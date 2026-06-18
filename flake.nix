@@ -1,0 +1,30 @@
+{
+  description = "our superrrrr aswesome nixpkgs-inspector";
+
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
+  outputs =
+    { self, nixpkgs }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
+    {
+      apps.${system}.scripts = builtins.mapAttrs (name: _: {
+        type = "app";
+        program = "${
+          pkgs.writeShellApplication {
+            name = "script-${name}";
+            runtimeInputs = [
+              pkgs.python3
+              pkgs.nix
+            ];
+            text = ''
+              export NIX_PATH="nixpkgs=${nixpkgs}"
+              exec python3 ${./scripts/${name}}/entry.py "$@"
+            '';
+          }
+        }/bin/script-${name}";
+      }) (pkgs.lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts));
+    };
+}
