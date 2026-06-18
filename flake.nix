@@ -8,6 +8,8 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+
+      nilib = ./lib;
     in
     {
       devShells.${system}.default = pkgs.mkShell {
@@ -31,7 +33,7 @@
             ];
             text = ''
               export NIX_PATH="nixpkgs=${nixpkgs}"
-              exec python3 ${./scripts/${name}}/entry.py "$@"
+              exec python3 ${./scripts/${name}}/entry.py "$@" "${nilib}"
             '';
           }
         }/bin/script-${name}";

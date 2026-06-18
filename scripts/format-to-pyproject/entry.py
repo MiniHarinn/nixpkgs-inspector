@@ -3,15 +3,27 @@ import subprocess
 from collections import defaultdict
 from pathlib import Path
 
+import sys
+
 
 def main():
     script_dir = Path(__file__).parent
     collect_nix = script_dir / "collect-packages.nix"
 
+    nilib_path = sys.argv[1]
+
     expr = f"""
-      (import {collect_nix} {{
-        pkgs = import <nixpkgs> {{}};
-      }})
+      let
+        defaultNixpkgsConfig = import {nilib_path}/nixpkgs-default-config.nix;
+
+        pkgs = import <nixpkgs> defaultNixpkgsConfig;
+
+        nilib = import {nilib_path} {{ inherit (pkgs) lib; }};
+
+        result = import {collect_nix} {{
+          inherit pkgs nilib;
+        }};
+      in result
     """
 
     result = subprocess.run(
