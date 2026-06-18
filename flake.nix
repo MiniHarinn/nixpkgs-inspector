@@ -20,7 +20,7 @@
         '';
       };
 
-      apps.${system}.scripts = builtins.mapAttrs (name: _: {
+      apps.${system} = builtins.mapAttrs (name: _: {
         type = "app";
         program = "${
           pkgs.writeShellApplication {
