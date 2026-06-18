@@ -10,6 +10,16 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
+      devShells.${system}.default = pkgs.mkShell {
+        packages = [
+          pkgs.python314
+          pkgs.uv
+        ];
+        shellHook = ''
+          export UV_PYTHON_PREFERENCE=only-system
+        '';
+      };
+
       apps.${system}.scripts = builtins.mapAttrs (name: _: {
         type = "app";
         program = "${
