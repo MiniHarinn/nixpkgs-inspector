@@ -8,8 +8,16 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      lib = pkgs.lib;
 
       nilib = ./lib;
+
+      scriptNames = lib.attrNames (lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts));
+
+      # Get all those config.toml and pack it into scriptsMeta
+      scriptsMeta = lib.genAttrs scriptNames (
+        name: builtins.fromTOML (builtins.readFile ./scripts/${name}/config.toml)
+      );
     in
     {
       devShells.${system}.default = pkgs.mkShell {
@@ -22,7 +30,7 @@
         '';
       };
 
-      apps.${system} = builtins.mapAttrs (name: _: {
+      apps.${system} = lib.genAttrs scriptNames (name: {
         type = "app";
         program = "${
           pkgs.writeShellApplication {
@@ -37,6 +45,11 @@
             '';
           }
         }/bin/script-${name}";
-      }) (pkgs.lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts));
+      });
+
+      inherit scriptsMeta;
+
+      # I suppose this will be useful when we have da frontend :D
+      nixpkgsRev = nixpkgs.rev or "unknown";
     };
 }
