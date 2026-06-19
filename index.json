@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-19T09:57:23Z",
-  "nixpkgsRev": "3e41b24abd260e8f71dbe2f5737d24122f972158",
+  "generatedAt": "2026-06-19T15:57:16Z",
+  "nixpkgsRev": "80854fcfdfcac1b44494fe2a81602a0fb3675fc9",
   "scripts": [
     {
       "name": "format-to-pyproject",
