@@ -1,10 +1,17 @@
 {
   description = "our superrrrr aswesome nixpkgs-inspector";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    subject-nixpkgs.url = "github:NixOS/nixpkgs/master"; # For script's package set; will be overwritten (re-lock) in ci for newest revision before every run.
+  };
 
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+      subject-nixpkgs,
+    }:
     let
       system = "x86_64-linux";
 
@@ -12,7 +19,9 @@
       lib = pkgs.lib;
 
       # For script's eval only, system components should ues normal `pkgs` above!!!
-      inspectPkgs = import nixpkgs ({ inherit system; } // import ./lib/nixpkgs-default-config.nix);
+      subjectPkgs = import subject-nixpkgs (
+        { inherit system; } // import ./lib/nixpkgs-default-config.nix
+      );
 
       nilib = import ./lib { inherit lib; };
 
@@ -25,10 +34,12 @@
       collectedJSON = lib.genAttrs scriptNames (
         name:
         pkgs.writeText "${name}-collected.json" (
-          builtins.toJSON (import ./scripts/${name}/collect.nix {
-            pkgs = inspectPkgs;
-            inherit nilib;
-          })
+          builtins.toJSON (
+            import ./scripts/${name}/collect.nix {
+              pkgs = subjectPkgs;
+              inherit nilib;
+            }
+          )
         )
       );
 
@@ -68,6 +79,6 @@
 
       inherit scriptsMeta;
 
-      nixpkgsRev = nixpkgs.rev or "unknown";
+      nixpkgsRev = subject-nixpkgs.rev or "unknown";
     };
 }
