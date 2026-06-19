@@ -16,12 +16,15 @@ jobs:
 
       - uses: cachix/install-nix-action@v31.10.6
 
-      - uses: nix-community/cache-nix-action@v7
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
+      - name: Get latest nixpkgs's master rev
+        id: rev
+        run: |
+          rev=$(git ls-remote https://github.com/NixOS/nixpkgs.git master | cut -f1)
+          echo "rev=$rev" | tee -a "$GITHUB_OUTPUT"
 
       - name: Run ${{ inputs.script }}
         env:
           SCRIPT: ${{ inputs.script }}
-        run: nix run ".#$SCRIPT"
+        run: |
+          nix run ".#$SCRIPT" \
+            --override-input subject-nixpkgs github:NixOS/nixpkgs/${{ steps.rev.outputs.rev }}

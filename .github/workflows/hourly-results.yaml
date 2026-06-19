@@ -17,15 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       scripts: ${{ steps.discover.outputs.scripts }}
+      rev: ${{ steps.rev.outputs.rev }}
     steps:
       - uses: actions/checkout@v7.0.0
 
       - uses: cachix/install-nix-action@v31.10.6
 
-      - uses: nix-community/cache-nix-action@v7
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
+      - name: Get latest nixpkgs' master rev
+        id: rev
+        run: |
+          rev=$(git ls-remote https://github.com/NixOS/nixpkgs.git master | cut -f1)
+          echo "rev=$rev" | tee -a "$GITHUB_OUTPUT"
 
       - name: Discover scheduled scripts
         id: discover
@@ -47,13 +49,12 @@ jobs:
 
       - uses: cachix/install-nix-action@v31.10.6
 
-      - uses: nix-community/cache-nix-action@v7
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
-
+        # Override flake input for lasest bleeding edge nixpkgs's master checkout
       - name: Run ${{ matrix.script }}
-        run: nix run ".#${{ matrix.script }}" > "${{ matrix.script }}.json"
+        run: |
+          nix run ".#${{ matrix.script }}" \
+            --override-input subject-nixpkgs github:NixOS/nixpkgs/${{ needs.discover.outputs.rev }} \
+            > "${{ matrix.script }}.json"
 
       - uses: actions/upload-artifact@v4
         with:
@@ -68,11 +69,6 @@ jobs:
 
       - uses: cachix/install-nix-action@v31.10.6
 
-      - uses: nix-community/cache-nix-action@v7
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
-
       - name: Download results
         uses: actions/download-artifact@v4
         with:
@@ -83,8 +79,7 @@ jobs:
       - name: Build index.json
         run: |
           nix eval --json '.#scriptsMeta' > meta.json
-          rev=$(nix eval --raw '.#nixpkgsRev')
-          python3 ci/build_index.py artifacts meta.json "$rev"
+          python3 ci/build_index.py artifacts meta.json "${{ needs.discover.outputs.rev }}"
 
       - name: Update result branch
         uses: peaceiris/actions-gh-pages@v4.1.0 # It's a bit tricky to use gh-pages action here but i suppose it should works(???).
