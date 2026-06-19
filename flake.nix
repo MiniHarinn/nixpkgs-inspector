@@ -43,10 +43,11 @@
         name:
         pkgs.writeText "${name}-collected.json" (
           builtins.toJSON (
-            import ./scripts/${name}/collect.nix {
-              pkgs = subjectPkgs;
-              inherit nilib;
-            }
+            let
+              exec = (import ./scripts/${name} {
+                inherit nilib;
+              });
+            in exec.script.builder exec.script.predicate "" subjectPkgs
           )
         )
       );
