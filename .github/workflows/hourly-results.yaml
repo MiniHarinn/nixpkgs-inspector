@@ -1,0 +1,98 @@
+name: Hourly results updater
+
+on:
+  # schedule:
+  #   - cron: "0 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: result-branch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      scripts: ${{ steps.discover.outputs.scripts }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - uses: nix-community/cache-nix-action@v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+
+      - name: Discover scheduled scripts
+        id: discover
+        run: |
+          scripts=$(nix eval --json '.#scriptsMeta' \
+            --apply 'meta: builtins.filter (name: (builtins.getAttr name meta).scheduled) (builtins.attrNames meta)')
+          echo "scripts=$scripts" | tee -a "$GITHUB_OUTPUT"
+
+  run:
+    needs: discover
+    if: needs.discover.outputs.scripts != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        script: ${{ fromJson(needs.discover.outputs.scripts) }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - uses: nix-community/cache-nix-action@v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+
+      - name: Run ${{ matrix.script }}
+        run: nix run ".#${{ matrix.script }}" > "${{ matrix.script }}.json"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.script }}
+          path: ${{ matrix.script }}.json
+
+  publish:
+    needs: [discover, run]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - uses: nix-community/cache-nix-action@v7
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+
+      - name: Download results
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: result-*
+          merge-multiple: true
+
+      - name: Build index.json
+        run: |
+          nix eval --json '.#scriptsMeta' > meta.json
+          rev=$(nix eval --raw '.#nixpkgsRev')
+          python3 ci/build_index.py artifacts meta.json "$rev"
+
+      - name: Update result branch
+        uses: peaceiris/actions-gh-pages@v4.1.0 # It's a bit tricky to use gh-pages action here but i suppose it should works(???).
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: result
+          publish_dir: ./artifacts
+          keep_files: false
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: "results: ${{ github.run_id }}"
