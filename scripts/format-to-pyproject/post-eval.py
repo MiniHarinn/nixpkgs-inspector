@@ -1,11 +1,11 @@
 import json
-import sys
 from collections import defaultdict
-from pathlib import Path
+
+from nipylib import getEvalResult
 
 
 def main():
-    collected = json.loads(Path(sys.argv[1]).read_text())
+    collected = getEvalResult()
 
     packages = defaultdict(list)
     for entry in collected:

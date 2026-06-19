@@ -54,7 +54,10 @@
             runtimeInputs = if hasPostEval then [ pkgs.python3 ] else [ pkgs.coreutils ];
             text =
               if hasPostEval then
-                ''exec python3 ${postEval} ${collectedJSON.${name}} "$@"''
+                ''
+                  export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
+                  exec python3 ${postEval} ${collectedJSON.${name}} "$@"
+                ''
               else
                 "exec cat ${collectedJSON.${name}}";
           };
