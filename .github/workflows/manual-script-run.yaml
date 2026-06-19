@@ -1,0 +1,35 @@
+name: Manual script run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      scripts: ${{ steps.discover.outputs.scripts }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - name: Discover scripts
+        id: discover
+        run: |
+          scripts=$(nix eval --json '.#apps.x86_64-linux' --apply builtins.attrNames)
+          echo "scripts=$scripts" | tee -a "$GITHUB_OUTPUT"
+
+  run:
+    needs: discover
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        script: ${{ fromJson(needs.discover.outputs.scripts) }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - name: Run ${{ matrix.script }}
+        run: nix run ".#${{ matrix.script }}"
