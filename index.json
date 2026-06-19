@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-06-19T09:57:23Z",
+  "nixpkgsRev": "3e41b24abd260e8f71dbe2f5737d24122f972158",
+  "scripts": [
+    {
+      "name": "format-to-pyproject",
+      "trackingIssueNum": 515974,
+      "file": "format-to-pyproject.json"
+    }
+  ]
+}
