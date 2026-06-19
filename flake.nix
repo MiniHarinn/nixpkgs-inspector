@@ -46,6 +46,7 @@
             let
               exec = (import ./scripts/${name} {
                 inherit nilib;
+                inherit lib;
               });
             in exec.script.builder exec.script.predicate "" subjectPkgs
           )

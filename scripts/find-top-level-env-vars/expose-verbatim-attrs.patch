@@ -1,0 +1,13 @@
+diff --git a/pkgs/stdenv/generic/check-meta.nix b/pkgs/stdenv/generic/check-meta.nix
+index 70c009c3e83a..fd3e3707651a 100644
+--- a/pkgs/stdenv/generic/check-meta.nix
++++ b/pkgs/stdenv/generic/check-meta.nix
+@@ -576,6 +576,8 @@ let
+     }
+     // attrs.meta or { }
+     // {
++      inherit attrs;
++
+       # Fill `meta.position` to identify the source location of the package.
+       ${if pos == null then null else "position"} = pos.file + ":" + toString pos.line;
+ 
