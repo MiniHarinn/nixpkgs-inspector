@@ -2,35 +2,15 @@ name: Manual script run
 
 on:
   workflow_dispatch:
+    inputs:
+      script:
+        description: Flake app to run (you probably wants to run a script, dont you?)
+        required: true
+        type: string
 
 jobs:
-  discover:
-    runs-on: ubuntu-latest
-    outputs:
-      scripts: ${{ steps.discover.outputs.scripts }}
-    steps:
-      - uses: actions/checkout@v7.0.0
-
-      - uses: cachix/install-nix-action@v31.10.6
-
-      - uses: nix-community/cache-nix-action@v7
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
-
-      - name: Discover scripts
-        id: discover
-        run: |
-          scripts=$(nix eval --json '.#apps.x86_64-linux' --apply builtins.attrNames)
-          echo "scripts=$scripts" | tee -a "$GITHUB_OUTPUT"
-
   run:
-    needs: discover
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        script: ${{ fromJson(needs.discover.outputs.scripts) }}
     steps:
       - uses: actions/checkout@v7.0.0
 
@@ -41,5 +21,7 @@ jobs:
           primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
           restore-prefixes-first-match: nix-${{ runner.os }}-
 
-      - name: Run ${{ matrix.script }}
-        run: nix run ".#${{ matrix.script }}"
+      - name: Run ${{ inputs.script }}
+        env:
+          SCRIPT: ${{ inputs.script }}
+        run: nix run ".#$SCRIPT"
