@@ -1,11 +1,11 @@
 import json
 from collections import defaultdict
 
-from nipylib import getEvalResult
+from nipylib import get_eval_result
 
 
 def main():
-    collected = getEvalResult()
+    collected = get_eval_result()
 
     packages = defaultdict(list)
     for entry in collected:
