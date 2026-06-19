@@ -28,7 +28,15 @@
       scriptNames = lib.attrNames (lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts));
 
       scriptsMeta = lib.genAttrs scriptNames (
-        name: builtins.fromTOML (builtins.readFile ./scripts/${name}/config.toml)
+        name:
+        let
+          configPath = ./scripts/${name}/config.toml;
+          defaults = {
+            trackingIssueNum = null;
+            scheduled = false;
+          };
+        in
+        defaults // (if builtins.pathExists configPath then builtins.fromTOML (builtins.readFile configPath) else { })
       );
 
       collectedJSON = lib.genAttrs scriptNames (
