@@ -21,7 +21,7 @@ def main():
         "scripts": [
             {
                 "name": name,
-                "trackingIssueNum": meta.get(name, {}).get("trackingIssueNum"),
+                "trackingIssue": meta.get(name, {}).get("trackingIssue"),
                 "file": f"{name}.json",
             }
             for name in names

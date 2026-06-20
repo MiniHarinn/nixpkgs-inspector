@@ -25,39 +25,20 @@
 
       nilib = import ./lib { inherit lib; };
 
-      scriptNames = lib.attrNames (lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts));
-
-      scriptsMeta = lib.genAttrs scriptNames (
-        name:
-        let
-          configPath = ./scripts/${name}/config.toml;
-          defaults = {
-            trackingIssueNum = null;
-            scheduled = false;
-          };
-        in
-        defaults // (if builtins.pathExists configPath then builtins.fromTOML (builtins.readFile configPath) else { })
-      );
-
-      collectedJSON = lib.genAttrs scriptNames (
-        name:
-        pkgs.writeText "${name}-collected.json" (
-          builtins.toJSON (
-            let
-              exec = (import ./scripts/${name} {
-                inherit nilib;
-                inherit lib;
-              });
-            in exec.script.builder exec.script.predicate "" subjectPkgs
-          )
-        )
+      # Discovery and lazy load all scripts
+      loadedScripts = lib.mapAttrs (name: _: import ./scripts/${name} { inherit nilib lib; }) (
+        lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts)
       );
 
       mkScriptApp =
-        name:
+        name: script:
         let
-          postEval = ./scripts/${name}/post-eval.py;
-          hasPostEval = builtins.pathExists postEval;
+          collectedJSON = pkgs.writeText "${name}-collected.json" (
+            builtins.toJSON (script.script.builder script.script.predicate "" subjectPkgs)
+          );
+
+          postEval = script.postEval or null;
+          hasPostEval = postEval != null;
 
           runner = pkgs.writeShellApplication {
             name = "script-${name}";
@@ -66,10 +47,10 @@
               if hasPostEval then
                 ''
                   export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
-                  exec python3 ${postEval} ${collectedJSON.${name}} "$@"
+                  exec python3 ${postEval} ${collectedJSON} "$@"
                 ''
               else
-                "exec cat ${collectedJSON.${name}}";
+                "exec cat ${collectedJSON}";
           };
         in
         {
@@ -88,9 +69,16 @@
         '';
       };
 
-      apps.${system} = lib.genAttrs scriptNames mkScriptApp;
+      apps.${system} = lib.mapAttrs mkScriptApp loadedScripts;
 
-      inherit scriptsMeta;
+      scriptsMeta = lib.mapAttrs (
+        _: script:
+        {
+          trackingIssue = null;
+          scheduled = false;
+        }
+        // (script.meta or { })
+      ) loadedScripts;
 
       nixpkgsRev = subject-nixpkgs.rev or "unknown";
     };
