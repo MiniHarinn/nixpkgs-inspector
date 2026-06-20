@@ -1,0 +1,85 @@
+name: Tracking automation
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: tracking-automation-result-branch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      scripts: ${{ steps.discover.outputs.scripts }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - name: Discover tracking-automation scripts
+        id: discover
+        run: |
+          scripts=$(nix eval --json '.#packages.x86_64-linux' \
+            --apply 'ps: builtins.filter (name: ps.${name} ? tracking-automation) (builtins.attrNames ps)')
+          echo "scripts=$scripts" | tee -a "$GITHUB_OUTPUT"
+
+  run:
+    needs: discover
+    if: needs.discover.outputs.scripts != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        script: ${{ fromJson(needs.discover.outputs.scripts) }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: cachix/install-nix-action@v31.10.6
+
+      - name: Clone nixpkgs (blobless)
+        run: |
+          git clone --no-checkout --filter=blob:none --origin upstream \
+            --branch master --single-branch \
+            https://github.com/NixOS/nixpkgs.git nixpkgs
+
+      - name: Run tracking automation for ${{ matrix.script }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          nix run ".#${{ matrix.script }}.tracking-automation.run" -- \
+            --worktree "$GITHUB_WORKSPACE/nixpkgs" \
+            --out out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tracking-${{ matrix.script }}
+          path: out
+
+  publish:
+    needs: [discover, run]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - name: Download results
+        uses: actions/download-artifact@v4
+        with:
+          path: out
+          pattern: tracking-*
+          merge-multiple: true
+
+      - name: Publish to tracking-automation-result branch
+        uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: tracking-automation-result
+          publish_dir: ./out
+          keep_files: false
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: "tracking-automation: ${{ github.run_id }}"
+          disable_nojekyll: true
