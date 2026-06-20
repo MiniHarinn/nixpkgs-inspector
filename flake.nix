@@ -18,11 +18,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
 
-      # For script's eval only, system components should ues normal `pkgs` above!!!
-      subjectPkgs = import subject-nixpkgs (
-        { inherit system; } // import ./lib/nixpkgs-default-config.nix
-      );
-
       nilib = import ./lib { inherit lib; };
 
       # The packaged tracking engine (one-shot, args-driven).
@@ -38,7 +33,13 @@
         name: script:
         let
           collectedJSON = pkgs.writeText "${name}-collected.json" (
-            builtins.toJSON (script.script.builder script.script.predicate "" subjectPkgs)
+            builtins.toJSON (import ./lib/eval.nix {
+              nixpkgsSrc = subject-nixpkgs;
+              scriptDir = ./scripts/${name};
+              configFile = ./lib/nixpkgs-default-config.nix;
+              toolingNixpkgs = pkgs.path;
+              inherit system;
+            }).collect
           );
 
           hasPostEval = script ? postEval;
