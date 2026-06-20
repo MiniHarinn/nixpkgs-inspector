@@ -38,7 +38,7 @@ class AttrStatus:
 class TrackerResult:
     tracker: Tracker
     current_rev: str  # master commit the checkbox states were evaluated at
-    statuses: list[AttrStatus]  # one per universe attr, ASCIIbetically sorted
+    statuses: list[AttrStatus]  # one per universe attr, in exact script collected order (assume script output sorted attrs)
 
     @property
     def creation_rev(self) -> str:

@@ -14,6 +14,7 @@ class CollectEvaluator(Protocol):
 @dataclass(frozen=True)
 class Universe:
     attrs: frozenset[str]
+    order: tuple[str, ...]  # attrs in collect (script) order
     pos: dict[str, frozenset[str]]  # repo-relative file -> attrs defined there
 
     def candidates(self, changed_files: Iterable[str]) -> set[str]:
@@ -32,15 +33,20 @@ def normalize_position(position: str) -> str:
 
 
 def _invert(entries: list[dict]) -> Universe:
+    order: list[str] = []
     attrs: set[str] = set()
     pos: dict[str, set[str]] = {}
     for e in entries:
-        attrs.add(e["attrpath"])
+        attr = e["attrpath"]
+        if attr not in attrs:
+            attrs.add(attr)
+            order.append(attr)
         position = e.get("position")
         if position:
-            pos.setdefault(normalize_position(position), set()).add(e["attrpath"])
+            pos.setdefault(normalize_position(position), set()).add(attr)
     return Universe(
         attrs=frozenset(attrs),
+        order=tuple(order),
         pos={f: frozenset(v) for f, v in pos.items()},
     )
 

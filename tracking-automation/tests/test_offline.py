@@ -20,6 +20,7 @@ from tracking_automation.universe import Universe  # noqa: E402
 
 UNIVERSE = Universe(
     attrs=frozenset({"a", "b", "c", "d", "e"}),
+    order=("a", "b", "c", "d", "e"),
     pos={
         "pkgs/by-name/aa/a/package.nix": frozenset({"a"}),
         "pkgs/by-name/dd/d/package.nix": frozenset({"d"}),

@@ -46,7 +46,7 @@ def run_tracking(
             f"({stats.attr_links} attr-links)"
         )
 
-        statuses_list = [statuses[a] for a in sorted(universe.attrs, key=str.casefold)]
+        statuses_list = [statuses[a] for a in universe.order]
         for s in statuses_list:
             s.prs.sort()
         return TrackerResult(
