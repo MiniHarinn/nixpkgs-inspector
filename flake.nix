@@ -30,7 +30,8 @@
         lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts)
       );
 
-      mkScriptApp =
+      # My attempt at making 1 script = 1 drv; meta is a little noisy with stdenv stuff but it works.
+      mkScript =
         name: script:
         let
           collectedJSON = pkgs.writeText "${name}-collected.json" (
@@ -53,23 +54,20 @@
                 "exec cat ${collectedJSON}";
           };
         in
-        {
-          type = "app";
-          program = lib.getExe runner;
-        };
+        runner.overrideAttrs (old: {
+          meta =
+            (old.meta or { })
+            // {
+              mainProgram = "script-${name}";
+              trackingIssue = null;
+              scheduled = false;
+            }
+            // (script.meta or { });
+        });
     in
     {
 
-      apps.${system} = lib.mapAttrs mkScriptApp loadedScripts;
-
-      scriptsMeta = lib.mapAttrs (
-        _: script:
-        {
-          trackingIssue = null;
-          scheduled = false;
-        }
-        // (script.meta or { })
-      ) loadedScripts;
+      packages.${system} = lib.mapAttrs mkScript loadedScripts;
 
       nixpkgsRev = subject-nixpkgs.rev or "unknown";
     };

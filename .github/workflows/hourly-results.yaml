@@ -32,8 +32,8 @@ jobs:
       - name: Discover scheduled scripts
         id: discover
         run: |
-          scripts=$(nix eval --json '.#scriptsMeta' \
-            --apply 'meta: builtins.filter (name: (builtins.getAttr name meta).scheduled) (builtins.attrNames meta)')
+          scripts=$(nix eval --json '.#packages.x86_64-linux' \
+            --apply 'ps: builtins.filter (name: ps.${name}.meta.scheduled or false) (builtins.attrNames ps)')
           echo "scripts=$scripts" | tee -a "$GITHUB_OUTPUT"
 
   run:
@@ -78,7 +78,8 @@ jobs:
 
       - name: Build index.json
         run: |
-          nix eval --json '.#scriptsMeta' > meta.json
+          nix eval --json '.#packages.x86_64-linux' \
+            --apply 'ps: builtins.mapAttrs (_: p: { inherit (p.meta) trackingIssue scheduled; }) ps' > meta.json
           python3 ci/build_index.py artifacts meta.json "${{ needs.discover.outputs.rev }}"
 
       - name: Update result branch
