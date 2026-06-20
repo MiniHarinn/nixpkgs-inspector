@@ -1,0 +1,1651 @@
+<!-- tracker:format-to-pyproject chunk:01/03 -->
+
+- [x] acd-cli #515674
+- [x] alerta #515970
+- [ ] alerta-server
+- [x] anime-downloader #516121
+- [ ] asn2quickder
+- [x] avell-unofficial-control-center #516125
+- [ ] awsume #516129
+- [ ] azure-cli
+- [ ] azure-cli-extensions.acat
+- [ ] azure-cli-extensions.account
+- [ ] azure-cli-extensions.acrcssc
+- [ ] azure-cli-extensions.acrquery
+- [ ] azure-cli-extensions.acrtransfer
+- [ ] azure-cli-extensions.ad
+- [ ] azure-cli-extensions.aem
+- [ ] azure-cli-extensions.ai-examples
+- [ ] azure-cli-extensions.aks-preview
+- [ ] azure-cli-extensions.aksarc
+- [ ] azure-cli-extensions.alb
+- [ ] azure-cli-extensions.alertsmanagement
+- [ ] azure-cli-extensions.alias
+- [ ] azure-cli-extensions.amg
+- [ ] azure-cli-extensions.amlfs
+- [ ] azure-cli-extensions.aosm
+- [ ] azure-cli-extensions.apic-extension
+- [ ] azure-cli-extensions.application-insights
+- [ ] azure-cli-extensions.appnet-preview
+- [ ] azure-cli-extensions.appservice-kube
+- [ ] azure-cli-extensions.arcappliance
+- [ ] azure-cli-extensions.arcdata
+- [ ] azure-cli-extensions.arcgateway
+- [ ] azure-cli-extensions.arize-ai
+- [ ] azure-cli-extensions.artifact-signing
+- [ ] azure-cli-extensions.astronomer
+- [ ] azure-cli-extensions.attestation
+- [ ] azure-cli-extensions.authV2
+- [ ] azure-cli-extensions.automanage
+- [ ] azure-cli-extensions.automation
+- [ ] azure-cli-extensions.azure-devops
+- [ ] azure-cli-extensions.azure-firewall
+- [ ] azure-cli-extensions.azure-iot
+- [ ] azure-cli-extensions.azurelargeinstance
+- [ ] azure-cli-extensions.baremetal-infrastructure
+- [ ] azure-cli-extensions.bastion
+- [ ] azure-cli-extensions.billing-benefits
+- [ ] azure-cli-extensions.blueprint
+- [ ] azure-cli-extensions.carbon
+- [ ] azure-cli-extensions.change-analysis
+- [ ] azure-cli-extensions.cli-translator
+- [ ] azure-cli-extensions.cloud-service
+- [ ] azure-cli-extensions.cloudhsm
+- [ ] azure-cli-extensions.computelimit
+- [ ] azure-cli-extensions.computeschedule
+- [ ] azure-cli-extensions.confcom
+- [ ] azure-cli-extensions.confidentialledger
+- [ ] azure-cli-extensions.confluent
+- [ ] azure-cli-extensions.connectedk8s
+- [ ] azure-cli-extensions.connectedmachine
+- [ ] azure-cli-extensions.connectedvmware
+- [ ] azure-cli-extensions.containerapp
+- [ ] azure-cli-extensions.cosmosdb-preview
+- [ ] azure-cli-extensions.costmanagement
+- [ ] azure-cli-extensions.custom-providers
+- [ ] azure-cli-extensions.customlocation
+- [ ] azure-cli-extensions.data-transfer
+- [ ] azure-cli-extensions.databox
+- [ ] azure-cli-extensions.databricks
+- [ ] azure-cli-extensions.datadog
+- [ ] azure-cli-extensions.datafactory
+- [ ] azure-cli-extensions.datamigration
+- [ ] azure-cli-extensions.dataprotection
+- [ ] azure-cli-extensions.datashare
+- [ ] azure-cli-extensions.dell
+- [ ] azure-cli-extensions.dependency-map
+- [ ] azure-cli-extensions.deploy-to-azure
+- [ ] azure-cli-extensions.desktopvirtualization
+- [ ] azure-cli-extensions.dev-spaces
+- [ ] azure-cli-extensions.devcenter
+- [ ] azure-cli-extensions.diskpool
+- [ ] azure-cli-extensions.dms-preview
+- [ ] azure-cli-extensions.dnc
+- [ ] azure-cli-extensions.dns-resolver
+- [ ] azure-cli-extensions.durabletask
+- [ ] azure-cli-extensions.dynatrace
+- [ ] azure-cli-extensions.edge-action
+- [ ] azure-cli-extensions.edgeorder
+- [ ] azure-cli-extensions.edgezones
+- [ ] azure-cli-extensions.elastic
+- [ ] azure-cli-extensions.elastic-san
+- [ ] azure-cli-extensions.eventgrid
+- [ ] azure-cli-extensions.express-route-cross-connection
+- [ ] azure-cli-extensions.firmwareanalysis
+- [ ] azure-cli-extensions.fleet
+- [ ] azure-cli-extensions.fluid-relay
+- [ ] azure-cli-extensions.footprint
+- [ ] azure-cli-extensions.front-door
+- [ ] azure-cli-extensions.fzf
+- [ ] azure-cli-extensions.gallery-service-artifact
+- [ ] azure-cli-extensions.graphservices
+- [ ] azure-cli-extensions.guestconfig
+- [ ] azure-cli-extensions.hack
+- [ ] azure-cli-extensions.hardware-security-modules
+- [ ] azure-cli-extensions.healthbot
+- [ ] azure-cli-extensions.healthcareapis
+- [ ] azure-cli-extensions.hpc-cache
+- [ ] azure-cli-extensions.image-copy-extension
+- [ ] azure-cli-extensions.image-gallery
+- [ ] azure-cli-extensions.import-export
+- [ ] azure-cli-extensions.informatica
+- [ ] azure-cli-extensions.init
+- [ ] azure-cli-extensions.interactive
+- [ ] azure-cli-extensions.internet-analyzer
+- [ ] azure-cli-extensions.ip-group
+- [ ] azure-cli-extensions.k8s-configuration
+- [ ] azure-cli-extensions.k8s-extension
+- [ ] azure-cli-extensions.k8s-runtime
+- [ ] azure-cli-extensions.keyvault-preview
+- [ ] azure-cli-extensions.kusto
+- [ ] azure-cli-extensions.lambda-test
+- [ ] azure-cli-extensions.log-analytics
+- [ ] azure-cli-extensions.log-analytics-solution
+- [ ] azure-cli-extensions.logic
+- [ ] azure-cli-extensions.maintenance
+- [ ] azure-cli-extensions.managedccfs
+- [ ] azure-cli-extensions.managednetworkfabric
+- [ ] azure-cli-extensions.managementpartner
+- [ ] azure-cli-extensions.mcc
+- [ ] azure-cli-extensions.mdp
+- [ ] azure-cli-extensions.microsoft-fabric
+- [ ] azure-cli-extensions.migrate
+- [ ] azure-cli-extensions.mixed-reality
+- [ ] azure-cli-extensions.mongo-db
+- [ ] azure-cli-extensions.monitor-control-service
+- [ ] azure-cli-extensions.monitor-pipeline-group
+- [ ] azure-cli-extensions.multicloud-connector
+- [ ] azure-cli-extensions.network-analytics
+- [ ] azure-cli-extensions.networkcloud
+- [ ] azure-cli-extensions.new-relic
+- [ ] azure-cli-extensions.next
+- [ ] azure-cli-extensions.nginx
+- [ ] azure-cli-extensions.notification-hub
+- [ ] azure-cli-extensions.nsp
+- [ ] azure-cli-extensions.offazure
+- [ ] azure-cli-extensions.oracle-database
+- [ ] azure-cli-extensions.orbital
+- [ ] azure-cli-extensions.palo-alto-networks
+- [ ] azure-cli-extensions.peering
+- [ ] azure-cli-extensions.portal
+- [ ] azure-cli-extensions.powerbidedicated
+- [ ] azure-cli-extensions.providerhub
+- [ ] azure-cli-extensions.pscloud
+- [ ] azure-cli-extensions.purview
+- [ ] azure-cli-extensions.quantum
+- [ ] azure-cli-extensions.qumulo
+- [ ] azure-cli-extensions.quota
+- [ ] azure-cli-extensions.rdbms-connect
+- [ ] azure-cli-extensions.redisenterprise
+- [ ] azure-cli-extensions.reservation
+- [ ] azure-cli-extensions.resource-graph
+- [ ] azure-cli-extensions.resource-mover
+- [ ] azure-cli-extensions.scenario-guide
+- [ ] azure-cli-extensions.scheduled-query
+- [ ] azure-cli-extensions.scvmm
+- [ ] azure-cli-extensions.self-help
+- [ ] azure-cli-extensions.sentinel
+- [ ] azure-cli-extensions.serial-console
+- [ ] azure-cli-extensions.sftp
+- [ ] azure-cli-extensions.site
+- [ ] azure-cli-extensions.site-recovery
+- [ ] azure-cli-extensions.ssh
+- [ ] azure-cli-extensions.stack-hci
+- [ ] azure-cli-extensions.stack-hci-vm
+- [ ] azure-cli-extensions.standbypool
+- [ ] azure-cli-extensions.staticwebapp
+- [ ] azure-cli-extensions.storage-actions
+- [ ] azure-cli-extensions.storage-blob-preview
+- [ ] azure-cli-extensions.storage-discovery
+- [ ] azure-cli-extensions.storage-mover
+- [ ] azure-cli-extensions.storage-preview
+- [ ] azure-cli-extensions.storagesync
+- [ ] azure-cli-extensions.stream-analytics
+- [ ] azure-cli-extensions.subscription
+- [ ] azure-cli-extensions.support
+- [ ] azure-cli-extensions.terraform
+- [ ] azure-cli-extensions.timeseriesinsights
+- [ ] azure-cli-extensions.traffic-collector
+- [ ] azure-cli-extensions.trustedsigning
+- [ ] azure-cli-extensions.virtual-network-manager
+- [ ] azure-cli-extensions.virtual-network-tap
+- [ ] azure-cli-extensions.virtual-wan
+- [ ] azure-cli-extensions.vm-repair
+- [ ] azure-cli-extensions.vme
+- [ ] azure-cli-extensions.vmware
+- [ ] azure-cli-extensions.webapp
+- [ ] azure-cli-extensions.webpubsub
+- [ ] azure-cli-extensions.workload-orchestration
+- [ ] azure-cli-extensions.workloads
+- [ ] azure-cli-extensions.zones
+- [ ] beancount_2
+- [x] black-macchiato #519572
+- [x] buildbot-plugins.badges #522474
+- [x] buildbot-plugins.buildbot-pkg #522474
+- [x] buildbot-plugins.console-view #522474
+- [x] buildbot-plugins.grid-view #522474
+- [x] buildbot-plugins.waterfall-view #522474
+- [x] buildbot-plugins.wsgi-dashboards #522474
+- [x] buildbot-plugins.www #522474
+- [x] buildbot-worker #522474
+- [x] buildbotPackages.buildbot-pkg #522474
+- [x] buildbotPackages.buildbot-worker #522474
+- [x] cdist #519575
+- [ ] changedetection-io
+- [ ] chkcrontab #519580
+- [x] clickgen #520684
+- [ ] cm-rgb
+- [ ] cmake-format
+- [x] corsair #520690
+- [ ] cot
+- [x] credslayer
+- [ ] crossplane
+- [ ] cryptop
+- [x] csv2md
+- [ ] cxxtest
+- [x] dehinter #522376
+- [ ] deluge
+- [ ] deluge-2_x
+- [ ] deluge-gtk
+- [ ] deluged
+- [x] devede #515980
+- [x] dfmt #464418
+- [x] displaycal #522804
+- [ ] dkimpy #522806
+- [x] dmensamenu #522807
+- [x] doit
+- [x] dot2tex #522814
+- [ ] dr14_tmeter #522820
+- [ ] duplicity
+- [ ] eddy
+- [ ] edl
+- [ ] eggnog-mapper #528766
+- [ ] electrum-grs
+- [ ] electrum-ltc
+- [ ] enochecker-test
+- [ ] etebase-server
+- [x] executor #528079
+- [ ] fail2ban #522379
+- [x] font-v #526542
+- [ ] gazelle-origin
+- [x] gdbgui #526789
+- [x] gdtoolkit_4 #527090
+- [ ] gfal2-util
+- [ ] ghp-import
+- [ ] ghrepo-stats
+- [ ] gibberish-detector #532306
+- [x] gif-for-cli #528148
+- [ ] gimme-aws-creds
+- [ ] gistyc
+- [x] git-aggregator #522848
+- [x] git-annex-remote-dbx
+- [x] git-archive-all #522851
+- [x] git-bars #522854
+- [ ] git-imerge #522897
+- [x] git-relevant-history #522899
+- [x] git-review #522900
+- [ ] git-revise #522830
+- [x] gitfs #522910
+- [x] github-to-sqlite #522868
+- [ ] gnome-keysign
+- [ ] gnomecast
+- [ ] google-compute-engine
+- [ ] gp-saml-gui #530652
+- [ ] gprof2dot
+- [ ] greg
+- [ ] gruut-ipa
+- [x] gscreenshot #530658
+- [ ] gspeech
+- [ ] hachoir
+- [x] haxor-news
+- [ ] hifiscan #530673
+- [ ] hocr-tools
+- [x] home-assistant-custom-components.adaptive_lighting
+- [x] home-assistant-custom-components.alarmo
+- [x] home-assistant-custom-components.amshan
+- [x] home-assistant-custom-components.auth_oidc
+- [x] home-assistant-custom-components.average
+- [x] home-assistant-custom-components.awtrix
+- [x] home-assistant-custom-components.battery_notes
+- [x] home-assistant-custom-components.benqprojector
+- [x] home-assistant-custom-components.better_thermostat
+- [x] home-assistant-custom-components.bodymiscale
+- [x] home-assistant-custom-components.browser-mod
+- [x] home-assistant-custom-components.calendar_export
+- [x] home-assistant-custom-components.circadian_lighting
+- [x] home-assistant-custom-components.climate_group
+- [x] home-assistant-custom-components.daikin_onecta
+- [x] home-assistant-custom-components.dirigera_platform
+- [x] home-assistant-custom-components.dreo
+- [x] home-assistant-custom-components.dwd
+- [x] home-assistant-custom-components.ecoflow_cloud
+- [x] home-assistant-custom-components.elegoo_printer
+- [x] home-assistant-custom-components.emporia_vue
+- [x] home-assistant-custom-components.epex_spot
+- [x] home-assistant-custom-components.fellow
+- [x] home-assistant-custom-components.frigate
+- [x] home-assistant-custom-components.frigidaire
+- [x] home-assistant-custom-components.garmin_connect
+- [x] home-assistant-custom-components.gpio
+- [x] home-assistant-custom-components.gtfs-realtime
+- [x] home-assistant-custom-components.ha_mcp_tools
+- [x] home-assistant-custom-components.hass_web_proxy
+- [x] home-assistant-custom-components.hildebrand_glow_ihd
+- [x] home-assistant-custom-components.home_connect_alt
+- [x] home-assistant-custom-components.homematicip_local
+- [x] home-assistant-custom-components.indego
+- [x] home-assistant-custom-components.ingress
+- [x] home-assistant-custom-components.lednetwf_ble
+- [x] home-assistant-custom-components.local_luftdaten
+- [x] home-assistant-custom-components.localtuya
+- [x] home-assistant-custom-components.luxer_one
+- [x] home-assistant-custom-components.midea-air-appliances-lan
+- [x] home-assistant-custom-components.midea_ac
+- [x] home-assistant-custom-components.midea_ac_lan
+- [x] home-assistant-custom-components.miraie
+- [x] home-assistant-custom-components.mitsubishi
+- [x] home-assistant-custom-components.moonraker
+- [x] home-assistant-custom-components.mypyllant
+- [x] home-assistant-custom-components.nest_protect
+- [x] home-assistant-custom-components.ntfy
+- [x] home-assistant-custom-components.octopus_energy
+- [x] home-assistant-custom-components.omnik_inverter
+- [x] home-assistant-custom-components.openplantbook
+- [x] home-assistant-custom-components.opensprinkler
+- [x] home-assistant-custom-components.oref_alert
+- [x] home-assistant-custom-components.philips_airpurifier_coap
+- [x] home-assistant-custom-components.pirate-weather
+- [x] home-assistant-custom-components.plant
+- [x] home-assistant-custom-components.polaris-mqtt
+- [x] home-assistant-custom-components.powercalc
+- [x] home-assistant-custom-components.prometheus_sensor
+- [x] home-assistant-custom-components.rct_power
+- [x] home-assistant-custom-components.roborock_custom_map
+- [x] home-assistant-custom-components.samsungtv-smart
+- [x] home-assistant-custom-components.scene_presets
+- [x] home-assistant-custom-components.scheduler
+- [x] home-assistant-custom-components.sensi
+- [x] home-assistant-custom-components.sleep_as_android_mqtt
+- [x] home-assistant-custom-components.smartir
+- [x] home-assistant-custom-components.smartthinq-sensors
+- [x] home-assistant-custom-components.solarman
+- [x] home-assistant-custom-components.solax_modbus
+- [x] home-assistant-custom-components.solis-sensor
+- [x] home-assistant-custom-components.somweb
+- [x] home-assistant-custom-components.spook
+- [x] home-assistant-custom-components.sun2
+- [x] home-assistant-custom-components.systemair
+- [x] home-assistant-custom-components.thewatchman
+- [x] home-assistant-custom-components.tibber_local
+- [x] home-assistant-custom-components.tuya_local
+- [x] home-assistant-custom-components.valetudo
+- [x] home-assistant-custom-components.versatile_thermostat
+- [x] home-assistant-custom-components.volkswagencarnet
+- [x] home-assistant-custom-components.volvo_cars
+- [x] home-assistant-custom-components.waste_collection_schedule
+- [x] home-assistant-custom-components.xiaomi_gateway3
+- [x] home-assistant-custom-components.xiaomi_home
+- [x] home-assistant-custom-components.xiaomi_miot
+- [x] home-assistant-custom-components.yandex-station
+- [x] home-assistant-custom-components.yoto_ha
+- [x] htgettoken #528722
+- [x] html5validator #527108
+- [ ] hue-plus
+- [ ] hwi
+- [x] i3-balance-workspace
+- [x] i3-resurrect
+- [x] i3altlayout
+- [ ] indicator-sound-switcher
+- [ ] inkscape-extensions.silhouette
+- [ ] inkscape-extensions.textext
+- [ ] input-remapper
+- [ ] iocextract
+- [ ] isso
+- [ ] j2cli
+- [ ] jc
+- [ ] jello
+- [x] jello-lang #515980
+- [x] jellyfish #515980
+- [ ] jiten
+- [ ] jpylyzer
+- [x] jsbeautifier #523008
+- [x] keepkey-agent
+- [ ] kerbrute
+- [ ] klaus
+- [ ] krop
+- [x] ledger-agent
+- [ ] libfx2
+- [ ] logitech-udev-rules
+- [ ] luddite
+- [x] m2r
+- [ ] mailman-hyperkitty
+- [ ] mailmanPackages.mailman-hyperkitty
+- [ ] mailmanPackages.postorius #530749
+- [ ] mate-tweak
+- [ ] matrix-synapse-plugins.matrix-synapse-mjolnir-antispam
+- [ ] matrix-synapse-plugins.matrix-synapse-pam
+- [ ] matrix-synapse-plugins.matrix-synapse-s3-storage-provider
+- [ ] matrix-synapse-plugins.matrix-synapse-shared-secret-auth
+- [x] maubot #528120
+- [ ] mautrix-googlechat
+- [ ] mbed-cli
+- [ ] md2gemini
+- [ ] mediagoblin
+- [ ] meerk40t-camera
+- [x] menulibre #530378
+- [ ] meson
+- [ ] mir-qualia
+- [ ] mkchromecast
+- [ ] mnemosyne
+- [ ] mpd-sima
+- [x] mpy-utils
+- [ ] mu-repo
+- [ ] nagiosPlugins.check_openvpn
+- [ ] nengo-gui
+- [ ] nix-heuristic-gc
+- [ ] nix-update-source
+- [ ] nixbang #530369
+- [ ] nixpkgs-pytools
+- [ ] nodepy-runtime
+- [ ] noteshrink
+- [ ] notifymuch
+- [ ] nsz
+- [ ] nvmet-cli
+- [ ] nwg-displays
+- [ ] nwg-panel
+- [ ] obitools3
+- [ ] octoprint
+- [ ] oletools
+- [ ] onboard
+- [ ] oncall
+- [ ] online-judge-template-generator
+- [ ] onlykey-agent
+- [ ] opcua-client-gui
+- [ ] open-fprintd
+- [ ] opendrop
+- [ ] openshot-qt
+- [ ] openttd-nml
+- [ ] openwebrx
+- [ ] pandoc-acro
+- [ ] pandoc-drawio-filter
+- [ ] pandoc-imagine
+- [ ] passExtensions.pass-import
+- [ ] patool
+- [ ] pgadmin4
+- [ ] pgadmin4-desktopmode
+- [x] picard
+- [x] picosnitch
+- [ ] pijuice
+- [ ] pinboard
+- [x] pius #530361
+- [ ] pixcat
+- [ ] play-with-mpv
+- [ ] pleroma-bot
+- [ ] plex-mpv-shim
+- [ ] pnglatex
+- [ ] powerline
+- [ ] prometheus-pve-exporter
+- [ ] protonup-ng
+- [x] psrecord
+- [ ] puddletag
+- [ ] pulseaudio-dlna
+- [ ] pycflow2dot
+- [ ] pycoin
+- [ ] pycritty
+- [x] pylint-exit
+- [ ] pysolfc
+- [x] python313Packages.abjad #523703
+- [x] python313Packages.adax #523707
+- [ ] python313Packages.adb-homeassistant
+- [x] python313Packages.adb-shell #524191
+- [ ] python313Packages.addict #525013
+- [x] python313Packages.advantage-air #525015
+- [ ] python313Packages.advocate
+- [ ] python313Packages.aerosandbox
+- [x] python313Packages.afsapi
+- [ ] python313Packages.ai-edge-litert
+- [ ] python313Packages.aigpy
+- [x] python313Packages.aiobroadlink #525018
+- [x] python313Packages.aioemonitor #525020
+- [ ] python313Packages.aioextensions
+- [ ] python313Packages.aiohttp-basicauth
+- [ ] python313Packages.aiohttp-oauthlib
+- [ ] python313Packages.aiohttp-wsgi
+- [ ] python313Packages.aiokef #525021
+- [ ] python313Packages.aiolifx-connection
+- [ ] python313Packages.aiolifx-effects
+- [x] python313Packages.aiolookin #525726
+- [ ] python313Packages.aionanoleaf
+- [ ] python313Packages.aiopg
+- [ ] python313Packages.aioprometheus
+- [x] python313Packages.aiopyarr #526537
+- [x] python313Packages.aiopylgtv #525733
+- [ ] python313Packages.aioredis
+- [ ] python313Packages.aioserial
+- [ ] python313Packages.airly
+- [x] python313Packages.airthings-cloud
+- [ ] python313Packages.airtouch4pyapi
+- [ ] python313Packages.aistudio-sdk
+- [ ] python313Packages.ajpy #525734
+- [x] python313Packages.aladdin-connect #525368
+- [x] python313Packages.alectryon #526535
+- [ ] python313Packages.algebraic-data-types
+- [x] python313Packages.aliyun-python-sdk-alimt #515980
+- [ ] python313Packages.aliyun-python-sdk-cdn
+- [ ] python313Packages.aliyun-python-sdk-config
+- [ ] python313Packages.aliyun-python-sdk-dbfs
+- [ ] python313Packages.aliyun-python-sdk-iot
+- [ ] python313Packages.aliyun-python-sdk-sts
+- [ ] python313Packages.altgraph
+- [ ] python313Packages.amarna #526896
+- [ ] python313Packages.amply #526895
+- [ ] python313Packages.amqp
+- [ ] python313Packages.android-backup
+- [ ] python313Packages.anel-pwrctrl-homeassistant
+- [ ] python313Packages.anitopy
+- [ ] python313Packages.anonip #526912
+- [x] python313Packages.ansi2image #526894
+- [x] python313Packages.ansicolors #527949
+- [ ] python313Packages.anyascii
+- [x] python313Packages.anyconfig #527955
+- [x] python313Packages.anyqt #527956
+- [x] python313Packages.apcaccess #527957
+- [x] python313Packages.applicationinsights #528192
+- [ ] python313Packages.appnope
+- [x] python313Packages.aprslib #528194
+- [x] python313Packages.aqipy-atmotech #528195
+- [x] python313Packages.aqualogic #528196
+- [x] python313Packages.arabic-reshaper
+- [x] python313Packages.area #528216
+- [x] python313Packages.argparse-addons #528217
+- [ ] python313Packages.args
+- [x] python313Packages.arpeggio #528218
+- [x] python313Packages.arpy #528219
+- [ ] python313Packages.array-record
+- [x] python313Packages.arxiv2bib #528220
+- [ ] python313Packages.asgiref #527554
+- [ ] python313Packages.asks
+- [x] python313Packages.asmog #527556
+- [ ] python313Packages.asn1ate #527557
+- [x] python313Packages.aspy-refactor-imports
+- [x] python313Packages.aspy-yaml #527596
+- [x] python313Packages.assertpy #527597
+- [ ] python313Packages.astunparse
+- [ ] python313Packages.async-generator #527599
+- [x] python313Packages.asyncio-rlock #527600
+- [x] python313Packages.asyncio-throttle #527601
+- [ ] python313Packages.asynctest
+- [x] python313Packages.atlassian-python-api #527602
+- [x] python313Packages.atomicwrites #527603
+- [ ] python313Packages.atomicwrites-homeassistant
+- [ ] python313Packages.auditok #527605
+- [x] python313Packages.augeas #527606
+- [x] python313Packages.authres #527608
+- [x] python313Packages.autograd-gamma #527610
+- [x] python313Packages.autologging #527611
+- [x] python313Packages.avion #527628
+- [x] python313Packages.avro-python3 #527629
+- [x] python313Packages.awesome-slugify #527630
+- [x] python313Packages.azure-applicationinsights #527631
+- [x] python313Packages.azure-common #527632
+- [x] python313Packages.azure-containerregistry #527633
+- [x] python313Packages.azure-cosmosdb-nspkg #527634
+- [x] python313Packages.azure-cosmosdb-table #527635
+- [x] python313Packages.azure-datalake-store #527636
+- [x] python313Packages.azure-keyvault #528222
+- [x] python313Packages.azure-keyvault-nspkg #528223
+- [x] python313Packages.azure-loganalytics #528224
+- [x] python313Packages.azure-mgmt-authorization #528225
+- [x] python313Packages.azure-mgmt-batchai #528226
+- [x] python313Packages.azure-mgmt-cdn #528245
+- [ ] python313Packages.azure-mgmt-common #528248
+- [ ] python313Packages.azure-mgmt-containerinstance #528250
+- [x] python313Packages.azure-mgmt-core #528252
+- [ ] python313Packages.azure-mgmt-dashboard
+- [x] python313Packages.azure-mgmt-datalake-analytics #528253
+- [x] python313Packages.azure-mgmt-datalake-nspkg #528255
+- [ ] python313Packages.azure-mgmt-datalake-store
+- [x] python313Packages.azure-mgmt-devspaces #528384
+- [x] python313Packages.azure-mgmt-devtestlabs #528412
+- [x] python313Packages.azure-mgmt-hanaonazure #528503
+- [ ] python313Packages.azure-mgmt-hybridcompute
+- [x] python313Packages.azure-mgmt-iotcentral #528504
+- [x] python313Packages.azure-mgmt-iothubprovisioningservices #528385
+- [x] python313Packages.azure-mgmt-loganalytics #528505
+- [x] python313Packages.azure-mgmt-machinelearningcompute #528386
+- [x] python313Packages.azure-mgmt-managementpartner #528506
+- [x] python313Packages.azure-mgmt-maps #528387
+- [x] python313Packages.azure-mgmt-marketplaceordering #528507
+- [ ] python313Packages.azure-mgmt-media
+- [ ] python313Packages.azure-mgmt-msi
+- [x] python313Packages.azure-mgmt-notificationhubs #528388
+- [x] python313Packages.azure-mgmt-nspkg #528389
+- [x] python313Packages.azure-mgmt-policyinsights
+- [x] python313Packages.azure-mgmt-rdbms #528508
+- [x] python313Packages.azure-mgmt-redis #528391
+- [x] python313Packages.azure-mgmt-servicelinker #528393
+- [x] python313Packages.azure-mgmt-signalr #528394
+- [x] python313Packages.azure-mgmt-sql #528395
+- [x] python313Packages.azure-mgmt-subscription #528396
+- [x] python313Packages.azure-mgmt-trafficmanager #528397
+- [x] python313Packages.azure-nspkg #528398
+- [x] python313Packages.azure-servicefabric #528404
+- [x] python313Packages.azure-storage-common #528405
+- [x] python313Packages.azure-storage-file #528406
+- [x] python313Packages.azure-storage-nspkg #528408
+- [x] python313Packages.azure-synapse-artifacts #528410
+- [x] python313Packages.babelgladeextractor #528518
+- [ ] python313Packages.backcall
+- [ ] python313Packages.bacpypes
+- [ ] python313Packages.banal #528645
+- [ ] python313Packages.bandcamp-api #528646
+- [ ] python313Packages.bangla #528647
+- [ ] python313Packages.bap #528648
+- [x] python313Packages.baron #528649
+- [x] python313Packages.base36 #528695
+- [x] python313Packages.base58check #528696
+- [x] python313Packages.baseline #528697
+- [ ] python313Packages.baselines #528698
+- [ ] python313Packages.basemap
+- [x] python313Packages.basemap-data #528700
+- [ ] python313Packages.bashlex #528701
+- [x] python313Packages.basiciw #528702
+- [ ] python313Packages.baycomp #528703
+- [x] python313Packages.bc-jsonpath-ng #528712
+- [x] python313Packages.bcdoc #528713
+- [ ] python313Packages.bcf #528714
+- [ ] python313Packages.bcg #528715
+- [x] python313Packages.bch #528716
+- [ ] python313Packages.beancount_2
+- [x] python313Packages.beanstalkc #528717
+- [x] python313Packages.beautiful-date #528719
+- [x] python313Packages.beautifultable #528718
+- [x] python313Packages.bech32 #528720
+- [x] python313Packages.before-after #528721
+- [x] python313Packages.bencode-py #528730
+- [x] python313Packages.bencoder #528731
+- [ ] python313Packages.betacode #528732
+- [x] python313Packages.betamax-serializers #528733
+- [x] python313Packages.bibtexparser #528734
+- [x] python313Packages.binaryornot #528735
+- [x] python313Packages.bincopy #528736
+- [x] python313Packages.binho-host-adapter #528738
+- [x] python313Packages.biplist #528739
+- [ ] python313Packages.bitcoin-utils-fork-minimal
+- [x] python313Packages.bitmath
+- [x] python313Packages.bitvavo-aio #528740
+- [x] python313Packages.black-macchiato #519572
+- [ ] python313Packages.bleach-allowlist #528780
+- [ ] python313Packages.blinkstick #528791
+- [ ] python313Packages.blivet
+- [x] python313Packages.blobfile #528822
+- [ ] python313Packages.blockchain
+- [ ] python313Packages.bluepy #528823
+- [x] python313Packages.bluepy-devices #528824
+- [ ] python313Packages.bme280spi
+- [ ] python313Packages.bnnumerizer #528825
+- [ ] python313Packages.bnunicodenormalizer #528828
+- [x] python313Packages.boa-api #528829
+- [ ] python313Packages.boilerpy3
+- [x] python313Packages.bond-api #528830
+- [x] python313Packages.bond-async #528831
+- [x] python313Packages.boolean-py #528832
+- [ ] python313Packages.bottleneck #528833
+- [x] python313Packages.bravia-tv #528835
+- [x] python313Packages.brelpy #528837
+- [x] python313Packages.brotli-asgi #528838
+- [x] python313Packages.brottsplatskartan #528839
+- [x] python313Packages.brunt #528841
+- [ ] python313Packages.bsdiff4 #528842
+- [x] python313Packages.bt-proximity #528843
+- [ ] python313Packages.btchip-python
+- [x] python313Packages.btrfs #523001
+- [x] python313Packages.btrfsutil #527068
+- [x] python313Packages.btsmarthub-devicelist #527318
+- [ ] python313Packages.btsocket #527311
+- [ ] python313Packages.bwapy
+- [ ] python313Packages.cachelib #527310
+- [ ] python313Packages.cachey #527335
+- [ ] python313Packages.cachy #528845
+- [x] python313Packages.callee #527309
+- [ ] python313Packages.calmjs-types #527308
+- [x] python313Packages.calysto #528846
+- [ ] python313Packages.capstone #526704
+- [ ] python313Packages.capstone_4 #526704
+- [x] python313Packages.cart #528847
+- [ ] python313Packages.casa-formats-io #527334
+- [ ] python313Packages.casttube #527333
+- [ ] python313Packages.cbor #527332
+- [x] python313Packages.cccolutils #529001
+- [ ] python313Packages.certbot-dns-rfc2136
+- [x] python313Packages.certvalidator #529003
+- [ ] python313Packages.cfn-flip #527331
+- [ ] python313Packages.cfscrape #527330
+- [ ] python313Packages.cftime #527329
+- [ ] python313Packages.chacha20poly1305 #527328
+- [x] python313Packages.chai #529152
+- [ ] python313Packages.chainmap
+- [x] python313Packages.chat-downloader #529046
+- [x] python313Packages.cheetah3 #529047
+- [x] python313Packages.chirpstack-api #529149
+- [x] python313Packages.chromaprint
+- [x] python313Packages.ci-info #529151
+- [x] python313Packages.ci-py #529148
+- [x] python313Packages.circuit-webhook #529147
+- [x] python313Packages.circuitbreaker #529054
+- [x] python313Packages.ciscomobilityexpress #529053
+- [ ] python313Packages.ckcc-protocol
+- [x] python313Packages.classify-imports #529052
+- [ ] python313Packages.clean-fid #529051
+- [x] python313Packages.clf #529050
+- [ ] python313Packages.cliche
+- [x] python313Packages.click-command-tree #529036
+- [ ] python313Packages.click-completion
+- [ ] python313Packages.click-configfile
+- [ ] python313Packages.click-help-colors
+- [ ] python313Packages.click-log
+- [x] python313Packages.clickgen #520684
+- [ ] python313Packages.clickhouse-connect
+- [ ] python313Packages.clickhouse-driver
+- [ ] python313Packages.cligj
+- [x] python313Packages.clintermission #529775
+- [x] python313Packages.clip #529774
+- [ ] python313Packages.cloudscraper
+- [ ] python313Packages.cloudsmith-api
+- [ ] python313Packages.cmarkgfm #529736
+- [ ] python313Packages.cmd2-ext-test
+- [ ] python313Packages.cmdline
+- [x] python313Packages.cmigemo #529735
+- [x] python313Packages.co2signal #529734
+- [ ] python313Packages.coapthon3
+- [x] python313Packages.cobs #529520
+- [x] python313Packages.cock #529519
+- [ ] python313Packages.cocotb
+- [ ] python313Packages.cocotb-bus
+- [x] python313Packages.colanderalchemy #529518
+- [ ] python313Packages.colorclass
+- [ ] python313Packages.colorful
+- [x] python313Packages.colorlover #529517
+- [x] python313Packages.colorspacious #529516
+- [ ] python313Packages.colorthief
+- [ ] python313Packages.colorzero
+- [ ] python313Packages.colour
+- [ ] python313Packages.colout
+- [ ] python313Packages.cometblue-lite
+- [ ] python313Packages.commandlines
+- [ ] python313Packages.commandparse
+- [ ] python313Packages.commentjson
+- [ ] python313Packages.configargparse
+- [ ] python313Packages.configclass
+- [ ] python313Packages.configobj
+- [ ] python313Packages.configupdater
+- [ ] python313Packages.connection-pool
+- [ ] python313Packages.connio
+- [ ] python313Packages.contexter
+- [x] python313Packages.convertdate
+- [ ] python313Packages.cookies
+- [ ] python313Packages.coreschema
+- [x] python313Packages.corsair-scan #520690
+- [ ] python313Packages.cot
+- [ ] python313Packages.cppe
+- [ ] python313Packages.cppheaderparser
+- [ ] python313Packages.cram
+- [ ] python313Packages.crashtest
+- [ ] python313Packages.crayons
+- [ ] python313Packages.crcmod
+- [ ] python313Packages.crossplane
+- [ ] python313Packages.crownstone-core
+- [ ] python313Packages.crownstone-uart
+- [ ] python313Packages.crysp
+- [ ] python313Packages.crytic-compile #531784
+- [ ] python313Packages.cson
+- [ ] python313Packages.csrmesh
+- [ ] python313Packages.css-parser
+- [ ] python313Packages.csscompressor
+- [ ] python313Packages.cssmin
+- [x] python313Packages.csv2md
+- [ ] python313Packages.curlify
+- [ ] python313Packages.cvxopt
+- [ ] python313Packages.cx-oracle
+- [ ] python313Packages.cxxfilt
+- [x] python313Packages.cypari2
+- [ ] python313Packages.daemonize
+- [ ] python313Packages.daemonocle
+- [ ] python313Packages.daff
+- [ ] python313Packages.dash-core-components
+- [ ] python313Packages.dash-html-components
+- [ ] python313Packages.dash-table
+- [ ] python313Packages.dashing
+- [ ] python313Packages.databricks-cli
+- [ ] python313Packages.dataclass-factory
+- [ ] python313Packages.dataclasses-serialization
+- [ ] python313Packages.datadiff
+- [ ] python313Packages.datamodeldict
+- [ ] python313Packages.datasette-publish-fly
+- [ ] python313Packages.datasette-template-sql
+- [ ] python313Packages.datefinder
+- [ ] python313Packages.datetime
+- [ ] python313Packages.dateutils
+- [ ] python313Packages.dawg-python
+- [ ] python313Packages.dbf
+- [ ] python313Packages.dbfread
+- [ ] python313Packages.dbus-client-gen
+- [ ] python313Packages.dbus-python-client-gen
+- [ ] python313Packages.dbus-signature-pyparsing
+- [ ] python313Packages.deap #532326
+- [ ] python313Packages.debts
+- [ ] python313Packages.debuglater
+- [ ] python313Packages.decopatch
+- [ ] python313Packages.deemix
+- [ ] python313Packages.deeptoolsintervals
+- [ ] python313Packages.deezer-py
+- [ ] python313Packages.defcon
+- [ ] python313Packages.defusedcsv
+- [x] python313Packages.dehinter #522376
+- [ ] python313Packages.delorean
+- [x] python313Packages.demjson3 #530366
+- [ ] python313Packages.deprecation
+- [ ] python313Packages.derpconf
+- [ ] python313Packages.dictdiffer
+- [ ] python313Packages.dictionaries
+- [ ] python313Packages.dicttoxml
+- [ ] python313Packages.dicttoxml2
+- [ ] python313Packages.diffimg
+- [ ] python313Packages.digi-xbee
+- [ ] python313Packages.dingz
+- [ ] python313Packages.discogs-client
+- [ ] python313Packages.diskcache
+- [ ] python313Packages.dissononce
+- [ ] python313Packages.distutils-extra
+- [ ] python313Packages.dj-email-url
+- [ ] python313Packages.dj-search-url
+- [ ] python313Packages.dj-static
+- [ ] python313Packages.django-admin-datta
+- [ ] python313Packages.django-cachalot
+- [ ] python313Packages.django-celery-email
+- [ ] python313Packages.django-celery-results
+- [ ] python313Packages.django-classy-tags
+- [ ] python313Packages.django-compression-middleware
+- [ ] python313Packages.django-configurations
+- [ ] python313Packages.django-contrib-comments
+- [ ] python313Packages.django-crossdomainmedia
+- [ ] python313Packages.django-hcaptcha
+- [ ] python313Packages.django-ipware
+- [ ] python313Packages.django-jquery-js
+- [ ] python313Packages.django-libsass
+- [ ] python313Packages.django-logentry-admin
+- [x] python313Packages.django-mdeditor
+- [ ] python313Packages.django-paintstore
+- [ ] python313Packages.django-pglocks
+- [ ] python313Packages.django-postgresql-netfields
+- [ ] python313Packages.django-ranged-response
+- [ ] python313Packages.django-raster
+- [ ] python313Packages.django-rest-auth
+- [ ] python313Packages.django-rest-polymorphic
+- [ ] python313Packages.django-scopes
+- [ ] python313Packages.django-sekizai
+- [ ] python313Packages.django-shortuuidfield
+- [ ] python313Packages.django-silk
+- [ ] python313Packages.django-sites
+- [ ] python313Packages.django-tagging
+- [ ] python313Packages.django-versatileimagefield
+- [ ] python313Packages.django-vite
+- [ ] python313Packages.djangorestframework-camel-case
+- [ ] python313Packages.djangorestframework-csv
+- [ ] python313Packages.djangorestframework-recursive
+- [ ] python313Packages.djangorestframework-simplejwt
+- [ ] python313Packages.djmail
+- [ ] python313Packages.dkimpy #522806
+- [ ] python313Packages.dlib
+- [ ] python313Packages.dlx
+- [ ] python313Packages.dm-env
+- [ ] python313Packages.dmenu-python
+- [ ] python313Packages.dnslib
+- [ ] python313Packages.dockerfile-parse
+- [ ] python313Packages.dockerpty
+- [ ] python313Packages.docloud
+- [ ] python313Packages.docopt
+- [ ] python313Packages.docrep
+- [ ] python313Packages.docstr-coverage
+- [ ] python313Packages.docx2txt
+- [ ] python313Packages.dogtag-pki
+- [ ] python313Packages.dogtail
+- [x] python313Packages.doit
+- [ ] python313Packages.doit-py
+- [ ] python313Packages.dokuwiki
+- [ ] python313Packages.dopy
+- [x] python313Packages.dot2tex #522814
+- [ ] python313Packages.dotmap
+- [ ] python313Packages.downloader-cli
+- [ ] python313Packages.doxmlparser
+- [ ] python313Packages.dparse2
+- [ ] python313Packages.dpcontracts
+- [ ] python313Packages.dpkt
+- [ ] python313Packages.draftjs-exporter
+- [ ] python313Packages.drawille
+- [ ] python313Packages.drawilleplot
+- [ ] python313Packages.dremel3dpy
+- [ ] python313Packages.drf-jwt
+- [ ] python313Packages.drf-nested-routers
+- [ ] python313Packages.drf-writable-nested
+- [ ] python313Packages.dronecan
+- [x] python313Packages.duct-py
+- [ ] python313Packages.dungeon-eos
+- [ ] python313Packages.eagle100
+- [x] python313Packages.easydict #529174
+- [x] python313Packages.easygui #529176
+- [x] python313Packages.easyprocess #529181
+- [x] python313Packages.easywatch #529186
+- [ ] python313Packages.ebaysdk
+- [ ] python313Packages.ebooklib
+- [ ] python313Packages.ec2instanceconnectcli
+- [ ] python313Packages.ecoaliface
+- [ ] python313Packages.edward
+- [ ] python313Packages.effdet
+- [ ] python313Packages.effect
+- [ ] python313Packages.eggdeps
+- [ ] python313Packages.elevate
+- [ ] python313Packages.eliqonline
+- [ ] python313Packages.email-validator
+- [ ] python313Packages.embedding-reader
+- [ ] python313Packages.embrace
+- [ ] python313Packages.emcee
+- [ ] python313Packages.empty-files
+- [ ] python313Packages.empy
+- [ ] python313Packages.enamlx
+- [ ] python313Packages.encodec
+- [ ] python313Packages.energyflip-client
+- [ ] python313Packages.enlighten
+- [ ] python313Packages.enochecker-core
+- [ ] python313Packages.enrich
+- [ ] python313Packages.entrypoint2
+- [ ] python313Packages.environmental-override
+- [ ] python313Packages.envoy-utils
+- [ ] python313Packages.epc
+- [ ] python313Packages.ephem
+- [ ] python313Packages.ephemeral-port-reserve
+- [ ] python313Packages.espeak-phonemizer
+- [ ] python313Packages.esprima
+- [ ] python313Packages.etcd
+- [ ] python313Packages.etesync
+- [ ] python313Packages.euclid3
+- [ ] python313Packages.eval-type-backport
+- [ ] python313Packages.eventkit
+- [ ] python313Packages.events
+- [ ] python313Packages.ewmh
+- [x] python313Packages.executor #528079
+- [ ] python313Packages.exif
+- [ ] python313Packages.expects
+- [ ] python313Packages.extractcode-7z
+- [ ] python313Packages.extractcode-libarchive
+- [ ] python313Packages.extras
+- [ ] python313Packages.f5-icontrol-rest
+- [ ] python313Packages.f5-sdk
+- [ ] python313Packages.face-recognition
+- [ ] python313Packages.face-recognition-models
+- [ ] python313Packages.facebook-sdk
+- [ ] python313Packages.facenet-pytorch
+- [ ] python313Packages.falcon-cors
+- [ ] python313Packages.fastai
+- [ ] python313Packages.fastdiff
+- [ ] python313Packages.fastdownload
+- [ ] python313Packages.fastdtw
+- [ ] python313Packages.fastecdsa
+- [ ] python313Packages.fastentrypoints
+- [ ] python313Packages.fastimport
+- [ ] python313Packages.fastpbkdf2
+- [ ] python313Packages.fastrlock
+- [ ] python313Packages.fasttext
+- [ ] python313Packages.favicon
+- [ ] python313Packages.feedgen
+- [ ] python313Packages.fiblary3-fork
+- [ ] python313Packages.fields
+- [ ] python313Packages.filebrowser-safe
+- [ ] python313Packages.filetype
+- [ ] python313Packages.finalfusion
+- [ ] python313Packages.fipy
+- [ ] python313Packages.firetv
+- [ ] python313Packages.first
+- [ ] python313Packages.fitbit
+- [ ] python313Packages.fivem-api
+- [ ] python313Packages.fixerio
+- [ ] python313Packages.flake8-blind-except
+- [ ] python313Packages.flake8-class-newline
+- [ ] python313Packages.flake8-debugger
+- [ ] python313Packages.flake8-docstrings
+- [ ] python313Packages.flashtext
+- [ ] python313Packages.flask-appbuilder
+- [ ] python313Packages.flask-bcrypt
+- [ ] python313Packages.flask-caching
+- [ ] python313Packages.flask-elastic
+- [ ] python313Packages.flask-expects-json
+- [ ] python313Packages.flask-paranoid
+- [ ] python313Packages.flask-restful
+- [ ] python313Packages.flask-reverse-proxy-fix
+- [ ] python313Packages.flask-script
+- [x] python313Packages.flask-sqlalchemy #515980
+- [ ] python313Packages.flask-swagger
+- [ ] python313Packages.flask-swagger-ui
+- [ ] python313Packages.flask-talisman
+- [ ] python313Packages.flask-testing
+- [ ] python313Packages.flask-xml-rpc-re
+- [ ] python313Packages.flatbuffers
+- [ ] python313Packages.flatdict
+- [ ] python313Packages.fleep
+- [ ] python313Packages.flower
+- [ ] python313Packages.flowlogs-reader
+- [ ] python313Packages.flyingsquid
+- [x] python313Packages.font-v #526542
+- [ ] python313Packages.fontawesomefree
+- [ ] python313Packages.fontmath
+- [ ] python313Packages.fordpass
+- [ ] python313Packages.fortiosapi
+- [ ] python313Packages.foundationdb
+- [ ] python313Packages.fpdf
+- [ ] python313Packages.fqdn
+- [ ] python313Packages.frida-python
+- [ ] python313Packages.frilouz
+- [ ] python313Packages.fs-s3fs
+- [ ] python313Packages.ftputil
+- [ ] python313Packages.func-timeout
+- [ ] python313Packages.funcsigs
+- [ ] python313Packages.funcy
+- [x] python313Packages.fusepy
+- [ ] python313Packages.future-fstrings
+- [ ] python313Packages.future-typing
+- [ ] python313Packages.fuzzywuzzy
+- [ ] python313Packages.fvcore
+- [x] python313Packages.fvs
+- [ ] python313Packages.fx2
+- [x] python313Packages.g2pkk #530384
+- [ ] python313Packages.garminconnect-aio
+- [ ] python313Packages.gatt
+- [ ] python313Packages.gcsa
+- [ ] python313Packages.gdata
+- [ ] python313Packages.gekitchen
+- [ ] python313Packages.genanki
+- [ ] python313Packages.geniushub-client
+- [ ] python313Packages.genome-collector
+- [ ] python313Packages.genpy
+- [ ] python313Packages.genzshcomp
+- [ ] python313Packages.geojson-client
+- [ ] python313Packages.geometric
+- [x] python313Packages.geopy #529119
+- [ ] python313Packages.georss-generic-client
+- [ ] python313Packages.georss-nrcan-earthquakes-client
+- [ ] python313Packages.georss-tfs-incidents-client
+- [ ] python313Packages.georss-wa-dfes-client
+- [ ] python313Packages.get-video-properties
+- [ ] python313Packages.getkey
+- [ ] python313Packages.gevent-socketio
+- [ ] python313Packages.gevent-websocket
+- [ ] python313Packages.gfal2-python
+- [ ] python313Packages.gfal2-util
+- [ ] python313Packages.gflags
+- [ ] python313Packages.ghdiff
+- [ ] python313Packages.ghp-import
+- [ ] python313Packages.ghrepo-stats
+- [ ] python313Packages.gibberish-detector #532306
+- [ ] python313Packages.gistyc
+- [ ] python313Packages.git-revise #522830
+- [ ] python313Packages.git-sweep #522869
+- [x] python313Packages.git-url-parse #522867
+- [x] python313Packages.github-to-sqlite #522868
+- [x] python313Packages.github-webhook #522860
+- [ ] python313Packages.glad
+- [ ] python313Packages.glfw
+- [ ] python313Packages.glob2
+- [ ] python313Packages.glyphtools
+- [ ] python313Packages.gntp
+- [ ] python313Packages.gnureadline
+- [ ] python313Packages.goalzero
+- [ ] python313Packages.goocalendar
+- [ ] python313Packages.google
+- [ ] python313Packages.google-cloud-iot
+- [ ] python313Packages.google-compute-engine
+- [ ] python313Packages.goveelights
+- [ ] python313Packages.gpaw
+- [ ] python313Packages.gpib-ctypes
+- [ ] python313Packages.gprof2dot
+- [ ] python313Packages.gps3
+- [ ] python313Packages.gptcache
+- [ ] python313Packages.gpustat
+- [ ] python313Packages.gpxpy
+- [x] python313Packages.gradient
+- [ ] python313Packages.gradient-statsd
+- [ ] python313Packages.grammalecte
+- [ ] python313Packages.graphene-django
+- [ ] python313Packages.graphql-server-core
+- [ ] python313Packages.graphql-subscription-manager
+- [ ] python313Packages.graphqlclient
+- [ ] python313Packages.greek-accentuation
+- [ ] python313Packages.green
+- [ ] python313Packages.grequests
+- [ ] python313Packages.grip
+- [ ] python313Packages.groestlcoin-hash
+- [ ] python313Packages.grpcio-gcp
+- [ ] python313Packages.grpcio-health-checking
+- [ ] python313Packages.grpcio-status
+- [ ] python313Packages.gruut-ipa
+- [ ] python313Packages.gtts-token
+- [ ] python313Packages.guessit
+- [ ] python313Packages.gumath
+- [ ] python313Packages.gurobipy
+- [ ] python313Packages.gviz-api #530391
+- [ ] python313Packages.h11
+- [ ] python313Packages.hachoir
+- [ ] python313Packages.halo
+- [ ] python313Packages.handout
+- [ ] python313Packages.hdbscan
+- [ ] python313Packages.heatshrink2
+- [ ] python313Packages.helpdev
+- [ ] python313Packages.helper
+- [x] python313Packages.hetzner #532206
+- [ ] python313Packages.hexdump
+- [ ] python313Packages.hfst
+- [ ] python313Packages.hiro
+- [ ] python313Packages.hkavr
+- [ ] python313Packages.hlk-sw16
+- [ ] python313Packages.hmmlearn
+- [ ] python313Packages.hocr-tools
+- [ ] python313Packages.home-assistant-chip-clusters
+- [ ] python313Packages.home-assistant-chip-core
+- [ ] python313Packages.hopcroftkarp
+- [ ] python313Packages.hs-dbus-signature
+- [ ] python313Packages.hsaudiotag3k
+- [ ] python313Packages.hsluv
+- [ ] python313Packages.html5-parser
+- [ ] python313Packages.html5tagger
+- [ ] python313Packages.httmock
+- [ ] python313Packages.httpauth
+- [ ] python313Packages.httpie-ntlm
+- [ ] python313Packages.httptools
+- [ ] python313Packages.httpx-ntlm
+- [ ] python313Packages.humblewx
+- [ ] python313Packages.hupper
+- [ ] python313Packages.hwi
+- [ ] python313Packages.hydrawiser
+- [ ] python313Packages.hypchat
+- [ ] python313Packages.hyperlink
+- [ ] python313Packages.hyperopt
+- [ ] python313Packages.i2c-tools
+- [ ] python313Packages.i2csense
+- [ ] python313Packages.i3-py
+- [ ] python313Packages.iammeter
+- [ ] python313Packages.iapws
+- [ ] python313Packages.ibis
+- [ ] python313Packages.icmplib
+- [ ] python313Packages.icnsutil
+- [ ] python313Packages.ifaddr
+- [ ] python313Packages.image-diff
+- [ ] python313Packages.imagecodecs-lite
+- [ ] python313Packages.imagesize
+- [ ] python313Packages.imapclient
+- [ ] python313Packages.imaplib2
+- [ ] python313Packages.imgdiff
+- [ ] python313Packages.importlab
+- [ ] python313Packages.imutils
+- [ ] python313Packages.inference-gym
+- [ ] python313Packages.infinity
+- [ ] python313Packages.inflection
+- [ ] python313Packages.inifile
+- [ ] python313Packages.iniparse
+- [ ] python313Packages.injector
+- [ ] python313Packages.inotifyrecursive
+- [ ] python313Packages.insegel
+- [ ] python313Packages.intelhex
+- [ ] python313Packages.interegular
+- [x] python313Packages.interruptingcow #530352
+- [ ] python313Packages.into-dbus-python
+- [ ] python313Packages.invoke
+- [ ] python313Packages.iocapture
+- [ ] python313Packages.iocextract
+- [ ] python313Packages.iopath
+- [ ] python313Packages.iowait
+- [ ] python313Packages.ipaddr
+- [ ] python313Packages.ipadic
+- [ ] python313Packages.ipydatawidgets
+- [ ] python313Packages.ipymarkup
+- [ ] python313Packages.ipyxact
+- [ ] python313Packages.ismartgate
+- [ ] python313Packages.iso-639
+- [ ] python313Packages.iso3166
+- [ ] python313Packages.isoduration
+- [ ] python313Packages.isosurfaces
+- [ ] python313Packages.isounidecode
+- [x] python313Packages.issubclass #515980
+- [ ] python313Packages.itanium-demangler
+- [ ] python313Packages.iterm2
+- [ ] python313Packages.itunespy
+- [ ] python313Packages.itypes
+- [ ] python313Packages.iwlib
+- [ ] python313Packages.j2cli
+- [ ] python313Packages.jamo
+- [ ] python313Packages.janus
+- [ ] python313Packages.javaobj-py3
+- [ ] python313Packages.jaxlib
+- [ ] python313Packages.jaxlib-bin
+- [ ] python313Packages.jaxlib-build
+- [ ] python313Packages.jaydebeapi
+- [ ] python313Packages.jc
+- [ ] python313Packages.jdcal
+- [ ] python313Packages.jello
+- [ ] python313Packages.jieba
+- [ ] python313Packages.jinja2-ansible-filters
+- [ ] python313Packages.jinja2-pluralize
+- [ ] python313Packages.jinja2-time
+- [x] python313Packages.jmespath
+- [ ] python313Packages.jmp
+- [ ] python313Packages.jplephem
+- [ ] python313Packages.jpylyzer
+- [ ] python313Packages.jq
+- [x] python313Packages.jsbeautifier #523008
+- [ ] python313Packages.jschema-to-python
+- [ ] python313Packages.jsmin
+- [ ] python313Packages.json-home-client
+- [ ] python313Packages.json-rpc
+- [ ] python313Packages.json-tricks
+- [ ] python313Packages.jsondate
+- [ ] python313Packages.jsonlines
+- [ ] python313Packages.jsonmerge
+- [ ] python313Packages.jsonpatch
+- [ ] python313Packages.jsonpath-ng
+- [ ] python313Packages.jsonpath-rw
+- [ ] python313Packages.jsonpointer
+- [ ] python313Packages.jsons
+- [ ] python313Packages.jsonstreams
+- [ ] python313Packages.jstyleson
+- [ ] python313Packages.junit-xml
+- [ ] python313Packages.jupyter-contrib-core
+- [ ] python313Packages.jupyter-highlight-selected-word
+- [ ] python313Packages.jupyterhub-tmpauthenticator
+- [ ] python313Packages.justbackoff
+- [ ] python313Packages.justbases
+- [ ] python313Packages.justbytes
+- [ ] python313Packages.justext
+- [ ] python313Packages.jxmlease
+- [ ] python313Packages.k-diffusion
+- [ ] python313Packages.kaa-base
+- [ ] python313Packages.kaa-metadata
+- [ ] python313Packages.kaldi-active-grammar
+- [ ] python313Packages.kaleido
+- [ ] python313Packages.karton-asciimagic
+- [ ] python313Packages.karton-config-extractor
+- [ ] python313Packages.karton-dashboard
+- [ ] python313Packages.karton-mwdb-reporter
+- [ ] python313Packages.karton-yaramatcher
+- [ ] python313Packages.kazoo
+- [ ] python313Packages.kconfiglib
+- [ ] python313Packages.keepalive
+- [ ] python313Packages.keepkey
+- [x] python313Packages.keepkey-agent
+- [ ] python313Packages.kerberos
+- [x] python313Packages.keystone-engine #529264
+- [ ] python313Packages.keyutils
+- [ ] python313Packages.kitchen
+- [ ] python313Packages.kivy-garden
+- [ ] python313Packages.kiwiki-client
+- [ ] python313Packages.kiwisolver
+- [ ] python313Packages.klaus
+- [ ] python313Packages.knack
+- [x] python313Packages.konnected
+- [ ] python313Packages.korean-lunar-calendar
+- [ ] python313Packages.kotsu
+- [ ] python313Packages.kurbopy
+- [ ] python313Packages.l18n
+- [ ] python313Packages.lakeside
+- [ ] python313Packages.lammps
+- [ ] python313Packages.langdetect
+- [ ] python313Packages.langid
+- [ ] python313Packages.language-tags
+- [ ] python313Packages.lanms-neo
+- [ ] python313Packages.latexcodec
+- [ ] python313Packages.layoutparser
+- [ ] python313Packages.ldaptor
+- [ ] python313Packages.leather
+- [x] python313Packages.ledger-agent
+- [ ] python313Packages.lexid
+- [ ] python313Packages.lgpio
+- [x] python313Packages.libarchive-c #523006
+- [ ] python313Packages.libasyncns
+- [ ] python313Packages.libcloud
+- [ ] python313Packages.libkeepass
+- [ ] python313Packages.liblzfse
+- [ ] python313Packages.libmr
+- [ ] python313Packages.libsass
+- [ ] python313Packages.libsixel
+- [ ] python313Packages.libthumbor
+- [x] python313Packages.libusbsio
+- [ ] python313Packages.libversion
+- [ ] python313Packages.lightparam
+- [ ] python313Packages.lightwave
+- [ ] python313Packages.lime #530733
+- [ ] python313Packages.limiter
+- [ ] python313Packages.limitlessled
+- [ ] python313Packages.line-profiler
+- [ ] python313Packages.linecache2
+- [ ] python313Packages.lineedit
+- [ ] python313Packages.linetable
+- [ ] python313Packages.linode
+- [ ] python313Packages.linuxfd
+- [ ] python313Packages.lion-pytorch
+- [ ] python313Packages.livereload
+- [ ] python313Packages.lizard
+- [ ] python313Packages.lmnotify
+- [ ] python313Packages.localimport
+- [ ] python313Packages.localstack-client
+- [ ] python313Packages.locket
+- [ ] python313Packages.logfury
+- [ ] python313Packages.logilab-constraint
+- [ ] python313Packages.logster
+- [ ] python313Packages.logzero
+- [ ] python313Packages.lomond
+- [ ] python313Packages.lrcalc-python
+- [ ] python313Packages.ltpycld2
+- [ ] python313Packages.luddite
+- [ ] python313Packages.luhn
+- [ ] python313Packages.lunarcalendar
+- [ ] python313Packages.luxtronik
+- [ ] python313Packages.lyricwikia
+- [x] python313Packages.m2r
+- [ ] python313Packages.macaddress
+- [ ] python313Packages.magic
+- [ ] python313Packages.mahotas
+- [ ] python313Packages.mailcap-fix
+- [ ] python313Packages.mailchimp
+- [ ] python313Packages.mailmanclient
+- [ ] python313Packages.manhole
+- [ ] python313Packages.manifestparser
+- [ ] python313Packages.manuel #530486
+- [ ] python313Packages.manuf
+- [x] python313Packages.marisa
+- [ ] python313Packages.markdown-include
+- [ ] python313Packages.masky
+- [ ] python313Packages.matchpy
+- [ ] python313Packages.material-color-utilities
+- [ ] python313Packages.mattermostdriver
+- [x] python313Packages.maubot #528120
+- [ ] python313Packages.maxcube-api
+- [ ] python313Packages.maxminddb
+- [ ] python313Packages.mayavi
+- [ ] python313Packages.mbddns
+- [ ] python313Packages.mccabe
+- [ ] python313Packages.mcuuid
+- [ ] python313Packages.md2gemini
+- [ ] python313Packages.meater-python
+- [ ] python313Packages.mecab-python3
+- [ ] python313Packages.mediafire-dl
+- [ ] python313Packages.meld3 #529253
+- [ ] python313Packages.memestra
+- [ ] python313Packages.memory-profiler
+- [ ] python313Packages.mergedb
+- [ ] python313Packages.mergedeep
+- [x] python313Packages.mergedict #529267
+- [ ] python313Packages.merkletools
+- [ ] python313Packages.meshcat
+- [ ] python313Packages.meshlabxml
+- [ ] python313Packages.meson
+- [ ] python313Packages.messagebird
+- [ ] python313Packages.metar
+- [ ] python313Packages.metawear
+- [ ] python313Packages.meteoalertapi
+- [ ] python313Packages.meteocalc
+- [ ] python313Packages.mezzanine
+- [ ] python313Packages.micawber
+- [ ] python313Packages.micloud
+- [ ] python313Packages.microdata
+- [ ] python313Packages.midiutil
+- [ ] python313Packages.milksnake
+- [ ] python313Packages.minexr
+- [ ] python313Packages.minichain
+- [ ] python313Packages.miniful
+- [ ] python313Packages.minimal-snowplow-tracker
+- [ ] python313Packages.misaka
+- [ ] python313Packages.misoc
+- [ ] python313Packages.mistletoe
+- [ ] python313Packages.mitmproxy-macos
+- [ ] python313Packages.mixins
+- [ ] python313Packages.mkdocs-exclude
+- [ ] python313Packages.mkdocs-linkcheck
+- [ ] python313Packages.mkdocs-mermaid2-plugin
+- [ ] python313Packages.mkdocs-minify-plugin
+- [ ] python313Packages.mmpython
+- [ ] python313Packages.mmtf-python
+- [ ] python313Packages.mnist
+- [ ] python313Packages.mock #533542
+- [ ] python313Packages.mock-open
+- [ ] python313Packages.mock-services
+- [ ] python313Packages.mockupdb
+- [ ] python313Packages.moddb
+- [ ] python313Packages.monero
+- [ ] python313Packages.mongodict
+- [ ] python313Packages.mongoengine
+- [ ] python313Packages.mongoquery
+- [ ] python313Packages.monkeyhex
+- [ ] python313Packages.monotonic
+- [ ] python313Packages.moonraker-api
+- [ ] python313Packages.morfessor
+- [ ] python313Packages.morphys
+- [ ] python313Packages.mouseinfo
+- [ ] python313Packages.mpldatacursor
+- [ ] python313Packages.mplfinance
+- [ ] python313Packages.mplleaflet
+- [x] python313Packages.mpmath
+- [ ] python313Packages.mpyq
+- [ ] python313Packages.ms-cv
+- [ ] python313Packages.msg-parser
+- [ ] python313Packages.msgpack-numpy
+- [ ] python313Packages.mt-940
+- [ ] python313Packages.mujson
+- [ ] python313Packages.mullvad-api
+- [ ] python313Packages.mulpyplexer
+- [ ] python313Packages.multipledispatch
+- [ ] python313Packages.multiprocess
+- [ ] python313Packages.munkres
+- [ ] python313Packages.muscima
+- [ ] python313Packages.music-tag
+- [ ] python313Packages.musicbrainzngs
+- [ ] python313Packages.mutesync
+- [ ] python313Packages.mutf8
+- [ ] python313Packages.mwcli
+- [ ] python313Packages.mwclient
+- [ ] python313Packages.mwoauth
+- [ ] python313Packages.mysql-connector
+- [ ] python313Packages.mysqlclient
+- [ ] python313Packages.nagiosplugin
+- [ ] python313Packages.namedlist
+- [ ] python313Packages.nameparser
+- [ ] python313Packages.names
+- [ ] python313Packages.nanoid
+- [ ] python313Packages.nasdaq-data-link
+- [ ] python313Packages.natasha
+- [ ] python313Packages.natsort
+- [ ] python313Packages.navec
+- [ ] python313Packages.nbsmoke
+- [ ] python313Packages.nc-dnsapi
+- [ ] python313Packages.ndg-httpsclient
+- [ ] python313Packages.ndjson
+- [ ] python313Packages.ndspy
+- [ ] python313Packages.ndtypes
+- [ ] python313Packages.nested-lookup
+- [ ] python313Packages.netapp-lib
+- [ ] python313Packages.netifaces
+- [ ] python313Packages.netmap
+- [ ] python313Packages.nevow
+- [ ] python313Packages.newspaper3k
+- [ ] python313Packages.nfcpy
+- [ ] python313Packages.niluclient
+- [ ] python313Packages.nimfa
+- [ ] python313Packages.nixpkgs-pytools
+- [ ] python313Packages.nltk
+- [ ] python313Packages.nmapthon2
+- [ ] python313Packages.node-semver
+- [ ] python313Packages.nodepy-runtime
+- [ ] python313Packages.notedown
+- [ ] python313Packages.notify-events
+- [ ] python313Packages.notify2
+- [ ] python313Packages.notmuch
+- [ ] python313Packages.notmuch2
+- [ ] python313Packages.nplusone
+- [x] python313Packages.nptyping #530377
+- [ ] python313Packages.npyscreen
+- [ ] python313Packages.nsz
+- [ ] python313Packages.ntplib
+- [ ] python313Packages.nuheat
+- [ ] python313Packages.nulltype
+- [ ] python313Packages.num2words
+- [ ] python313Packages.numba-scipy
+- [ ] python313Packages.nunavut
+- [ ] python313Packages.nvidia-dlprof-pytorch-nvtx
+- [ ] python313Packages.oath
+- [ ] python313Packages.oauth2client
+- [ ] python313Packages.obfsproxy
+- [ ] python313Packages.od
+- [ ] python313Packages.odfpy
+- [ ] python313Packages.offtrac
+- [ ] python313Packages.ofxclient
+- [ ] python313Packages.ofxparse
+- [ ] python313Packages.ofxtools
+- [ ] python313Packages.oldest-supported-numpy
+- [ ] python313Packages.olefile
+- [ ] python313Packages.oletools
+- [ ] python313Packages.omnilogic
+- [ ] python313Packages.omorfi
+- [ ] python313Packages.omrdatasettools
+- [ ] python313Packages.oncalendar
+- [ ] python313Packages.onetimepad
+- [ ] python313Packages.onkyo-eiscp
+- [ ] python313Packages.online-judge-api-client
+- [ ] python313Packages.onlykey-solo-python
+- [ ] python313Packages.onnx
+- [ ] python313Packages.onnxruntime
+- [ ] python313Packages.onnxruntime-tools
+- [ ] python313Packages.oocsi
+- [ ] python313Packages.opcua-widgets
+- [ ] python313Packages.open-garage
+- [ ] python313Packages.opencc
+- [ ] python313Packages.opencensus
+- [ ] python313Packages.opencensus-context
+- [ ] python313Packages.opencontainers
+- [ ] python313Packages.openidc-client
+- [ ] python313Packages.openrouteservice
+- [ ] python313Packages.openshift
+- [ ] python313Packages.opensimplex
+- [ ] python313Packages.opentimestamps
+- [ ] python313Packages.openwrt-luci-rpc
+- [ ] python313Packages.opytimark
+- [ ] python313Packages.orvibo
+- [ ] python313Packages.osc
+- [ ] python313Packages.oscpy
+- [ ] python313Packages.oscrypto
+- [ ] python313Packages.oset
+- [ ] python313Packages.oslotest
+- [ ] python313Packages.ospd
+- [ ] python313Packages.oss2
+- [ ] python313Packages.ots-python
+- [ ] python313Packages.outcome
+- [ ] python313Packages.overly
+- [ ] python313Packages.ovmfvartool
+- [ ] python313Packages.oyaml
+- [ ] python313Packages.pa-ringbuffer
+- [ ] python313Packages.packbits
+- [ ] python313Packages.pad4pi
+- [ ] python313Packages.paddle-bfloat
+- [ ] python313Packages.paddle2onnx
+- [ ] python313Packages.paddlepaddle
+- [ ] python313Packages.pagelabels
+- [x] python313Packages.pamela
+- [ ] python313Packages.pan-python
+- [ ] python313Packages.panacotta
+- [ ] python313Packages.pandoc-attributes
+- [ ] python313Packages.pandocfilters
+- [ ] python313Packages.panel
+- [ ] python313Packages.panflute
+- [ ] python313Packages.papis-python-rofi
+- [ ] python313Packages.parallel-ssh
+- [ ] python313Packages.parameter-expansion-patched
+- [ ] python313Packages.paranoid-crypto
+- [ ] python313Packages.parsimonious
+- [ ] python313Packages.parsley
+- [ ] python313Packages.pastel
+- [ ] python313Packages.patch
+- [ ] python313Packages.patch-ng
+- [ ] python313Packages.path-and-address
+- [ ] python313Packages.pathlib2
+- [ ] python313Packages.pathos
+- [ ] python313Packages.pathtools
+- [ ] python313Packages.patool
+- [ ] python313Packages.patrowl4py
+- [ ] python313Packages.paypal-checkout-serversdk
+- [ ] python313Packages.paypalhttp
+- [ ] python313Packages.pbkdf2
+- [ ] python313Packages.pcapy-ng
+- [ ] python313Packages.pcbnewtransition #529058
+- [ ] python313Packages.pcodedmp
+- [ ] python313Packages.pcpp
+- [ ] python313Packages.pdf2image
+- [ ] python313Packages.pdfkit
+- [ ] python313Packages.pdfrw
+- [ ] python313Packages.pdftotext
+- [ ] python313Packages.pdunehd
+- [ ] python313Packages.pencompy
+- [ ] python313Packages.pep8
+- [ ] python313Packages.peppercorn
+- [ ] python313Packages.permissionedforms
+- [ ] python313Packages.persim
+- [ ] python313Packages.persisting-theory
+- [ ] python313Packages.pescea
+- [ ] python313Packages.pexif
+- [ ] python313Packages.pgpdump
+- [ ] python313Packages.phone-modem
+- [ ] python313Packages.phpserialize
+- [ ] python313Packages.pi1wire
+- [ ] python313Packages.piccata
+- [ ] python313Packages.piccolo-theme
+- [ ] python313Packages.pickleshare #529269
+- [ ] python313Packages.picos
+- [ ] python313Packages.picosvg
+- [ ] python313Packages.piexif
+- [ ] python313Packages.pigpio
+- [ ] python313Packages.pijuice
+- [ ] python313Packages.pillowfight
+- [x] python313Packages.pims
+- [ ] python313Packages.pinboard
+- [ ] python313Packages.pip-install-test
+- [x] python313Packages.pip-requirements-parser #523135
+- [ ] python313Packages.pipetools
+- [ ] python313Packages.pixcat
+- [ ] python313Packages.pkce
+- [ ] python313Packages.plac
+- [ ] python313Packages.plantuml
+- [ ] python313Packages.plantuml-markdown
+- [ ] python313Packages.plaster
+- [ ] python313Packages.plaster-pastedeploy
+- [ ] python313Packages.playsound
+- [ ] python313Packages.plexauth
+- [ ] python313Packages.plexwebsocket
+- [ ] python313Packages.plotext
+- [ ] python313Packages.plugincode
+- [ ] python313Packages.plugnplay
+- [ ] python313Packages.plugp100
+- [ ] python313Packages.plum-py
+- [ ] python313Packages.ply
+- [ ] python313Packages.plyplus
+- [ ] python313Packages.plyvel
+- [ ] python313Packages.pmsensor
+- [ ] python313Packages.pmw
+- [ ] python313Packages.pnglatex
+- [ ] python313Packages.pocket
+- [ ] python313Packages.poetry-semver
+- [ ] python313Packages.polarizationsolver
+- [ ] python313Packages.polib
+- [ ] python313Packages.policyuniverse
+- [ ] python313Packages.polygon3
+- [ ] python313Packages.ponywhoosh
+- [ ] python313Packages.poolsense
+- [ ] python313Packages.posix-ipc
+- [ ] python313Packages.potr
+- [ ] python313Packages.power
+- [ ] python313Packages.powerline
+- [ ] python313Packages.powerline-mem-segment
+- [ ] python313Packages.pox
+- [ ] python313Packages.poyo
+- [ ] python313Packages.ppft
+- [ ] python313Packages.pplpy
+- [ ] python313Packages.pq
+- [ ] python313Packages.prefixed
+- [ ] python313Packages.preshed
+- [ ] python313Packages.pretend
+- [ ] python313Packages.procmon-parser
+- [ ] python313Packages.prodict
+- [ ] python313Packages.progressbar
+- [ ] python313Packages.progressbar33 #523002
+- [ ] python313Packages.promise
+- [ ] python313Packages.property-manager
+- [ ] python313Packages.protobuf3-to-dict
+- [ ] python313Packages.protobuf4
+- [ ] python313Packages.proton-client
+- [ ] python313Packages.protonup-ng
+- [ ] python313Packages.prov
+- [ ] python313Packages.proxy-db
+- [ ] python313Packages.psautohint
