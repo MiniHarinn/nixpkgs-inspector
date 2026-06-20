@@ -3,11 +3,10 @@
   script = {
     builder = nilib.packagesWith;
 
-    predicate = _: pkg:
-      (builtins.hasAttr "pyproject" pkg) && (pkg.pyproject == null);
+    predicate = _: pkg: (builtins.hasAttr "pyproject" pkg) && (pkg.pyproject == null);
   };
 
-  postEval.file = ./post-eval.py;
+  # postEval.file = ./post-eval.py; # USELESS
 
   meta = {
     description = "All packages that need to upgrade from format -> pyproject";
