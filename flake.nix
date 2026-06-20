@@ -38,20 +38,39 @@
             builtins.toJSON (script.script.builder script.script.predicate "" subjectPkgs)
           );
 
-          postEval = script.postEval or null;
-          hasPostEval = postEval != null;
+          hasPostEval = script ? postEval;
+          postEval =
+            if hasPostEval then
+              {
+                impure = false;
+                pythonDeps = _: [ ];
+              }
+              // script.postEval
+            else
+              null;
+
+          python = if hasPostEval then pkgs.python3.withPackages postEval.pythonDeps else null;
+
+          # Pure post-eval: this will most of the time gets us there, if postEval only do some trivial transformation
+          pureResult = pkgs.runCommand "${name}-result.json" { nativeBuildInputs = [ python ]; } ''
+            export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
+            python3 ${postEval.file} ${collectedJSON} > $out
+          '';
+
+          # Impure runs python at run time (needs network), opt in
+          impure = hasPostEval && postEval.impure;
 
           runner = pkgs.writeShellApplication {
             name = "script-${name}";
-            runtimeInputs = if hasPostEval then [ pkgs.python3 ] else [ pkgs.coreutils ];
+            runtimeInputs = if impure then [ python ] else [ pkgs.coreutils ];
             text =
-              if hasPostEval then
+              if impure then
                 ''
                   export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
-                  exec python3 ${postEval} ${collectedJSON} "$@"
+                  exec python3 ${postEval.file} ${collectedJSON} "$@"
                 ''
               else
-                "exec cat ${collectedJSON}";
+                "exec cat ${if hasPostEval then pureResult else collectedJSON}";
           };
         in
         runner.overrideAttrs (old: {

@@ -7,8 +7,7 @@
       (builtins.hasAttr "pyproject" pkg) && (pkg.pyproject == null);
   };
 
-  # TODO: should use this attr for postEval, maybe should be runCommand?
-  postEval = ./post-eval.py;
+  postEval.file = ./post-eval.py;
 
   meta = {
     description = "All packages that need to upgrade from format -> pyproject";
