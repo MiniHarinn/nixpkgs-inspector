@@ -1,0 +1,13 @@
+[project]
+name = "tracking-automation"
+version = "0.4.0"
+description = "Frozen-universe nixpkgs tracking-issue automation"
+requires-python = ">=3.11"
+dependencies = ["PyGithub>=2,<3"]
+
+[project.scripts]
+tracking-automation = "tracking_automation.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.10,<0.11"]
+build-backend = "uv_build"

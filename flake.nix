@@ -25,6 +25,9 @@
 
       nilib = import ./lib { inherit lib; };
 
+      # The packaged tracking engine (one-shot, args-driven).
+      tracking-automation = pkgs.callPackage ./tracking-automation/package.nix { };
+
       # Discovery and lazy load all scripts
       loadedScripts = lib.mapAttrs (name: _: import ./scripts/${name} { inherit nilib lib; }) (
         lib.filterAttrs (_: t: t == "directory") (builtins.readDir ./scripts)
@@ -72,21 +75,49 @@
               else
                 "exec cat ${if hasPostEval then pureResult else collectedJSON}";
           };
+
+          ta = script.tracking-automation or { };
+
+          # Tracking issue automation entry point
+          trackingApp = pkgs.writeShellApplication {
+            name = "${name}-run-tracking-automation";
+            runtimeInputs = [
+              pkgs.git
+              pkgs.nix
+            ];
+            text = ''
+              exec ${lib.getExe tracking-automation} \
+                --script ${name} \
+                --issue ${toString ta.issue} \
+                --creation-rev ${ta.creationRev} \
+                --script-dir ${./scripts/${name}} \
+                --lib-dir ${./lib} \
+                --config-file ${./lib/nixpkgs-default-config.nix} \
+                --tooling-nixpkgs ${pkgs.path} \
+                "$@"
+            '';
+          };
         in
         runner.overrideAttrs (old: {
           meta =
             (old.meta or { })
             // {
               mainProgram = "script-${name}";
-              trackingIssue = null;
               scheduled = false;
             }
             // (script.meta or { });
+          passthru =
+            (old.passthru or { })
+            // lib.optionalAttrs (ta.enable or false) {
+              tracking-automation = ta // { run = trackingApp; };
+            };
         });
     in
     {
 
-      packages.${system} = lib.mapAttrs mkScript loadedScripts;
+      packages.${system} = (lib.mapAttrs mkScript loadedScripts) // {
+        inherit tracking-automation;
+      };
 
       nixpkgsRev = subject-nixpkgs.rev or "unknown";
     };

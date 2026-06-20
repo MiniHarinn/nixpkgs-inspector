@@ -20,7 +20,10 @@
 
   meta = {
     description = "Check if changelogs are usable";
-    trackingIssue = 514132;
     scheduled = false; # slow
+  };
+
+  tracking-automation = {
+    issue = 514132;
   };
 }
