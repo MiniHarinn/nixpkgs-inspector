@@ -13,6 +13,7 @@
   };
 
   postEval = {
+    enable = true;
     file = ./post-eval.py;
     impure = true; # network request, duh 🤷‍♀
     pythonDeps = p: [ p.requests ];

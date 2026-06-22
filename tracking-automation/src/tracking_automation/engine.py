@@ -24,7 +24,7 @@ def run_tracking(
         current = backend.current_rev()
         _log(f"{tracker.id}: current master {current[:12]}, |U|={len(universe.attrs)}")
 
-        b_now = {e["attrpath"] for e in backend.collect(current)}
+        b_now = set(backend.offenders(current))
         remaining = universe.attrs & b_now
         done = universe.attrs - remaining
         _log(f"{tracker.id}: done={len(done)} remaining={len(remaining)}")

@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
+import tempfile
 from collections.abc import Iterable
 from pathlib import Path
 from typing import Protocol
@@ -17,6 +19,8 @@ _COLLECT_TIMEOUT = 3600
 class Evaluator(Protocol):
     def collect(self, rev: str) -> list[dict]: ...
     def check_at(self, rev: str, attrs: Iterable[str]) -> set[str]: ...
+    def offenders(self, rev: str) -> list[str]: ...
+    def offenders_in_scope(self, rev: str, scope: set[str]) -> set[str]: ...
 
 
 class Attribution(Protocol):
@@ -42,6 +46,7 @@ class CheckoutManager:
         config_file: str | Path,
         tooling_nixpkgs: str | Path,
         *,
+        post_eval: str | Path | None = None,
         remote: str = "upstream",
         base_branch: str = "master",
         ref_namespace: str | None = None,
@@ -51,12 +56,15 @@ class CheckoutManager:
         self.lib_dir = str(Path(lib_dir).expanduser().resolve())
         self.config_file = str(Path(config_file).expanduser().resolve())
         self.tooling_nixpkgs = str(Path(tooling_nixpkgs).expanduser().resolve())
+        # Pure postEval exe: maps raw collect JSON (argv[1]) -> offender JSON.
+        self.post_eval = str(Path(post_eval).expanduser().resolve()) if post_eval else None
         self.remote = remote
         self.base_branch = base_branch
         self.check_nix = _bundled("check.nix")
         self.collect_nix = _bundled("collect.nix")
         self._landing: dict[int, str] | None = None
         self._base_tip: str | None = None
+        self._offenders_cache: dict[str, list[str]] = {}
         # Per-leg namespace: concurrent worktrees share one object store.
         leg = ref_namespace or Path(self.script_dir).name
         self._ref_ns = f"{_REF_NS}/{leg}"
@@ -153,6 +161,46 @@ class CheckoutManager:
         )
         out = self._nix_eval(expr, fmt="--raw", timeout=_EVAL_TIMEOUT)
         return {line for line in out.split("\n") if line}
+
+    def offenders(self, rev: str) -> list[str]:
+        """The authoritative offender list at rev: collect, then (if configured)
+        run the script's pure postEval. Order is preserved (postEval may resort).
+        """
+        if rev in self._offenders_cache:
+            return self._offenders_cache[rev]
+        entries = self.collect(rev)
+        attrs = (
+            [e["attrpath"] for e in entries]
+            if self.post_eval is None
+            else self._run_post_eval(entries)
+        )
+        self._offenders_cache[rev] = attrs
+        return attrs
+
+    def offenders_in_scope(self, rev: str, scope: set[str]) -> set[str]:
+        # No postEval: the predicate alone defines offenders, so the cheap
+        # subset check suffices. With postEval, the offender set may differ
+        # from the raw predicate, so we must derive it from full offenders().
+        if self.post_eval is None:
+            return self.check_at(rev, scope)
+        return set(self.offenders(rev)) & scope
+
+    def _run_post_eval(self, entries: list[dict]) -> list[str]:
+        fd, path = tempfile.mkstemp(suffix=".json")
+        try:
+            with os.fdopen(fd, "w") as f:
+                json.dump(entries, f)
+            proc = subprocess.run(
+                [self.post_eval, path],
+                capture_output=True, text=True, timeout=_EVAL_TIMEOUT,
+            )
+        finally:
+            os.unlink(path)
+        if proc.returncode != 0:
+            raise RuntimeError(f"postEval failed:\n{proc.stderr.strip()[:500]}")
+        data = json.loads(proc.stdout)
+        # Schema: JSON array of attrpath strings or objects with .attrpath.
+        return [e if isinstance(e, str) else e["attrpath"] for e in data]
 
     # ---- cleanup ------------------------------------------------------------
 

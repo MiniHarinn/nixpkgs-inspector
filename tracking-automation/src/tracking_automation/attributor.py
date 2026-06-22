@@ -57,16 +57,18 @@ def _attribute_one(
     backend: _Backend,
     scope: set[str],
 ) -> int:
-    # Diff the predicate over the whole (frozen) scope across the commit, rather
-    # than guessing affected attrs from changed files: this catches fixes that
-    # land outside an attr's meta.position (e.g. an adjacent imported file) and
-    # keeps the eval boundary closed to attrs we already track.
+    # Diff the offender set over the whole (frozen) scope across the commit,
+    # rather than guessing affected attrs from changed files: this catches fixes
+    # that land outside an attr's meta.position (e.g. an adjacent imported file)
+    # and keeps the eval boundary closed to attrs we already track. offenders()
+    # honours a pure postEval; without one it falls back to the cheap predicate
+    # check over just the scope.
     if not scope:
         return 0
 
     try:
-        before = backend.check_at(f"{commit}^1", scope)
-        after = backend.check_at(commit, scope)
+        before = backend.offenders_in_scope(f"{commit}^1", scope)
+        after = backend.offenders_in_scope(commit, scope)
     except Exception as exc:  # noqa: BLE001
         _log(f"PR #{pr.number}: eval failed: {exc}")
         return 0

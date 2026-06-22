@@ -16,26 +16,26 @@ from tracking_automation.model import (  # noqa: E402
     Tracker,
 )
 from tracking_automation.render import render  # noqa: E402
-from tracking_automation.universe import Universe  # noqa: E402
+from tracking_automation.universe import Universe, build  # noqa: E402
 
 UNIVERSE = Universe(
     attrs=frozenset({"a", "b", "c", "d", "e"}),
     order=("a", "b", "c", "d", "e"),
 )
 
-# Current offenders at master (B_now): a, b, c still match; d, e are done.
+# offenders now: a,b,c match; d,e done.
 B_NOW = [{"attrpath": x} for x in ("a", "b", "c")]
 
-# Per-revision predicate-match for the eval-diff (before = commit^1, after = commit).
+# predicate-match per rev (before=commit^1, after=commit).
 MATCHED = {
-    "c101^1": {"a", "b", "c", "d"},  # before #101: d broken
-    "c101": {"a", "b", "c"},         # after  #101: d fixed
+    "c101^1": {"a", "b", "c", "d"},
+    "c101": {"a", "b", "c"},         # #101 fixed d
     "c104^1": {"a", "b", "c", "e"},
-    "c104": {"a", "b", "c"},
-    "m102^1": {"a", "b", "c"},       # before #102 (open): a broken
-    "m102": {"b", "c"},              # after  #102: a would be fixed
-    "c106^1": {"a", "b", "c"},       # guard: #106 lands but flips nothing in
-    "c106": {"a", "b", "c"},         # scope (d/e already done) -> no link
+    "c104": {"a", "b", "c"},         # #104 fixed e
+    "m102^1": {"a", "b", "c"},
+    "m102": {"b", "c"},              # #102 would fix a
+    "c106^1": {"a", "b", "c"},
+    "c106": {"a", "b", "c"},         # #106 flips nothing -> no link
 }
 LANDING = {101: "c101", 104: "c104", 106: "c106"}
 
@@ -59,6 +59,12 @@ class FakeBackend:
     def landing_commit(self, number: int):
         return LANDING.get(number)
 
+    def offenders(self, rev: str) -> list:
+        return [e["attrpath"] for e in self.collect(rev)]
+
+    def offenders_in_scope(self, rev: str, scope: set) -> set:
+        return self.check_at(rev, scope)  # no postEval -> predicate is authoritative
+
     def restore(self) -> None:
         pass
 
@@ -69,6 +75,62 @@ class FakeReader:
 
     def referencing_prs(self, repo: str, issue_number: int):
         return list(self.prs)
+
+
+# postEval path: offenders() is authoritative (decoupled from raw predicate).
+OFFENDERS = {
+    "rev0": ["p", "q", "r"],   # universe at creation
+    "CUR2": ["p"],             # now: q, r done
+    "l201^1": ["p", "q", "r"],
+    "l201": ["p", "r"],        # #201 fixed q
+    "g202^1": ["p"],
+    "g202": [],                # #202 would fix p
+}
+LANDING2 = {201: "l201"}
+
+
+class PostEvalBackend:
+    def current_rev(self) -> str:
+        return "CUR2"
+
+    def offenders(self, rev: str) -> list:
+        return list(OFFENDERS[rev])
+
+    def offenders_in_scope(self, rev: str, scope: set) -> set:
+        return set(self.offenders(rev)) & scope
+
+    def prime_landing_map(self, creation_rev: str) -> None:
+        pass
+
+    def merge_commit(self, number: int):
+        return "g202" if number == 202 else None
+
+    def landing_commit(self, number: int):
+        return LANDING2.get(number)
+
+    def restore(self) -> None:
+        pass
+
+
+def _check_posteval() -> None:
+    tracker = Tracker(id="pe", issue_number=1, creation_rev="rev0")
+    backend = PostEvalBackend()
+    universe = build(tracker, backend)
+    assert universe.attrs == frozenset({"p", "q", "r"}), universe
+    assert universe.order == ("p", "q", "r"), universe.order  # postEval order preserved
+
+    prs = [PullRequest(201, PR_MERGED), PullRequest(202, PR_OPEN)]
+    result = run_tracking(
+        tracker, universe=universe, backend=backend, reader=FakeReader(prs)
+    )
+    got = {s.attr: (s.done, tuple(s.prs)) for s in result.statuses}
+    expected = {
+        "p": (False, (202,)),  # open PR would fix it
+        "q": (True, (201,)),   # merged PR fixed it
+        "r": (True, ()),       # done, no referencing PR
+    }
+    assert got == expected, f"postEval attribution mismatch:\n got={got}\n exp={expected}"
+    print("OK - postEval offender pipeline verified")
 
 
 def main() -> int:
@@ -120,6 +182,8 @@ def main() -> int:
         print(ctext)
         print("=== index.md ===")
         print(itext)
+
+    _check_posteval()
     return 0
 
 

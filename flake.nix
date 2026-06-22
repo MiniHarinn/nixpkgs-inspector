@@ -33,19 +33,20 @@
         name: script:
         let
           collectedJSON = pkgs.writeText "${name}-collected.json" (
-            builtins.toJSON (import ./lib/eval.nix {
-              nixpkgsSrc = subject-nixpkgs;
-              scriptDir = ./scripts/${name};
-              configFile = ./lib/nixpkgs-default-config.nix;
-              toolingNixpkgs = pkgs.path;
-              inherit system;
-            }).collect
+            builtins.toJSON
+              (import ./lib/eval.nix {
+                nixpkgsSrc = subject-nixpkgs;
+                scriptDir = ./scripts/${name};
+                configFile = ./lib/nixpkgs-default-config.nix;
+                toolingNixpkgs = pkgs.path;
+                inherit system;
+              }).collect
           );
 
-          hasPostEval = script ? postEval;
           postEval =
-            if hasPostEval then
+            if script ? postEval then
               {
+                enable = false;
                 impure = false;
                 pythonDeps = _: [ ];
               }
@@ -53,33 +54,40 @@
             else
               null;
 
-          python = if hasPostEval then pkgs.python3.withPackages postEval.pythonDeps else null;
+          hasPostEval = postEval != null && postEval.enable;
 
-          # Pure post-eval: this will most of the time gets us there, if postEval only do some trivial transformation
-          pureResult = pkgs.runCommand "${name}-result.json" { nativeBuildInputs = [ python ]; } ''
-            export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
-            python3 ${postEval.file} ${collectedJSON} > $out
-          '';
-
-          # Impure runs python at run time (needs network), opt in
-          impure = hasPostEval && postEval.impure;
+          postEvalExe =
+            if hasPostEval then
+              pkgs.writeShellApplication {
+                name = "${name}-post-eval";
+                runtimeInputs = [ (pkgs.python3.withPackages postEval.pythonDeps) ];
+                text = ''
+                  export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
+                  exec python3 ${postEval.file} "$@"
+                '';
+              }
+            else
+              null;
 
           runner = pkgs.writeShellApplication {
             name = "script-${name}";
-            runtimeInputs = if impure then [ python ] else [ pkgs.coreutils ];
+            runtimeInputs = [ pkgs.coreutils ];
             text =
-              if impure then
-                ''
-                  export PYTHONPATH=${./lib/python}''${PYTHONPATH:+:$PYTHONPATH}
-                  exec python3 ${postEval.file} ${collectedJSON} "$@"
-                ''
+              if !hasPostEval then
+                "exec cat ${collectedJSON}"
+              else if postEval.impure then
+                ''exec ${lib.getExe postEvalExe} ${collectedJSON} "$@"''
               else
-                "exec cat ${if hasPostEval then pureResult else collectedJSON}";
+                "exec cat ${
+                  pkgs.runCommand "${name}-result.json" { } ''
+                    ${lib.getExe postEvalExe} ${collectedJSON} > $out
+                  ''
+                }";
           };
 
           ta = script.tracking-automation or { };
 
-          # Tracking issue automation entry point
+          # Tracking issue automation entry point.
           trackingApp = pkgs.writeShellApplication {
             name = "${name}-run-tracking-automation";
             runtimeInputs = [
@@ -94,7 +102,9 @@
                 --script-dir ${./scripts/${name}} \
                 --lib-dir ${./lib} \
                 --config-file ${./lib/nixpkgs-default-config.nix} \
-                --tooling-nixpkgs ${pkgs.path} \
+                --tooling-nixpkgs ${pkgs.path}${
+                  lib.optionalString (hasPostEval && !postEval.impure) " --post-eval ${lib.getExe postEvalExe}"
+                } \
                 "$@"
             '';
           };
@@ -109,9 +119,16 @@
             // (script.meta or { });
           passthru =
             (old.passthru or { })
-            // lib.optionalAttrs (ta.enable or false) {
-              tracking-automation = ta // { run = trackingApp; };
-            };
+            # tracking can't reproduce an impure postEval at historical revs. Sadly, those kind of tracking need manual maintainance :(
+            // lib.optionalAttrs (ta.enable or false) (
+              assert lib.assertMsg (!(hasPostEval && postEval.impure))
+                "tracking-automation '${name}': impure postEval is unsupported (not reproducible at historical revs).";
+              {
+                tracking-automation = ta // {
+                  run = trackingApp;
+                };
+              }
+            );
         });
     in
     {
