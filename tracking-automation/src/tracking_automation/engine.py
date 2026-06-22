@@ -38,7 +38,7 @@ def run_tracking(
 
         backend.prime_landing_map(tracker.creation_rev)
         stats = attribute(
-            statuses, universe, prs, backend, remaining=remaining, done=done
+            statuses, prs, backend, remaining=remaining, done=done
         )
         _log(
             f"{tracker.id}: attribution open {stats.open_linked}/{stats.open_total} "

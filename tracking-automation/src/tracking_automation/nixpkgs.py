@@ -23,7 +23,6 @@ class Attribution(Protocol):
     def current_rev(self) -> str: ...
     def merge_commit(self, number: int) -> str | None: ...
     def landing_commit(self, number: int) -> str | None: ...
-    def first_parent_changed_files(self, commit: str) -> list[str]: ...
 
 
 def _bundled(name: str) -> Path:
@@ -111,10 +110,6 @@ class CheckoutManager:
         if self._landing is None:
             raise RuntimeError("call prime_landing_map(creation_rev) first")
         return self._landing.get(number)
-
-    def first_parent_changed_files(self, commit: str) -> list[str]:
-        out = self._git("diff", "--name-only", f"{commit}^1", commit)
-        return [line for line in out.splitlines() if line]
 
     # ---- eval ---------------------------------------------------------------
 

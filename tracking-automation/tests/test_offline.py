@@ -21,11 +21,6 @@ from tracking_automation.universe import Universe  # noqa: E402
 UNIVERSE = Universe(
     attrs=frozenset({"a", "b", "c", "d", "e"}),
     order=("a", "b", "c", "d", "e"),
-    pos={
-        "pkgs/by-name/aa/a/package.nix": frozenset({"a"}),
-        "pkgs/by-name/dd/d/package.nix": frozenset({"d"}),
-        "pkgs/by-name/ee/e/package.nix": frozenset({"e"}),
-    },
 )
 
 # Current offenders at master (B_now): a, b, c still match; d, e are done.
@@ -39,14 +34,8 @@ MATCHED = {
     "c104": {"a", "b", "c"},
     "m102^1": {"a", "b", "c"},       # before #102 (open): a broken
     "m102": {"b", "c"},              # after  #102: a would be fixed
-    "c106^1": {"a", "b", "c"},       # guard: #106 touches d's file but
-    "c106": {"a", "b", "c"},         # d already fixed before & after -> no link
-}
-CHANGED = {
-    "m102": ["pkgs/by-name/aa/a/package.nix"],
-    "c101": ["pkgs/by-name/dd/d/package.nix"],
-    "c104": ["pkgs/by-name/ee/e/package.nix"],
-    "c106": ["pkgs/by-name/dd/d/package.nix"],
+    "c106^1": {"a", "b", "c"},       # guard: #106 lands but flips nothing in
+    "c106": {"a", "b", "c"},         # scope (d/e already done) -> no link
 }
 LANDING = {101: "c101", 104: "c104", 106: "c106"}
 
@@ -69,9 +58,6 @@ class FakeBackend:
 
     def landing_commit(self, number: int):
         return LANDING.get(number)
-
-    def first_parent_changed_files(self, commit: str) -> list:
-        return list(CHANGED.get(commit, []))
 
     def restore(self) -> None:
         pass
@@ -96,7 +82,7 @@ def main() -> int:
         PullRequest(102, PR_OPEN),    # would fix a -> [ ] #102
         PullRequest(103, PR_CLOSED),  # ignored
         PullRequest(104, PR_MERGED),  # fixes e
-        PullRequest(106, PR_MERGED),  # stale ref on d's file -> no link
+        PullRequest(106, PR_MERGED),  # lands but flips nothing in scope -> no link
     ]
 
     result = run_tracking(

@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 
 @dataclass(frozen=True)
 class Tracker:
-    id: str  # inspector script name; drives collect + restricted check
+    id: str  # inspector script name
     issue_number: int
     creation_rev: str  # nixpkgs rev U is frozen at (tracking-automation.creationRev)
     repo: str = "NixOS/nixpkgs"

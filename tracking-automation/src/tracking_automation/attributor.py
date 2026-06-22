@@ -5,7 +5,6 @@ from dataclasses import dataclass
 
 from .model import PR_MERGED, PR_OPEN, AttrStatus, PullRequest
 from .nixpkgs import Attribution, Evaluator
-from .universe import Universe
 
 
 @dataclass
@@ -27,7 +26,6 @@ def _log(msg: str) -> None:
 
 def attribute(
     statuses: dict[str, AttrStatus],
-    universe: Universe,
     prs: list[PullRequest],
     backend: _Backend,
     *,
@@ -41,7 +39,7 @@ def attribute(
             commit = commit_of(pr.number)
             if commit is None:
                 continue
-            n = _attribute_one(pr, commit, statuses, universe, backend, scope)
+            n = _attribute_one(pr, commit, statuses, backend, scope)
             if n:
                 linked += 1
                 links += n
@@ -56,23 +54,19 @@ def _attribute_one(
     pr: PullRequest,
     commit: str,
     statuses: dict[str, AttrStatus],
-    universe: Universe,
     backend: _Backend,
     scope: set[str],
 ) -> int:
-    try:
-        changed = backend.first_parent_changed_files(commit)
-    except Exception as exc:  # noqa: BLE001
-        _log(f"PR #{pr.number}: changed-files failed: {exc}")
-        return 0
-
-    candidates = universe.candidates(changed) & scope
-    if not candidates:
+    # Diff the predicate over the whole (frozen) scope across the commit, rather
+    # than guessing affected attrs from changed files: this catches fixes that
+    # land outside an attr's meta.position (e.g. an adjacent imported file) and
+    # keeps the eval boundary closed to attrs we already track.
+    if not scope:
         return 0
 
     try:
-        before = backend.check_at(f"{commit}^1", candidates)
-        after = backend.check_at(commit, candidates)
+        before = backend.check_at(f"{commit}^1", scope)
+        after = backend.check_at(commit, scope)
     except Exception as exc:  # noqa: BLE001
         _log(f"PR #{pr.number}: eval failed: {exc}")
         return 0
