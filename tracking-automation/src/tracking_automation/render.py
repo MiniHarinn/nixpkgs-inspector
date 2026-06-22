@@ -7,6 +7,10 @@ from .model import AttrStatus, TrackerResult
 
 DEFAULT_CHUNK_BYTES = 60000
 
+# Reserved some space for PR attributions to prevent chunk misalignment on comment updates.
+RESERVED_PRS = 3
+PR_NUM_DIGITS = 7  # nixpkgs PRs are ~500k rn, so 10M is reasonable upper bound no?
+
 
 def _attr_line(s: AttrStatus) -> str:
     box = "x" if s.done else " "
@@ -14,17 +18,28 @@ def _attr_line(s: AttrStatus) -> str:
     return f"- [{box}] {s.attr}{refs}"
 
 
-def _chunk_lines(lines: list[str], limit: int) -> list[list[str]]:
-    chunks: list[list[str]] = []
-    cur: list[str] = []
+def _reserved_ref_bytes(n: int = RESERVED_PRS) -> int:
+    if n <= 0:
+        return 0
+    return 1 + n * (1 + PR_NUM_DIGITS) + (n - 1) * 2
+
+
+def _budget_bytes(s: AttrStatus) -> int:
+    base = f"- [ ] {s.attr}"
+    return len(base.encode("utf-8")) + _reserved_ref_bytes() + 1
+
+
+def _chunk(statuses: list[AttrStatus], limit: int) -> list[list[AttrStatus]]:
+    chunks: list[list[AttrStatus]] = []
+    cur: list[AttrStatus] = []
     size = 0
-    for line in lines:
-        ln = len(line.encode("utf-8")) + 1
-        if cur and size + ln > limit:
+    for s in statuses:
+        b = _budget_bytes(s)
+        if cur and size + b > limit:
             chunks.append(cur)
             cur, size = [], 0
-        cur.append(line)
-        size += ln
+        cur.append(s)
+        size += b
     if cur:
         chunks.append(cur)
     return chunks or [[]]
@@ -39,13 +54,13 @@ def render(
     out.mkdir(parents=True, exist_ok=True)
     written: list[Path] = []
 
-    lines = [_attr_line(s) for s in result.statuses]
-    chunks = _chunk_lines(lines, chunk_bytes)
+    chunks = _chunk(result.statuses, chunk_bytes)
     total = len(chunks)
 
     for i, chunk in enumerate(chunks, start=1):
         anchor = f"<!-- tracker:{result.tracker.id} chunk:{i:02d}/{total:02d} -->"
-        body = "\n".join([anchor, "", *chunk, ""])
+        lines = [_attr_line(s) for s in chunk]
+        body = "\n".join([anchor, "", *lines, ""])
         path = out / f"{result.tracker.id}-comment-{i:02d}.md"
         path.write_text(body, encoding="utf-8")
         written.append(path)
