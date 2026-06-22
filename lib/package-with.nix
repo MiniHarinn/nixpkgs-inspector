@@ -11,13 +11,11 @@ let
               [
                 {
                   attrpath = "${prefix}${name}";
-                  inherit (pkg.meta) position;
+                  position = pkg.meta.position or null; # Sadly, some weird derivation does not have meta / not literal 🥲
                   maintainers = builtins.map (m: m.github) pkg.meta.maintainers;
                 }
               ]
-            else if
-              pkg.recurseForDerivations or false || pkg.recurseForRelease or false
-            then
+            else if pkg.recurseForDerivations or false || pkg.recurseForRelease or false then
               packagesWith cond "${name}." pkg
             else
               [ ]
@@ -26,6 +24,7 @@ let
         if result.success then result.value else [ ]
       ) set
     ));
-in {
+in
+{
   inherit packagesWith;
 }
