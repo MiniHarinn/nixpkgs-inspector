@@ -16,7 +16,7 @@ let
                 }
               ]
             else if pkg.recurseForDerivations or false || pkg.recurseForRelease or false then
-              packagesWith cond "${name}." pkg
+              packagesWith cond "${prefix}${name}." pkg
             else
               [ ]
           );
