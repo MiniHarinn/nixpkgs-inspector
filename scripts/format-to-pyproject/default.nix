@@ -14,7 +14,7 @@
   };
 
   tracking-automation = {
-    enable = true;
+    enable = false;
     issue = 515974;
     creationRev = "304246fb630fc9b6a49b20e534940950c0664f53"; # Superrr important: its a nixpkgs' rev where tracking issue list was snapshotted!
   };
