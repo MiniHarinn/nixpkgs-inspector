@@ -37,7 +37,7 @@
 
   tracking-automation = {
     enable = true;
-    issue = 0; # TODO: real tracking issue number.
+    issue = 541820;
     creationRev = "b1bd76124a60a81341f984594c945b0d591c9606";
   };
 }
