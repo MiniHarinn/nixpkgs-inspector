@@ -1,8 +1,8 @@
 <!-- tracker:invalid-unstable-version-scheme chunk:01/01 -->
 
-- [ ] acme
-- [ ] ams
-- [ ] ananicy
+- [x] acme #541866
+- [ ] ams #541876
+- [ ] ananicy #541881
 - [ ] apacheHttpdPackages.mod_mbtiles
 - [ ] apg
 - [ ] arc_unpacker
@@ -17,7 +17,7 @@
 - [ ] basiliskii
 - [ ] beam27Packages.webdriver
 - [ ] bean-add
-- [ ] bfetch
+- [ ] bfetch #541865
 - [ ] bfscripts
 - [ ] bicgl
 - [ ] bioawk
@@ -86,7 +86,7 @@
 - [ ] evhz
 - [ ] faq
 - [ ] fasd
-- [ ] fetchutils
+- [ ] fetchutils #541898
 - [ ] fffuu
 - [ ] filegive
 - [ ] finalfrontier
@@ -411,7 +411,7 @@
 - [ ] soil
 - [ ] sony-dump
 - [ ] soundfont-ydp-grand
-- [ ] sox
+- [ ] sox #541888
 - [ ] sparrow3d
 - [ ] spectre-cli
 - [ ] speedread
