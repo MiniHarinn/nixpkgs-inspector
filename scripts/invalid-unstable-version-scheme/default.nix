@@ -1,7 +1,16 @@
 { lib, nilib, ... }:
 {
   script = {
-    builder = nilib.packagesWith;
+    builder = cond: prefix: set:
+      (builtins.foldl' (acc: e:
+        if e.position == null || builtins.hasAttr e.position acc.seen then
+          acc
+        else
+          {
+            seen = acc.seen // { ${e.position} = true; };
+            kept = acc.kept ++ [ e ];
+          }
+      ) { seen = { }; kept = [ ]; } (nilib.packagesWith cond prefix set)).kept;
 
     predicate = _: pkg:
       with builtins; (
@@ -24,5 +33,11 @@
   meta = {
     description = "Matches invalid sheme of unstable version";
     scheduled = true;
+  };
+
+  tracking-automation = {
+    enable = true;
+    issue = 0; # TODO: real tracking issue number.
+    creationRev = "b1bd76124a60a81341f984594c945b0d591c9606";
   };
 }
