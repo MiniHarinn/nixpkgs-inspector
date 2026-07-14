@@ -76,9 +76,9 @@ def _render_index(result: TrackerResult, out: Path, n_chunks: int) -> Path:
     lines = [
         f"<!-- tracker:{t.id} index -->",
         f"Tracking: {t.repo}#{t.issue_number}",
-        f"Universe pinned at: `{result.creation_rev}`",
-        f"Evaluated at master: `{result.current_rev}`",
-        f"Generated: {now}",
+        f"Baseline revision: `{result.creation_rev}`",
+        f"Last checked against master: `{result.current_rev}`",
+        f"Last updated: {now}",
         "",
         f"- Total: **{result.total}**",
         f"- Done: **{result.done}** ({pct}%)",
