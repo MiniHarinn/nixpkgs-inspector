@@ -572,7 +572,7 @@
 - [ ] yafetch
 - [ ] yersinia
 - [ ] zabbixctl
-- [ ] zenmonitor
+- [ ] zenmonitor #541850
 - [ ] zeyple
 - [ ] zfsbackup
 - [ ] zi
