@@ -17,16 +17,9 @@
         (hasAttr "version" pkg)
         && (isString pkg.version)
         && (lib.strings.hasInfix "unstable" pkg.version)
-        /* do not comply with: */
-        && !(let
-          split = lib.strings.splitString "-" pkg.version;
-        in
-          ((lib.lists.length split) == 5)
-          && (lib.strings.hasPrefix "unstable" (elemAt split 1))
-          && ((stringLength (elemAt split 2)) == 4)
-          && ((stringLength (elemAt split 3)) == 2)
-          && ((stringLength (elemAt split 4)) == 2)
-        )
+        # Does not comply with pkgs/README.md "Versioning": a snapshot must be
+        # "{version}-unstable-YYYY-MM-DD" with {version} starting with a digit.
+        && (match "[0-9].*-unstable-[0-9]{4}-[0-9]{2}-[0-9]{2}" pkg.version == null)
       );
   };
 
