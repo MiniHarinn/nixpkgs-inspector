@@ -60,7 +60,7 @@ def render(
     for i, chunk in enumerate(chunks, start=1):
         anchor = f"<!-- tracker:{result.tracker.id} chunk:{i:02d}/{total:02d} -->"
         lines = [_attr_line(s) for s in chunk]
-        body = "\n".join([anchor, "", *lines, ""])
+        body = "\n".join([anchor, "", *lines])
         path = out / f"{result.tracker.id}-comment-{i:02d}.md"
         path.write_text(body, encoding="utf-8")
         written.append(path)
@@ -85,7 +85,6 @@ def _render_index(result: TrackerResult, out: Path, n_chunks: int) -> Path:
         f"- Remaining: **{result.remaining}**",
         f"- In-flight (open PR linked): **{result.in_flight}**",
         f"- Comment chunks: **{n_chunks}**",
-        "",
     ]
     path = out / f"{t.id}-index.md"
     path.write_text("\n".join(lines), encoding="utf-8")
