@@ -4,12 +4,12 @@
 - [ ] ams #541876
 - [ ] ananicy #541881
 - [ ] apacheHttpdPackages.mod_mbtiles
-- [ ] apg
+- [ ] apg #541905
 - [ ] arc_unpacker
 - [ ] ardopc
-- [ ] arftracksat
-- [ ] aritim-dark
-- [ ] armitage
+- [ ] arftracksat #541972
+- [ ] aritim-dark #541971
+- [ ] armitage #541973
 - [ ] as-tree
 - [ ] ath9k-htc-blobless-firmware-unstable
 - [ ] ayu-theme-gtk
@@ -329,14 +329,14 @@
 - [ ] pup
 - [ ] python313Packages.aioprometheus
 - [ ] python313Packages.amqtt
-- [ ] python313Packages.changefinder
+- [ ] python313Packages.changefinder #541974
 - [ ] python313Packages.clip
 - [ ] python313Packages.cocotb-bus
-- [ ] python313Packages.contexttimer
+- [ ] python313Packages.contexttimer #541981
 - [ ] python313Packages.dasbus
 - [ ] python313Packages.gps3
 - [ ] python313Packages.gyp
-- [ ] python313Packages.june-analytics-python
+- [ ] python313Packages.june-analytics-python #541987
 - [ ] python313Packages.mediafire-dl
 - [ ] python313Packages.mkdocs-linkcheck
 - [ ] python313Packages.muscima
@@ -572,7 +572,7 @@
 - [ ] yafetch
 - [ ] yersinia
 - [ ] zabbixctl
-- [ ] zenmonitor #541850
+- [x] zenmonitor #541850
 - [ ] zeyple
 - [ ] zfsbackup
 - [ ] zi
