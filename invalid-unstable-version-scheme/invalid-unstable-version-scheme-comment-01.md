@@ -7,30 +7,30 @@
 - [ ] apg #541905
 - [ ] arc_unpacker
 - [ ] ardopc
-- [ ] arftracksat #541972
-- [ ] aritim-dark #541971
-- [ ] armitage #541973
-- [ ] as-tree
+- [x] arftracksat #541972
+- [x] aritim-dark #541971
+- [x] armitage #541973
+- [ ] as-tree #542399
 - [ ] ath9k-htc-blobless-firmware-unstable
-- [ ] ayu-theme-gtk
+- [ ] ayu-theme-gtk #542402
 - [ ] azure-sdk-for-cpp.c-shared-utility
 - [ ] basiliskii
 - [ ] beam27Packages.webdriver
-- [ ] bean-add
+- [ ] bean-add #542405
 - [ ] bfetch #541865
 - [ ] bfscripts
-- [ ] bicgl
+- [ ] bicgl #542408
 - [ ] bioawk
 - [ ] blobs_gg
-- [ ] bookworm
+- [ ] bookworm #542412
 - [ ] bootil
-- [ ] bosun
+- [ ] bosun #542416
 - [ ] brise
-- [ ] bsp-layout
+- [ ] bsp-layout #542417
 - [ ] buck2
 - [ ] bwa-mem2
 - [ ] byzanz
-- [ ] cambrinary
+- [ ] cambrinary #542421
 - [ ] carps-cups
 - [ ] cc-token
 - [ ] ccemux
@@ -332,11 +332,11 @@
 - [ ] python313Packages.changefinder #541974
 - [ ] python313Packages.clip
 - [ ] python313Packages.cocotb-bus
-- [ ] python313Packages.contexttimer #541981
+- [x] python313Packages.contexttimer #541981
 - [ ] python313Packages.dasbus
 - [ ] python313Packages.gps3
 - [ ] python313Packages.gyp
-- [ ] python313Packages.june-analytics-python #541987
+- [x] python313Packages.june-analytics-python #541987
 - [ ] python313Packages.mediafire-dl
 - [ ] python313Packages.mkdocs-linkcheck
 - [ ] python313Packages.muscima
@@ -554,7 +554,7 @@
 - [ ] weylus
 - [ ] wgautomesh
 - [ ] wireworld
-- [ ] wlay
+- [ ] wlay #542382
 - [ ] wlprop
 - [ ] wlr-protocols
 - [ ] wmderland
