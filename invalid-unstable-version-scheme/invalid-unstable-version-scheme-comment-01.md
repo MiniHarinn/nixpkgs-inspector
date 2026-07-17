@@ -4,7 +4,7 @@
 - [ ] ams #541876
 - [ ] ananicy #541881
 - [ ] apacheHttpdPackages.mod_mbtiles
-- [ ] apg #541905
+- [x] apg #541905
 - [ ] arc_unpacker
 - [ ] ardopc
 - [x] arftracksat #541972
@@ -16,13 +16,13 @@
 - [ ] azure-sdk-for-cpp.c-shared-utility
 - [ ] basiliskii
 - [ ] beam27Packages.webdriver
-- [ ] bean-add #542405
+- [x] bean-add #542405
 - [ ] bfetch #541865
 - [ ] bfscripts
 - [ ] bicgl #542408
 - [ ] bioawk
 - [ ] blobs_gg
-- [ ] bookworm #542412
+- [x] bookworm #542412
 - [ ] bootil
 - [ ] bosun #542416
 - [ ] brise
@@ -32,11 +32,11 @@
 - [ ] byzanz
 - [ ] cambrinary #542421
 - [ ] carps-cups
-- [ ] cc-token
+- [ ] cc-token #542743
 - [ ] ccemux
 - [ ] celeste-classic
 - [ ] chez-racket
-- [ ] clipnotify
+- [ ] clipnotify #542744
 - [ ] comfortaa
 - [ ] conglomerate
 - [ ] cooper-hewitt
@@ -341,7 +341,7 @@
 - [ ] python313Packages.mkdocs-linkcheck
 - [ ] python313Packages.muscima
 - [ ] python313Packages.nix-kernel
-- [ ] python313Packages.opensfm
+- [x] python313Packages.opensfm
 - [ ] python313Packages.osc-diagram
 - [ ] python313Packages.oscscreen
 - [ ] python313Packages.ovmfvartool
