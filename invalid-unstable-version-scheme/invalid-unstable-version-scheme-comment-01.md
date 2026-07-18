@@ -32,11 +32,11 @@
 - [ ] byzanz
 - [ ] cambrinary #542421
 - [ ] carps-cups
-- [ ] cc-token #542743
+- [x] cc-token #542743
 - [ ] ccemux
 - [ ] celeste-classic
 - [ ] chez-racket
-- [ ] clipnotify #542744
+- [x] clipnotify #542744
 - [ ] comfortaa
 - [ ] conglomerate
 - [ ] cooper-hewitt
@@ -364,7 +364,7 @@
 - [ ] python313Packages.tree-sitter-grammars.tree-sitter-adl
 - [ ] python313Packages.typechecks
 - [ ] python313Packages.vqgan-jax
-- [ ] python313Packages.yaswfp
+- [ ] python313Packages.yaswfp #543069
 - [ ] qboot
 - [ ] qdjango
 - [ ] qgo
