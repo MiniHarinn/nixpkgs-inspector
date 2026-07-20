@@ -17,7 +17,7 @@
 - [ ] basiliskii
 - [ ] beam27Packages.webdriver
 - [x] bean-add #542405
-- [ ] bfetch #541865
+- [x] bfetch #541865
 - [ ] bfscripts
 - [ ] bicgl #542408
 - [ ] bioawk
@@ -71,8 +71,8 @@
 - [ ] dockfmt
 - [ ] dockstarter
 - [ ] doom-bcc
-- [ ] drone-runner-exec
-- [ ] drone-runner-ssh
+- [ ] drone-runner-exec #543796
+- [ ] drone-runner-ssh #543800
 - [ ] duckling-proxy
 - [ ] dvtm-unstable
 - [ ] dwt1-shell-color-scripts
@@ -90,7 +90,7 @@
 - [ ] fffuu
 - [ ] filegive
 - [ ] finalfrontier
-- [ ] fish-irssi
+- [ ] fish-irssi #543813
 - [ ] footswitch
 - [ ] freqtweak
 - [ ] freshrss-extensions.demo
@@ -98,7 +98,7 @@
 - [ ] freshrss-extensions.unsafe-auto-login
 - [ ] freshrss-extensions.youtube
 - [ ] frogatto
-- [ ] fusee-nano
+- [ ] fusee-nano #543810
 - [ ] fverb
 - [ ] gambit-unstable
 - [ ] gawkextlib.abort
@@ -178,7 +178,7 @@
 - [ ] jack-autoconnect
 - [ ] jack-passthrough
 - [ ] jackline
-- [ ] joomscan
+- [ ] joomscan #543076
 - [ ] jpegexiforient
 - [ ] jpegrescan
 - [ ] jtdx
@@ -230,7 +230,7 @@
 - [ ] linuxKernel.packages.linux_5_10.rtw89
 - [ ] linuxKernel.packages.linux_5_10.sheep-net
 - [ ] linuxKernel.packages.linux_5_10.vendor-reset
-- [ ] linuxKernel.packages.linux_5_10.zenpower
+- [x] linuxKernel.packages.linux_5_10.zenpower
 - [ ] linx-server
 - [ ] livedl
 - [ ] lssecret
@@ -287,7 +287,7 @@
 - [ ] ocamlPackages.telegraml
 - [ ] odroid-xu3-bootloader
 - [ ] ofono-phonesim
-- [ ] oh-my-fish
+- [ ] oh-my-fish #543815
 - [ ] open-music-kontrollers.jit
 - [ ] openbrf
 - [ ] opensoldat
@@ -364,7 +364,7 @@
 - [ ] python313Packages.tree-sitter-grammars.tree-sitter-adl
 - [ ] python313Packages.typechecks
 - [ ] python313Packages.vqgan-jax
-- [ ] python313Packages.yaswfp #543069
+- [x] python313Packages.yaswfp #543069
 - [ ] qboot
 - [ ] qdjango
 - [ ] qgo
@@ -391,7 +391,7 @@
 - [ ] rspamd-trainer
 - [ ] rxvt-unicode-plugins.perl
 - [ ] rxvt-unicode-plugins.theme-switch
-- [ ] salut
+- [ ] salut #543822
 - [ ] scala-runners
 - [ ] scion-apps
 - [ ] selectdefaultapplication
@@ -403,7 +403,7 @@
 - [ ] sixpair
 - [ ] sks
 - [ ] skydns
-- [ ] sleek-grub-theme
+- [ ] sleek-grub-theme #543819
 - [ ] smartcrop
 - [ ] smpeg2
 - [ ] smuxi
@@ -483,7 +483,7 @@
 - [ ] tremor
 - [ ] trezor-udev-rules
 - [ ] tt-rss-plugin-auth-ldap
-- [ ] tty-clock
+- [ ] tty-clock #543806
 - [ ] tunnelto
 - [ ] twilight
 - [ ] twinkle
