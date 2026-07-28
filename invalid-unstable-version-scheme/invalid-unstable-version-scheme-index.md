@@ -1,11 +1,11 @@
 <!-- tracker:invalid-unstable-version-scheme index -->
 Tracking: NixOS/nixpkgs#541820
 Baseline revision: `b1bd76124a60a81341f984594c945b0d591c9606`
-Last checked against master: `d29358efc133e4219d3c704b6d1ecf01a739d3a3`
-Last updated: 2026-07-20 12:45 UTC
+Last checked against master: `484224e5187eda9408c645a6bbc2e913daee3e5e`
+Last updated: 2026-07-28 08:35 UTC
 
 - Total: **579**
-- Done: **16** (2%)
-- Remaining: **563**
-- In-flight (open PR linked): **21**
+- Done: **61** (10%)
+- Remaining: **518**
+- In-flight (open PR linked): **17**
 - Comment chunks: **1**

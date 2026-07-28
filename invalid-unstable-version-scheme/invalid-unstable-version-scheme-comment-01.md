@@ -1,16 +1,16 @@
 <!-- tracker:invalid-unstable-version-scheme chunk:01/01 -->
 
 - [x] acme #541866
-- [ ] ams #541876
-- [ ] ananicy #541881
+- [x] ams #541876
+- [x] ananicy #541881
 - [ ] apacheHttpdPackages.mod_mbtiles
 - [x] apg #541905
 - [ ] arc_unpacker
-- [ ] ardopc
+- [ ] ardopc #546478
 - [x] arftracksat #541972
 - [x] aritim-dark #541971
 - [x] armitage #541973
-- [ ] as-tree #542399
+- [x] as-tree #542399
 - [ ] ath9k-htc-blobless-firmware-unstable
 - [ ] ayu-theme-gtk #542402
 - [ ] azure-sdk-for-cpp.c-shared-utility
@@ -20,17 +20,17 @@
 - [x] bfetch #541865
 - [ ] bfscripts
 - [ ] bicgl #542408
-- [ ] bioawk
+- [ ] bioawk #546472
 - [ ] blobs_gg
 - [x] bookworm #542412
-- [ ] bootil
-- [ ] bosun #542416
+- [x] bootil #546476
+- [x] bosun #542416
 - [ ] brise
-- [ ] bsp-layout #542417
-- [ ] buck2
+- [x] bsp-layout #542417
+- [x] buck2
 - [ ] bwa-mem2
-- [ ] byzanz
-- [ ] cambrinary #542421
+- [ ] byzanz #546483
+- [x] cambrinary #542421
 - [ ] carps-cups
 - [x] cc-token #542743
 - [ ] ccemux
@@ -39,16 +39,16 @@
 - [x] clipnotify #542744
 - [ ] comfortaa
 - [ ] conglomerate
-- [ ] cooper-hewitt
+- [ ] cooper-hewitt #546485
 - [ ] coreboot-configurator
-- [ ] courier-prime
-- [ ] crackle
+- [ ] courier-prime #546504
+- [ ] crackle #546473
 - [ ] crimson-pro
 - [ ] crowbar
 - [ ] ctx
 - [ ] culvert
 - [ ] cutterPlugins.sigdb
-- [ ] cwiid
+- [x] cwiid
 - [ ] cyclone
 - [ ] dab_lib
 - [ ] damon
@@ -61,8 +61,8 @@
 - [ ] decoder
 - [ ] dee
 - [ ] devd
-- [ ] devmem2
-- [ ] dia
+- [x] devmem2
+- [x] dia #545336
 - [ ] dialogbox
 - [ ] diopser
 - [ ] disk_indicator
@@ -71,8 +71,8 @@
 - [ ] dockfmt
 - [ ] dockstarter
 - [ ] doom-bcc
-- [ ] drone-runner-exec #543796
-- [ ] drone-runner-ssh #543800
+- [x] drone-runner-exec #543796
+- [x] drone-runner-ssh #543800
 - [ ] duckling-proxy
 - [ ] dvtm-unstable
 - [ ] dwt1-shell-color-scripts
@@ -83,14 +83,14 @@
 - [ ] emscriptenPackages.xmlmirror
 - [ ] emu2
 - [ ] enblend-enfuse
-- [ ] evhz
-- [ ] faq
+- [x] evhz #546499
+- [x] faq #545796
 - [ ] fasd
-- [ ] fetchutils #541898
+- [x] fetchutils #541898
 - [ ] fffuu
 - [ ] filegive
 - [ ] finalfrontier
-- [ ] fish-irssi #543813
+- [x] fish-irssi #543813
 - [ ] footswitch
 - [ ] freqtweak
 - [ ] freshrss-extensions.demo
@@ -98,7 +98,7 @@
 - [ ] freshrss-extensions.unsafe-auto-login
 - [ ] freshrss-extensions.youtube
 - [ ] frogatto
-- [ ] fusee-nano #543810
+- [x] fusee-nano #543810
 - [ ] fverb
 - [ ] gambit-unstable
 - [ ] gawkextlib.abort
@@ -112,17 +112,17 @@
 - [ ] git-fire
 - [ ] gl-gsync-demo
 - [ ] glabels-qt
-- [ ] gladtex
+- [ ] gladtex #546510
 - [ ] glow-lang
 - [ ] glpaper
 - [ ] gmad
 - [ ] gnome-inform7
 - [ ] gnome2.gtkglext
-- [ ] gnomeExtensions.argos
-- [ ] gnomeExtensions.drop-down-terminal
-- [ ] gnomeExtensions.sound-output-device-chooser
-- [ ] gnomeExtensions.tilingnome
-- [ ] gnomeExtensions.window-corner-preview
+- [x] gnomeExtensions.argos
+- [x] gnomeExtensions.drop-down-terminal
+- [x] gnomeExtensions.sound-output-device-chooser
+- [x] gnomeExtensions.tilingnome
+- [x] gnomeExtensions.window-corner-preview
 - [ ] gnomecast
 - [ ] gnuradioPackages.fosphor
 - [ ] go-autoconfig
@@ -146,7 +146,7 @@
 - [ ] haskellPackages.leveldb-haskell
 - [ ] haste-server
 - [ ] hdl-dump
-- [ ] hecate
+- [x] hecate #545807
 - [ ] herqq
 - [ ] hidrd
 - [ ] hub
@@ -167,10 +167,10 @@
 - [ ] inkscape-extensions.applytransforms
 - [ ] inkscape-extensions.hexmap
 - [ ] intel-llvm
-- [ ] ion
+- [x] ion #545799
 - [ ] ioq3-scion
 - [ ] ios-safari-remote-debug
-- [ ] iotools
+- [x] iotools #545800
 - [ ] ipu6-camera-bins
 - [ ] ipu6-camera-hal
 - [ ] ivsc-firmware
@@ -178,24 +178,24 @@
 - [ ] jack-autoconnect
 - [ ] jack-passthrough
 - [ ] jackline
-- [ ] joomscan #543076
+- [x] joomscan #543076
 - [ ] jpegexiforient
 - [ ] jpegrescan
 - [ ] jtdx
-- [ ] justify
+- [x] justify #545792
 - [ ] kbdd
-- [ ] kepler
+- [ ] kepler #545801
 - [ ] kerf
 - [ ] keyleds
 - [ ] keym
-- [ ] kjv
+- [x] kjv #545782
 - [ ] kmscube
 - [ ] kxstitch
 - [ ] l2md
 - [ ] lalezar-fonts
 - [ ] lamb
 - [ ] ldapvi
-- [ ] lemon
+- [ ] lemon #546488
 - [ ] lemonade
 - [ ] lemonbar-xft
 - [ ] lerpn
@@ -211,7 +211,7 @@
 - [ ] libstrangle
 - [ ] libunity
 - [ ] libusbgx
-- [ ] libuvc
+- [x] libuvc
 - [ ] libvdwxc
 - [ ] libyafaray
 - [ ] libykclient
@@ -239,13 +239,13 @@
 - [ ] lua51Packages.luarocks-nix
 - [ ] lukesmithxyz-bible-kjv
 - [ ] lukesmithxyz-st
-- [ ] lwc
+- [x] lwc #545804
 - [ ] m2libc
 - [ ] manga-cli
 - [ ] mar1d
 - [ ] maxfetch
 - [ ] mdctags
-- [ ] meh
+- [x] meh #545788
 - [ ] meslo-lgs-nf
 - [ ] minc_widgets
 - [ ] mio
@@ -287,10 +287,10 @@
 - [ ] ocamlPackages.telegraml
 - [ ] odroid-xu3-bootloader
 - [ ] ofono-phonesim
-- [ ] oh-my-fish #543815
+- [x] oh-my-fish #543815
 - [ ] open-music-kontrollers.jit
 - [ ] openbrf
-- [ ] opensoldat
+- [ ] opensoldat #546497
 - [ ] openspin
 - [ ] openvpn_learnaddress
 - [ ] openwith
@@ -299,7 +299,7 @@
 - [ ] osx-cpu-temp
 - [ ] pan-bindings
 - [ ] paper-icon-theme
-- [ ] pdfmm
+- [x] pdfmm #545817
 - [ ] perf-tools
 - [ ] persistent-evdev
 - [ ] pflask
@@ -314,7 +314,7 @@
 - [ ] pms
 - [ ] pngloss
 - [ ] polar
-- [ ] ponysay
+- [x] ponysay #545791
 - [ ] postgresql14Packages.pg_similarity
 - [ ] potreeconverter
 - [ ] powerline-fonts
@@ -326,9 +326,9 @@
 - [ ] prosody-filer
 - [ ] ps2client
 - [ ] pulseaudio-dlna
-- [ ] pup
+- [x] pup #545795
 - [ ] python313Packages.aioprometheus
-- [ ] python313Packages.amqtt
+- [x] python313Packages.amqtt
 - [ ] python313Packages.changefinder #541974
 - [ ] python313Packages.clip
 - [ ] python313Packages.cocotb-bus
@@ -341,7 +341,7 @@
 - [ ] python313Packages.mkdocs-linkcheck
 - [ ] python313Packages.muscima
 - [ ] python313Packages.nix-kernel
-- [x] python313Packages.opensfm
+- [x] python313Packages.opensfm #436700
 - [ ] python313Packages.osc-diagram
 - [ ] python313Packages.oscscreen
 - [ ] python313Packages.ovmfvartool
@@ -377,7 +377,7 @@
 - [ ] quintom-cursor-theme
 - [ ] rapidsvn
 - [ ] raspberrypi-armstubs
-- [ ] rc
+- [x] rc #545794
 - [ ] recastnavigation
 - [ ] redprl
 - [ ] remarkable-mouse
@@ -391,7 +391,7 @@
 - [ ] rspamd-trainer
 - [ ] rxvt-unicode-plugins.perl
 - [ ] rxvt-unicode-plugins.theme-switch
-- [ ] salut #543822
+- [x] salut #543822
 - [ ] scala-runners
 - [ ] scion-apps
 - [ ] selectdefaultapplication
@@ -403,7 +403,7 @@
 - [ ] sixpair
 - [ ] sks
 - [ ] skydns
-- [ ] sleek-grub-theme #543819
+- [x] sleek-grub-theme #543819
 - [ ] smartcrop
 - [ ] smpeg2
 - [ ] smuxi
@@ -411,7 +411,7 @@
 - [ ] soil
 - [ ] sony-dump
 - [ ] soundfont-ydp-grand
-- [ ] sox #541888
+- [ ] sox
 - [ ] sparrow3d
 - [ ] spectre-cli
 - [ ] speedread
@@ -424,10 +424,10 @@
 - [ ] stw
 - [ ] surf-display
 - [ ] suwidgets
-- [ ] svgcleaner
+- [ ] svgcleaner #546503
 - [ ] swaycons
 - [ ] swaylock-fancy
-- [ ] sweet-nova
+- [ ] sweet-nova #546502
 - [ ] synapse-bt
 - [ ] syslinux
 - [ ] systrayhelper
@@ -436,7 +436,7 @@
 - [ ] tcping-go
 - [ ] tcptrack
 - [ ] teavpn2
-- [ ] tensor
+- [x] tensor #545816
 - [ ] termbench-pro
 - [ ] termdbms
 - [ ] tests.pkg-config.defaultPkgConfigPackages.SoapySDR
@@ -477,13 +477,13 @@
 - [ ] tmuxPlugins.vim-tmux-navigator
 - [ ] tmuxPlugins.weather
 - [ ] tmuxPlugins.yank
-- [ ] tpm-luks
+- [x] tpm-luks #545813
 - [ ] tracefilesim
 - [ ] trellis
 - [ ] tremor
 - [ ] trezor-udev-rules
 - [ ] tt-rss-plugin-auth-ldap
-- [ ] tty-clock #543806
+- [x] tty-clock #543806
 - [ ] tunnelto
 - [ ] twilight
 - [ ] twinkle
@@ -554,9 +554,9 @@
 - [ ] weylus
 - [ ] wgautomesh
 - [ ] wireworld
-- [ ] wlay #542382
+- [x] wlay #542382
 - [ ] wlprop
-- [ ] wlr-protocols
+- [x] wlr-protocols #544809
 - [ ] wmderland
 - [ ] wmderlandc
 - [ ] workstyle
@@ -566,8 +566,8 @@
 - [ ] xfs-undelete
 - [ ] xhosts
 - [ ] xidel
-- [ ] xmonad_log_applet
-- [ ] xss-lock
+- [ ] xmonad_log_applet #546494
+- [ ] xss-lock #546507
 - [ ] xygrib
 - [ ] yafetch
 - [ ] yersinia
