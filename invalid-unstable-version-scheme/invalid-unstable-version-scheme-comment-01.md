@@ -11,14 +11,14 @@
 - [x] aritim-dark #541971
 - [x] armitage #541973
 - [x] as-tree #542399
-- [ ] ath9k-htc-blobless-firmware-unstable #546851
-- [ ] ayu-theme-gtk #542402
+- [x] ath9k-htc-blobless-firmware-unstable #546851
+- [x] ayu-theme-gtk
 - [ ] azure-sdk-for-cpp.c-shared-utility #546852
-- [ ] basiliskii #546855
+- [x] basiliskii #546855
 - [ ] beam27Packages.webdriver #546857
 - [x] bean-add #542405
 - [x] bfetch #541865
-- [ ] bfscripts #546858
+- [x] bfscripts #546858
 - [ ] bicgl #542408
 - [x] bioawk #546472
 - [ ] blobs_gg #546870
@@ -37,24 +37,24 @@
 - [ ] celeste-classic
 - [ ] chez-racket #546879
 - [x] clipnotify #542744
-- [ ] comfortaa #546831
+- [x] comfortaa #546831
 - [ ] conglomerate #546880
 - [x] cooper-hewitt #546485
-- [ ] coreboot-configurator #546884
+- [x] coreboot-configurator #546884
 - [x] courier-prime #546504
-- [ ] crackle #546473
+- [x] crackle #546473
 - [ ] crimson-pro #546887
 - [ ] crowbar #546888
-- [ ] ctx #546892
+- [x] ctx #546892
 - [x] culvert #546895
 - [ ] cutterPlugins.sigdb #546896
 - [x] cwiid
 - [ ] cyclone #546899
 - [ ] dab_lib #546905
-- [ ] damon #546908
+- [x] damon #546908
 - [ ] dasher #546910
-- [ ] datalad-gooey #546911
-- [ ] dbus-test-runner #546912
+- [x] datalad-gooey #546911
+- [x] dbus-test-runner #546912
 - [ ] deadbeefPlugins.lyricbar #546913
 - [ ] deadbeefPlugins.musical-spectrum #546914
 - [ ] deadbeefPlugins.playlist-manager #546916
@@ -63,26 +63,26 @@
 - [ ] devd #546919
 - [x] devmem2
 - [x] dia #545336
-- [ ] dialogbox #546920
-- [ ] diopser
+- [x] dialogbox #546920
+- [x] diopser #546922
 - [ ] disk_indicator #546923
 - [ ] dmsdos #546924
-- [ ] docker-gc
-- [ ] dockfmt #546927
-- [ ] dockstarter #546928
-- [ ] doom-bcc #546929
+- [ ] docker-gc #546926
+- [x] dockfmt #546927
+- [x] dockstarter #546928
+- [x] doom-bcc #546929
 - [x] drone-runner-exec #543796
 - [x] drone-runner-ssh #543800
-- [ ] duckling-proxy #546931
-- [ ] dvtm-unstable #546933
-- [ ] dwt1-shell-color-scripts #546936
-- [ ] edac-utils
-- [ ] edit
-- [ ] ekam
-- [ ] email
-- [ ] emscriptenPackages.xmlmirror
-- [ ] emu2
-- [ ] enblend-enfuse
+- [x] duckling-proxy #546931
+- [x] dvtm-unstable #546933
+- [x] dwt1-shell-color-scripts #546936
+- [ ] edac-utils #547233
+- [ ] edit #547240
+- [ ] ekam #547251
+- [ ] email #547249
+- [ ] emscriptenPackages.xmlmirror #547253
+- [ ] emu2 #547256
+- [ ] enblend-enfuse #547260
 - [x] evhz #546499
 - [x] faq #545796
 - [ ] fasd
@@ -228,7 +228,7 @@
 - [ ] linuxKernel.packages.linux_5_10.mba6x_bl
 - [ ] linuxKernel.packages.linux_5_10.nxp-pn5xx
 - [ ] linuxKernel.packages.linux_5_10.rtw89
-- [ ] linuxKernel.packages.linux_5_10.sheep-net #546855
+- [x] linuxKernel.packages.linux_5_10.sheep-net #546855
 - [ ] linuxKernel.packages.linux_5_10.vendor-reset
 - [x] linuxKernel.packages.linux_5_10.zenpower
 - [ ] linx-server
@@ -274,7 +274,7 @@
 - [ ] nix-tour
 - [ ] non
 - [ ] nsf-ordlista
-- [ ] numix-gtk-theme
+- [x] numix-gtk-theme
 - [ ] numworks-udev-rules
 - [ ] nvibrant
 - [ ] obconf
@@ -327,7 +327,7 @@
 - [ ] ps2client
 - [ ] pulseaudio-dlna
 - [x] pup #545795
-- [ ] python313Packages.aioprometheus
+- [ ] python313Packages.aioprometheus #546859
 - [x] python313Packages.amqtt
 - [ ] python313Packages.changefinder #541974
 - [ ] python313Packages.clip
@@ -359,7 +359,7 @@
 - [ ] python313Packages.radicale-infcloud
 - [ ] python313Packages.rumps
 - [ ] python313Packages.serializable
-- [ ] python313Packages.soapysdr
+- [ ] python313Packages.soapysdr #546964
 - [ ] python313Packages.sphinx-fortran
 - [ ] python313Packages.tree-sitter-grammars.tree-sitter-adl
 - [ ] python313Packages.typechecks
@@ -398,7 +398,7 @@
 - [ ] sgp4
 - [ ] shellnoob
 - [ ] shrikhand
-- [ ] sierra-gtk-theme
+- [x] sierra-gtk-theme
 - [ ] sigutils
 - [ ] sixpair
 - [ ] sks
@@ -439,7 +439,7 @@
 - [x] tensor #545816
 - [ ] termbench-pro
 - [ ] termdbms
-- [ ] tests.pkg-config.defaultPkgConfigPackages.SoapySDR
+- [ ] tests.pkg-config.defaultPkgConfigPackages.SoapySDR #546964
 - [ ] textql
 - [ ] times-newer-roman
 - [ ] tinyalsa
