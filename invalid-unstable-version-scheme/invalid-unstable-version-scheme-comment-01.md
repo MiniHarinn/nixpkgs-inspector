@@ -15,7 +15,7 @@
 - [x] ayu-theme-gtk
 - [ ] azure-sdk-for-cpp.c-shared-utility #546852
 - [x] basiliskii #546855
-- [ ] beam27Packages.webdriver #546857
+- [x] beam27Packages.webdriver
 - [x] bean-add #542405
 - [x] bfetch #541865
 - [x] bfscripts #546858
@@ -25,7 +25,7 @@
 - [x] bookworm #542412
 - [x] bootil #546476
 - [x] bosun #542416
-- [ ] brise #546872
+- [x] brise #546872
 - [x] bsp-layout #542417
 - [x] buck2
 - [ ] bwa-mem2 #546875
@@ -33,23 +33,23 @@
 - [x] cambrinary #542421
 - [ ] carps-cups #546820
 - [x] cc-token #542743
-- [ ] ccemux #546877
+- [x] ccemux #546877
 - [ ] celeste-classic
-- [ ] chez-racket #546879
+- [x] chez-racket #546879
 - [x] clipnotify #542744
 - [x] comfortaa #546831
-- [ ] conglomerate #546880
+- [x] conglomerate #546880
 - [x] cooper-hewitt #546485
 - [x] coreboot-configurator #546884
 - [x] courier-prime #546504
 - [x] crackle #546473
 - [ ] crimson-pro #546887
-- [ ] crowbar #546888
+- [x] crowbar #546888
 - [x] ctx #546892
 - [x] culvert #546895
 - [ ] cutterPlugins.sigdb #546896
 - [x] cwiid
-- [ ] cyclone #546899
+- [x] cyclone #546899
 - [ ] dab_lib #546905
 - [x] damon #546908
 - [ ] dasher #546910
@@ -58,15 +58,15 @@
 - [ ] deadbeefPlugins.lyricbar #546913
 - [ ] deadbeefPlugins.musical-spectrum #546914
 - [ ] deadbeefPlugins.playlist-manager #546916
-- [ ] decoder #546917
-- [ ] dee #546918
-- [ ] devd #546919
+- [x] decoder #546917
+- [x] dee #546918
+- [x] devd #546919
 - [x] devmem2
 - [x] dia #545336
 - [x] dialogbox #546920
 - [x] diopser #546922
 - [ ] disk_indicator #546923
-- [ ] dmsdos #546924
+- [x] dmsdos #546924
 - [ ] docker-gc #546926
 - [x] dockfmt #546927
 - [x] dockstarter #546928
@@ -76,13 +76,13 @@
 - [x] duckling-proxy #546931
 - [x] dvtm-unstable #546933
 - [x] dwt1-shell-color-scripts #546936
-- [ ] edac-utils #547233
-- [ ] edit #547240
+- [x] edac-utils #547233
+- [x] edit #547240
 - [ ] ekam #547251
 - [ ] email #547249
-- [ ] emscriptenPackages.xmlmirror #547253
+- [x] emscriptenPackages.xmlmirror #547253
 - [ ] emu2 #547256
-- [ ] enblend-enfuse #547260
+- [x] enblend-enfuse #547260
 - [x] evhz #546499
 - [x] faq #545796
 - [ ] fasd
@@ -112,7 +112,7 @@
 - [ ] git-fire
 - [ ] gl-gsync-demo
 - [ ] glabels-qt
-- [ ] gladtex #546510
+- [x] gladtex #546510
 - [ ] glow-lang
 - [ ] glpaper
 - [ ] gmad
@@ -166,7 +166,7 @@
 - [ ] indradb-client
 - [ ] inkscape-extensions.applytransforms
 - [ ] inkscape-extensions.hexmap
-- [ ] intel-llvm
+- [x] intel-llvm
 - [x] ion #545799
 - [ ] ioq3-scion
 - [ ] ios-safari-remote-debug
@@ -184,7 +184,7 @@
 - [ ] jtdx
 - [x] justify #545792
 - [ ] kbdd
-- [ ] kepler #545801
+- [x] kepler
 - [ ] kerf
 - [ ] keyleds
 - [ ] keym
@@ -195,7 +195,7 @@
 - [ ] lalezar-fonts
 - [ ] lamb
 - [ ] ldapvi
-- [ ] lemon #546488
+- [x] lemon #546488
 - [ ] lemonade
 - [ ] lemonbar-xft
 - [ ] lerpn
@@ -359,7 +359,7 @@
 - [ ] python313Packages.radicale-infcloud
 - [ ] python313Packages.rumps
 - [ ] python313Packages.serializable
-- [ ] python313Packages.soapysdr #546964
+- [x] python313Packages.soapysdr #546964
 - [ ] python313Packages.sphinx-fortran
 - [ ] python313Packages.tree-sitter-grammars.tree-sitter-adl
 - [ ] python313Packages.typechecks
@@ -411,7 +411,7 @@
 - [ ] soil
 - [ ] sony-dump
 - [ ] soundfont-ydp-grand
-- [ ] sox
+- [x] sox #541888
 - [ ] sparrow3d
 - [ ] spectre-cli
 - [ ] speedread
@@ -439,7 +439,7 @@
 - [x] tensor #545816
 - [ ] termbench-pro
 - [ ] termdbms
-- [ ] tests.pkg-config.defaultPkgConfigPackages.SoapySDR #546964
+- [x] tests.pkg-config.defaultPkgConfigPackages.SoapySDR #546964
 - [ ] textql
 - [ ] times-newer-roman
 - [ ] tinyalsa
@@ -491,7 +491,7 @@
 - [ ] u9fs
 - [ ] ubus
 - [ ] ucg
-- [ ] uci
+- [x] uci #547512
 - [ ] uclient
 - [ ] udebug
 - [ ] udis86
