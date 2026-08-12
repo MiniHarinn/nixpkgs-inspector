@@ -5,7 +5,7 @@
 - [x] ananicy #541881
 - [x] apacheHttpdPackages.mod_mbtiles #546849
 - [x] apg #541905
-- [ ] arc_unpacker #546836
+- [x] arc_unpacker #546836
 - [ ] ardopc #546478
 - [x] arftracksat #541972
 - [x] aritim-dark #541971
@@ -28,7 +28,7 @@
 - [x] brise #546872
 - [x] bsp-layout #542417
 - [x] buck2
-- [ ] bwa-mem2 #546875
+- [x] bwa-mem2 #546875
 - [ ] byzanz #546483
 - [x] cambrinary #542421
 - [ ] carps-cups #546820
@@ -78,7 +78,7 @@
 - [x] dwt1-shell-color-scripts #546936
 - [x] edac-utils #547233
 - [x] edit #547240
-- [ ] ekam #547251
+- [x] ekam #547251
 - [ ] email #547249
 - [x] emscriptenPackages.xmlmirror #547253
 - [ ] emu2 #547256
@@ -117,7 +117,7 @@
 - [ ] glpaper
 - [ ] gmad
 - [ ] gnome-inform7
-- [ ] gnome2.gtkglext
+- [x] gnome2.gtkglext
 - [x] gnomeExtensions.argos
 - [x] gnomeExtensions.drop-down-terminal
 - [x] gnomeExtensions.sound-output-device-chooser
@@ -176,7 +176,7 @@
 - [ ] ivsc-firmware
 - [ ] jabcode
 - [ ] jack-autoconnect
-- [ ] jack-passthrough
+- [x] jack-passthrough #537629
 - [ ] jackline
 - [x] joomscan #543076
 - [ ] jpegexiforient
@@ -273,7 +273,7 @@
 - [ ] nim-atlas
 - [ ] nix-tour
 - [ ] non
-- [ ] nsf-ordlista
+- [x] nsf-ordlista
 - [x] numix-gtk-theme
 - [ ] numworks-udev-rules
 - [ ] nvibrant
@@ -330,7 +330,7 @@
 - [ ] python313Packages.aioprometheus #546859
 - [x] python313Packages.amqtt
 - [ ] python313Packages.changefinder #541974
-- [ ] python313Packages.clip
+- [x] python313Packages.clip #550017
 - [ ] python313Packages.cocotb-bus
 - [x] python313Packages.contexttimer #541981
 - [ ] python313Packages.dasbus
@@ -363,7 +363,7 @@
 - [ ] python313Packages.sphinx-fortran
 - [ ] python313Packages.tree-sitter-grammars.tree-sitter-adl
 - [ ] python313Packages.typechecks
-- [ ] python313Packages.vqgan-jax
+- [ ] python313Packages.vqgan-jax #550012
 - [x] python313Packages.yaswfp #543069
 - [ ] qboot
 - [ ] qdjango
@@ -409,7 +409,7 @@
 - [ ] smuxi
 - [ ] snet
 - [ ] soil
-- [ ] sony-dump
+- [x] sony-dump
 - [ ] soundfont-ydp-grand
 - [x] sox #541888
 - [ ] sparrow3d
@@ -566,7 +566,7 @@
 - [ ] xfs-undelete
 - [ ] xhosts
 - [ ] xidel
-- [ ] xmonad_log_applet #546494
+- [x] xmonad_log_applet #546494
 - [x] xss-lock #546507
 - [ ] xygrib
 - [ ] yafetch
