@@ -93,11 +93,11 @@
 - [x] fish-irssi #543813
 - [x] footswitch #553124
 - [x] freqtweak #553131
-- [ ] freshrss-extensions.demo #553140
-- [ ] freshrss-extensions.title-wrap #553140
-- [ ] freshrss-extensions.unsafe-auto-login #553140
-- [ ] freshrss-extensions.youtube #553140
-- [ ] frogatto
+- [x] freshrss-extensions.demo #553140
+- [x] freshrss-extensions.title-wrap #553140
+- [x] freshrss-extensions.unsafe-auto-login #553140
+- [x] freshrss-extensions.youtube #553140
+- [ ] frogatto #555346
 - [x] fusee-nano #543810
 - [x] fverb #553133
 - [ ] gambit-unstable #553149
@@ -111,7 +111,7 @@
 - [x] git-appraise #553168
 - [x] git-fire #553172
 - [x] gl-gsync-demo #555217
-- [ ] glabels-qt
+- [ ] glabels-qt #555360
 - [x] gladtex #546510
 - [ ] glow-lang
 - [ ] glpaper
@@ -159,7 +159,7 @@
 - [ ] i3lock-fancy-rapid
 - [ ] iannix
 - [ ] ibus-engines.cangjie
-- [ ] ifupdown-ng
+- [ ] ifupdown-ng #536753
 - [ ] imnodes
 - [ ] in-formant
 - [ ] inav-blackbox-tools
@@ -168,7 +168,7 @@
 - [ ] inkscape-extensions.hexmap
 - [x] intel-llvm
 - [x] ion #545799
-- [ ] ioq3-scion
+- [ ] ioq3-scion #555343
 - [ ] ios-safari-remote-debug
 - [x] iotools #545800
 - [ ] ipu6-camera-bins
@@ -569,7 +569,7 @@
 - [x] xmonad_log_applet #546494
 - [x] xss-lock #546507
 - [ ] xygrib
-- [ ] yafetch #555203
+- [x] yafetch #555203
 - [ ] yersinia
 - [ ] zabbixctl
 - [x] zenmonitor #541850
