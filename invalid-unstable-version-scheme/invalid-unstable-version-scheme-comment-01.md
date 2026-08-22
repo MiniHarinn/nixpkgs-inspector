@@ -6,7 +6,7 @@
 - [x] apacheHttpdPackages.mod_mbtiles #546849
 - [x] apg #541905
 - [x] arc_unpacker #546836
-- [ ] ardopc #546478
+- [x] ardopc #546478
 - [x] arftracksat #541972
 - [x] aritim-dark #541971
 - [x] armitage #541973
@@ -19,9 +19,9 @@
 - [x] bean-add #542405
 - [x] bfetch #541865
 - [x] bfscripts #546858
-- [ ] bicgl #542408
+- [x] bicgl #542408
 - [x] bioawk #546472
-- [ ] blobs_gg #546870
+- [x] blobs_gg #546870
 - [x] bookworm #542412
 - [x] bootil #546476
 - [x] bosun #542416
@@ -29,9 +29,9 @@
 - [x] bsp-layout #542417
 - [x] buck2
 - [x] bwa-mem2 #546875
-- [ ] byzanz #546483
+- [x] byzanz #546483
 - [x] cambrinary #542421
-- [ ] carps-cups #546820
+- [x] carps-cups #546820
 - [x] cc-token #542743
 - [x] ccemux #546877
 - [ ] celeste-classic
@@ -43,21 +43,21 @@
 - [x] coreboot-configurator #546884
 - [x] courier-prime #546504
 - [x] crackle #546473
-- [ ] crimson-pro #546887
+- [x] crimson-pro #546887
 - [x] crowbar #546888
 - [x] ctx #546892
 - [x] culvert #546895
-- [ ] cutterPlugins.sigdb #546896
+- [x] cutterPlugins.sigdb #546896
 - [x] cwiid
 - [x] cyclone #546899
-- [ ] dab_lib #546905
+- [x] dab_lib #546905
 - [x] damon #546908
-- [ ] dasher #546910
+- [x] dasher #546910
 - [x] datalad-gooey #546911
 - [x] dbus-test-runner #546912
-- [ ] deadbeefPlugins.lyricbar #546913
-- [ ] deadbeefPlugins.musical-spectrum #546914
-- [ ] deadbeefPlugins.playlist-manager #546916
+- [x] deadbeefPlugins.lyricbar #546913
+- [x] deadbeefPlugins.musical-spectrum #546914
+- [x] deadbeefPlugins.playlist-manager #546916
 - [x] decoder #546917
 - [x] dee #546918
 - [x] devd #546919
@@ -65,9 +65,9 @@
 - [x] dia #545336
 - [x] dialogbox #546920
 - [x] diopser #546922
-- [ ] disk_indicator #546923
+- [x] disk_indicator #546923
 - [x] dmsdos #546924
-- [ ] docker-gc #546926
+- [x] docker-gc #546926
 - [x] dockfmt #546927
 - [x] dockstarter #546928
 - [x] doom-bcc #546929
@@ -81,36 +81,36 @@
 - [x] ekam #547251
 - [ ] email #547249
 - [x] emscriptenPackages.xmlmirror #547253
-- [ ] emu2 #547256
+- [x] emu2 #547256
 - [x] enblend-enfuse #547260
 - [x] evhz #546499
 - [x] faq #545796
-- [ ] fasd
+- [x] fasd #553114
 - [x] fetchutils #541898
-- [ ] fffuu
-- [ ] filegive
-- [ ] finalfrontier
+- [x] fffuu #553117
+- [x] filegive #553118
+- [x] finalfrontier #553121
 - [x] fish-irssi #543813
-- [ ] footswitch
-- [ ] freqtweak
-- [ ] freshrss-extensions.demo
-- [ ] freshrss-extensions.title-wrap
-- [ ] freshrss-extensions.unsafe-auto-login
-- [ ] freshrss-extensions.youtube
+- [x] footswitch #553124
+- [x] freqtweak #553131
+- [ ] freshrss-extensions.demo #553140
+- [ ] freshrss-extensions.title-wrap #553140
+- [ ] freshrss-extensions.unsafe-auto-login #553140
+- [ ] freshrss-extensions.youtube #553140
 - [ ] frogatto
 - [x] fusee-nano #543810
-- [ ] fverb
-- [ ] gambit-unstable
-- [ ] gawkextlib.abort
-- [ ] gbforth
-- [ ] gerbil-unstable
-- [ ] ghidra-extensions.ghidraninja-ghidra-scripts
+- [x] fverb #553133
+- [ ] gambit-unstable #553149
+- [ ] gawkextlib.abort #553154
+- [x] gbforth #553157
+- [x] gerbil-unstable #553162
+- [ ] ghidra-extensions.ghidraninja-ghidra-scripts #553164
 - [ ] gimp2Plugins.farbfeld
 - [ ] gimp2Plugins.gimplensfun
 - [ ] gimp2Plugins.texturize
-- [ ] git-appraise
-- [ ] git-fire
-- [ ] gl-gsync-demo
+- [x] git-appraise #553168
+- [x] git-fire #553172
+- [x] gl-gsync-demo #555217
 - [ ] glabels-qt
 - [x] gladtex #546510
 - [ ] glow-lang
@@ -237,8 +237,8 @@
 - [ ] lua51Packages.ljsyscall
 - [ ] lua51Packages.lua-pam
 - [ ] lua51Packages.luarocks-nix
-- [ ] lukesmithxyz-bible-kjv
-- [ ] lukesmithxyz-st
+- [x] lukesmithxyz-bible-kjv #554858
+- [ ] lukesmithxyz-st #554857
 - [x] lwc #545804
 - [ ] m2libc
 - [ ] manga-cli
@@ -270,7 +270,7 @@
 - [ ] ncdns
 - [ ] networkd-notify
 - [ ] ngadmin
-- [ ] nim-atlas
+- [x] nim-atlas
 - [ ] nix-tour
 - [ ] non
 - [x] nsf-ordlista
@@ -290,10 +290,10 @@
 - [x] oh-my-fish #543815
 - [ ] open-music-kontrollers.jit
 - [ ] openbrf
-- [ ] opensoldat #546497
+- [x] opensoldat #546497
 - [ ] openspin
 - [ ] openvpn_learnaddress
-- [ ] openwith
+- [x] openwith
 - [ ] opkg-utils
 - [ ] orca-c
 - [ ] osx-cpu-temp
@@ -329,7 +329,7 @@
 - [x] pup #545795
 - [ ] python313Packages.aioprometheus #546859
 - [x] python313Packages.amqtt
-- [ ] python313Packages.changefinder #541974
+- [x] python313Packages.changefinder #541974
 - [x] python313Packages.clip #550017
 - [ ] python313Packages.cocotb-bus
 - [x] python313Packages.contexttimer #541981
@@ -363,7 +363,7 @@
 - [ ] python313Packages.sphinx-fortran
 - [ ] python313Packages.tree-sitter-grammars.tree-sitter-adl
 - [ ] python313Packages.typechecks
-- [ ] python313Packages.vqgan-jax #550012
+- [x] python313Packages.vqgan-jax #550012
 - [x] python313Packages.yaswfp #543069
 - [ ] qboot
 - [ ] qdjango
@@ -373,7 +373,7 @@
 - [ ] qscreenshot
 - [ ] qt-box-editor
 - [ ] quake3hires
-- [ ] quark
+- [x] quark #555199
 - [ ] quintom-cursor-theme
 - [ ] rapidsvn
 - [ ] raspberrypi-armstubs
@@ -393,7 +393,7 @@
 - [ ] rxvt-unicode-plugins.theme-switch
 - [x] salut #543822
 - [ ] scala-runners
-- [ ] scion-apps
+- [x] scion-apps #552735
 - [ ] selectdefaultapplication
 - [ ] sgp4
 - [ ] shellnoob
@@ -427,7 +427,7 @@
 - [ ] svgcleaner #546503
 - [ ] swaycons
 - [ ] swaylock-fancy
-- [ ] sweet-nova #546502
+- [x] sweet-nova #546502
 - [ ] synapse-bt
 - [ ] syslinux
 - [ ] systrayhelper
@@ -494,7 +494,7 @@
 - [x] uci #547512
 - [ ] uclient
 - [ ] udebug
-- [ ] udis86
+- [x] udis86
 - [ ] udunits
 - [ ] uhub
 - [ ] ultrablue-server
@@ -564,12 +564,12 @@
 - [ ] wwcd
 - [ ] xf86-video-intel
 - [ ] xfs-undelete
-- [ ] xhosts
+- [x] xhosts #554852
 - [ ] xidel
 - [x] xmonad_log_applet #546494
 - [x] xss-lock #546507
 - [ ] xygrib
-- [ ] yafetch
+- [ ] yafetch #555203
 - [ ] yersinia
 - [ ] zabbixctl
 - [x] zenmonitor #541850
