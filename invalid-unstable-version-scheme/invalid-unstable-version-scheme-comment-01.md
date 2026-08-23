@@ -104,7 +104,7 @@
 - [ ] gawkextlib.abort #553154
 - [x] gbforth #553157
 - [x] gerbil-unstable #553162
-- [ ] ghidra-extensions.ghidraninja-ghidra-scripts #553164
+- [x] ghidra-extensions.ghidraninja-ghidra-scripts #553164
 - [ ] gimp2Plugins.farbfeld
 - [ ] gimp2Plugins.gimplensfun
 - [ ] gimp2Plugins.texturize
@@ -113,33 +113,33 @@
 - [x] gl-gsync-demo #555217
 - [ ] glabels-qt #555360
 - [x] gladtex #546510
-- [ ] glow-lang
-- [ ] glpaper
+- [x] glow-lang #555540
+- [ ] glpaper #555541
 - [ ] gmad
-- [ ] gnome-inform7
+- [ ] gnome-inform7 #555545
 - [x] gnome2.gtkglext
 - [x] gnomeExtensions.argos
 - [x] gnomeExtensions.drop-down-terminal
 - [x] gnomeExtensions.sound-output-device-chooser
 - [x] gnomeExtensions.tilingnome
 - [x] gnomeExtensions.window-corner-preview
-- [ ] gnomecast
-- [ ] gnuradioPackages.fosphor
-- [ ] go-autoconfig
-- [ ] go-bindata-assetfs
-- [ ] go-check
-- [ ] go-neb
+- [ ] gnomecast #555547
+- [ ] gnuradioPackages.fosphor #555550
+- [x] go-autoconfig #555553
+- [x] go-bindata-assetfs #555554
+- [x] go-check #555555
+- [ ] go-neb #555559
 - [ ] go-outline
-- [ ] go-sct
-- [ ] golint
-- [ ] goofys
-- [ ] gpm
-- [ ] grpc-health-check
-- [ ] gsmlib
-- [ ] gst_all_1.icamerasrc-ipu6
-- [ ] guile-commonmark
-- [ ] guile-xcb
-- [ ] gx-go
+- [x] go-sct #555568
+- [x] golint #555569
+- [x] goofys #555572
+- [ ] gpm #555577
+- [x] grpc-health-check #555580
+- [x] gsmlib #555582
+- [x] gst_all_1.icamerasrc-ipu6 #555584
+- [ ] guile-commonmark #555587
+- [ ] guile-xcb #555591
+- [ ] gx-go #555593
 - [ ] handlr
 - [ ] hash_extender
 - [ ] haskellPackages.hoogle
@@ -168,7 +168,7 @@
 - [ ] inkscape-extensions.hexmap
 - [x] intel-llvm
 - [x] ion #545799
-- [ ] ioq3-scion #555343
+- [x] ioq3-scion #555343
 - [ ] ios-safari-remote-debug
 - [x] iotools #545800
 - [ ] ipu6-camera-bins
