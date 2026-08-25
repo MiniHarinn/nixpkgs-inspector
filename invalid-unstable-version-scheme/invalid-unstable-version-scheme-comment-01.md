@@ -97,7 +97,7 @@
 - [x] freshrss-extensions.title-wrap #553140
 - [x] freshrss-extensions.unsafe-auto-login #553140
 - [x] freshrss-extensions.youtube #553140
-- [ ] frogatto #555346
+- [x] frogatto #555346
 - [x] fusee-nano #543810
 - [x] fverb #553133
 - [ ] gambit-unstable #553149
@@ -129,7 +129,7 @@
 - [x] go-bindata-assetfs #555554
 - [x] go-check #555555
 - [ ] go-neb #555559
-- [ ] go-outline
+- [x] go-outline #555562
 - [x] go-sct #555568
 - [x] golint #555569
 - [x] goofys #555572
@@ -139,7 +139,7 @@
 - [x] gst_all_1.icamerasrc-ipu6 #555584
 - [ ] guile-commonmark #555587
 - [ ] guile-xcb #555591
-- [ ] gx-go #555593
+- [x] gx-go #555593
 - [ ] handlr
 - [ ] hash_extender
 - [ ] haskellPackages.hoogle
@@ -428,14 +428,14 @@
 - [ ] swaycons
 - [ ] swaylock-fancy
 - [x] sweet-nova #546502
-- [ ] synapse-bt
-- [ ] syslinux
-- [ ] systrayhelper
-- [ ] tai-ahom
-- [ ] tamgamp-lv2
-- [ ] tcping-go
-- [ ] tcptrack
-- [ ] teavpn2
+- [ ] synapse-bt #556397
+- [ ] syslinux #556396
+- [ ] systrayhelper #556399
+- [ ] tai-ahom #556400
+- [ ] tamgamp-lv2 #556402
+- [ ] tcping-go #556404
+- [ ] tcptrack #556405
+- [ ] teavpn2 #556406
 - [x] tensor #545816
 - [ ] termbench-pro
 - [ ] termdbms
