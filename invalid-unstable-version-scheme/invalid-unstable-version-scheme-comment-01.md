@@ -114,7 +114,7 @@
 - [ ] glabels-qt #555360
 - [x] gladtex #546510
 - [x] glow-lang #555540
-- [ ] glpaper #555541
+- [x] glpaper #555541
 - [ ] gmad
 - [ ] gnome-inform7 #555545
 - [x] gnome2.gtkglext
@@ -138,7 +138,7 @@
 - [x] gsmlib #555582
 - [x] gst_all_1.icamerasrc-ipu6 #555584
 - [ ] guile-commonmark #555587
-- [ ] guile-xcb #555591
+- [x] guile-xcb #555591
 - [x] gx-go #555593
 - [ ] handlr
 - [ ] hash_extender
@@ -327,7 +327,7 @@
 - [ ] ps2client
 - [ ] pulseaudio-dlna
 - [x] pup #545795
-- [ ] python313Packages.aioprometheus #546859
+- [x] python313Packages.aioprometheus #546859
 - [x] python313Packages.amqtt
 - [x] python313Packages.changefinder #541974
 - [x] python313Packages.clip #550017
@@ -383,8 +383,8 @@
 - [ ] remarkable-mouse
 - [ ] remontoire
 - [ ] reredirect
-- [ ] rkdeveloptool
-- [ ] rkdeveloptool-pine64
+- [ ] rkdeveloptool #462998
+- [ ] rkdeveloptool-pine64 #462998
 - [ ] rocmPackages.mscclpp
 - [ ] rootbar
 - [ ] rose-pine-icon-theme
@@ -428,21 +428,21 @@
 - [ ] swaycons
 - [ ] swaylock-fancy
 - [x] sweet-nova #546502
-- [ ] synapse-bt #556397
+- [x] synapse-bt #556397
 - [ ] syslinux #556396
-- [ ] systrayhelper #556399
-- [ ] tai-ahom #556400
-- [ ] tamgamp-lv2 #556402
-- [ ] tcping-go #556404
-- [ ] tcptrack #556405
-- [ ] teavpn2 #556406
+- [x] systrayhelper #556399
+- [x] tai-ahom #556400
+- [x] tamgamp-lv2 #556402
+- [x] tcping-go #556404
+- [x] tcptrack #556405
+- [x] teavpn2 #556406
 - [x] tensor #545816
 - [ ] termbench-pro
 - [ ] termdbms
 - [x] tests.pkg-config.defaultPkgConfigPackages.SoapySDR #546964
 - [ ] textql
 - [ ] times-newer-roman
-- [ ] tinyalsa
+- [x] tinyalsa
 - [ ] tmate
 - [ ] tmate-ssh-server
 - [ ] tmux-cssh
@@ -480,7 +480,7 @@
 - [x] tpm-luks #545813
 - [ ] tracefilesim
 - [ ] trellis
-- [ ] tremor
+- [x] tremor
 - [ ] trezor-udev-rules
 - [ ] tt-rss-plugin-auth-ldap
 - [x] tty-clock #543806
@@ -489,7 +489,7 @@
 - [ ] twinkle
 - [ ] u001-font
 - [ ] u9fs
-- [ ] ubus
+- [x] ubus
 - [ ] ucg
 - [x] uci #547512
 - [ ] uclient
@@ -547,7 +547,7 @@
 - [ ] vobsub2srt
 - [ ] vpnc-scripts
 - [ ] vsc-leetcode-cli
-- [ ] waylogout
+- [ ] waylogout #462998
 - [ ] webdav-server-rs
 - [ ] weechatScripts.weechat-matrix-bridge
 - [ ] wemux
@@ -557,13 +557,13 @@
 - [x] wlay #542382
 - [ ] wlprop
 - [x] wlr-protocols #544809
-- [ ] wmderland
-- [ ] wmderlandc
-- [ ] workstyle
-- [ ] wvdial
-- [ ] wwcd
+- [ ] wmderland #557775
+- [ ] wmderlandc #557774
+- [ ] workstyle #557773
+- [ ] wvdial #557772
+- [ ] wwcd #462998
 - [ ] xf86-video-intel
-- [ ] xfs-undelete
+- [ ] xfs-undelete #557769
 - [x] xhosts #554852
 - [ ] xidel
 - [x] xmonad_log_applet #546494
@@ -575,7 +575,7 @@
 - [x] zenmonitor #541850
 - [ ] zeyple
 - [ ] zfsbackup
-- [ ] zi
-- [ ] zotero-translation-server
+- [ ] zi #557778
+- [ ] zotero-translation-server #557777
 - [ ] zpool-iostat-viz
-- [ ] zsa-udev-rules
+- [ ] zsa-udev-rules #557779
