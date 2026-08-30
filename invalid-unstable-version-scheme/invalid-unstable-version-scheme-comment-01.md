@@ -123,7 +123,7 @@
 - [x] gnomeExtensions.sound-output-device-chooser
 - [x] gnomeExtensions.tilingnome
 - [x] gnomeExtensions.window-corner-preview
-- [ ] gnomecast #555547
+- [x] gnomecast #555547
 - [ ] gnuradioPackages.fosphor #555550
 - [x] go-autoconfig #555553
 - [x] go-bindata-assetfs #555554
@@ -137,7 +137,7 @@
 - [x] grpc-health-check #555580
 - [x] gsmlib #555582
 - [x] gst_all_1.icamerasrc-ipu6 #555584
-- [ ] guile-commonmark #555587
+- [x] guile-commonmark #555587
 - [x] guile-xcb #555591
 - [x] gx-go #555593
 - [ ] handlr
@@ -446,37 +446,37 @@
 - [ ] tmate
 - [ ] tmate-ssh-server
 - [ ] tmux-cssh
-- [ ] tmuxPlugins.better-mouse-mode
-- [ ] tmuxPlugins.continuum
-- [ ] tmuxPlugins.copycat
-- [ ] tmuxPlugins.cpu
-- [ ] tmuxPlugins.fpp
-- [ ] tmuxPlugins.fuzzback
-- [ ] tmuxPlugins.fzf-tmux-url
-- [ ] tmuxPlugins.logging
-- [ ] tmuxPlugins.maildir-counter
-- [ ] tmuxPlugins.mode-indicator
-- [ ] tmuxPlugins.net-speed
-- [ ] tmuxPlugins.onedark-theme
-- [ ] tmuxPlugins.online-status
-- [ ] tmuxPlugins.open
-- [ ] tmuxPlugins.pain-control
-- [ ] tmuxPlugins.power-theme
-- [ ] tmuxPlugins.prefix-highlight
-- [ ] tmuxPlugins.resurrect
-- [ ] tmuxPlugins.rose-pine
-- [ ] tmuxPlugins.sensible
-- [ ] tmuxPlugins.sessionist
-- [ ] tmuxPlugins.sidebar
-- [ ] tmuxPlugins.sysstat
-- [ ] tmuxPlugins.tilish
-- [ ] tmuxPlugins.tmux-colors-solarized
-- [ ] tmuxPlugins.tmux-fzf
-- [ ] tmuxPlugins.urlview
-- [ ] tmuxPlugins.vim-tmux-focus-events
-- [ ] tmuxPlugins.vim-tmux-navigator
-- [ ] tmuxPlugins.weather
-- [ ] tmuxPlugins.yank
+- [ ] tmuxPlugins.better-mouse-mode #558068
+- [ ] tmuxPlugins.continuum #558068
+- [ ] tmuxPlugins.copycat #558068
+- [ ] tmuxPlugins.cpu #558068
+- [ ] tmuxPlugins.fpp #558068
+- [ ] tmuxPlugins.fuzzback #558068
+- [ ] tmuxPlugins.fzf-tmux-url #558068
+- [ ] tmuxPlugins.logging #558068
+- [ ] tmuxPlugins.maildir-counter #558068
+- [ ] tmuxPlugins.mode-indicator #558068
+- [ ] tmuxPlugins.net-speed #558068
+- [ ] tmuxPlugins.onedark-theme #558068
+- [ ] tmuxPlugins.online-status #558068
+- [ ] tmuxPlugins.open #558068
+- [ ] tmuxPlugins.pain-control #558068
+- [ ] tmuxPlugins.power-theme #558068
+- [ ] tmuxPlugins.prefix-highlight #558068
+- [ ] tmuxPlugins.resurrect #558068
+- [ ] tmuxPlugins.rose-pine #558068
+- [ ] tmuxPlugins.sensible #558068
+- [ ] tmuxPlugins.sessionist #558068
+- [ ] tmuxPlugins.sidebar #558068
+- [ ] tmuxPlugins.sysstat #558068
+- [ ] tmuxPlugins.tilish #558068
+- [ ] tmuxPlugins.tmux-colors-solarized #558068
+- [ ] tmuxPlugins.tmux-fzf #558068
+- [ ] tmuxPlugins.urlview #558068
+- [ ] tmuxPlugins.vim-tmux-focus-events #558068
+- [ ] tmuxPlugins.vim-tmux-navigator #558068
+- [ ] tmuxPlugins.weather #558068
+- [ ] tmuxPlugins.yank #558068
 - [x] tpm-luks #545813
 - [ ] tracefilesim
 - [ ] trellis
@@ -506,44 +506,44 @@
 - [ ] vapoursynth-znedi3
 - [ ] vdrift
 - [ ] vdrift-bin
-- [ ] vimPlugins.fidget-nvim
-- [ ] vimPlugins.fzf-lua
-- [ ] vimPlugins.gitsigns-nvim
-- [ ] vimPlugins.grug-far-nvim
-- [ ] vimPlugins.haskell-tools-nvim
-- [ ] vimPlugins.image-nvim
-- [ ] vimPlugins.kulala-nvim
-- [ ] vimPlugins.lsp-progress-nvim
-- [ ] vimPlugins.lualine-nvim
-- [ ] vimPlugins.luasnip
-- [ ] vimPlugins.lush-nvim
-- [ ] vimPlugins.lz-n
-- [ ] vimPlugins.lze
-- [ ] vimPlugins.lzextras
-- [ ] vimPlugins.lzn-auto-require
-- [ ] vimPlugins.middleclass
-- [ ] vimPlugins.mini-test
-- [ ] vimPlugins.neorg
-- [ ] vimPlugins.neorg-interim-ls
-- [ ] vimPlugins.neotest
-- [ ] vimPlugins.neotest-nix
-- [ ] vimPlugins.nui-nvim
-- [ ] vimPlugins.nvim-cmp
-- [ ] vimPlugins.nvim-nio
-- [ ] vimPlugins.nvim-web-devicons
-- [ ] vimPlugins.oil-nvim
-- [ ] vimPlugins.orgmode
-- [ ] vimPlugins.papis-nvim
-- [ ] vimPlugins.plenary-nvim
-- [ ] vimPlugins.rest-nvim
-- [ ] vimPlugins.rocks-config-nvim
-- [ ] vimPlugins.rocks-dev-nvim
-- [ ] vimPlugins.rocks-git-nvim
-- [ ] vimPlugins.rocks-nvim
-- [ ] vimPlugins.rtp-nvim
-- [ ] vimPlugins.rustaceanvim
-- [ ] vimPlugins.telescope-manix
-- [ ] vimPlugins.telescope-nvim
+- [ ] vimPlugins.fidget-nvim #558059
+- [ ] vimPlugins.fzf-lua #558059
+- [ ] vimPlugins.gitsigns-nvim #558059
+- [ ] vimPlugins.grug-far-nvim #558059
+- [ ] vimPlugins.haskell-tools-nvim #558059
+- [ ] vimPlugins.image-nvim #558059
+- [ ] vimPlugins.kulala-nvim #558059
+- [ ] vimPlugins.lsp-progress-nvim #558059
+- [ ] vimPlugins.lualine-nvim #558059
+- [ ] vimPlugins.luasnip #558059
+- [ ] vimPlugins.lush-nvim #558059
+- [ ] vimPlugins.lz-n #558059
+- [ ] vimPlugins.lze #558059
+- [ ] vimPlugins.lzextras #558059
+- [ ] vimPlugins.lzn-auto-require #558059
+- [ ] vimPlugins.middleclass #558059
+- [ ] vimPlugins.mini-test #558059
+- [ ] vimPlugins.neorg #558059
+- [ ] vimPlugins.neorg-interim-ls #558059
+- [ ] vimPlugins.neotest #558059
+- [ ] vimPlugins.neotest-nix #558059
+- [ ] vimPlugins.nui-nvim #558059
+- [ ] vimPlugins.nvim-cmp #558059
+- [ ] vimPlugins.nvim-nio #558059
+- [ ] vimPlugins.nvim-web-devicons #558059
+- [ ] vimPlugins.oil-nvim #558059
+- [ ] vimPlugins.orgmode #558059
+- [ ] vimPlugins.papis-nvim #558059
+- [ ] vimPlugins.plenary-nvim #558059
+- [ ] vimPlugins.rest-nvim #558059
+- [ ] vimPlugins.rocks-config-nvim #558059
+- [ ] vimPlugins.rocks-dev-nvim #558059
+- [ ] vimPlugins.rocks-git-nvim #558059
+- [ ] vimPlugins.rocks-nvim #558059
+- [ ] vimPlugins.rtp-nvim #558059
+- [ ] vimPlugins.rustaceanvim #558059
+- [ ] vimPlugins.telescope-manix #558059
+- [ ] vimPlugins.telescope-nvim #558059
 - [ ] vobsub2srt
 - [ ] vpnc-scripts
 - [ ] vsc-leetcode-cli
@@ -560,10 +560,10 @@
 - [ ] wmderland #557775
 - [ ] wmderlandc #557774
 - [ ] workstyle #557773
-- [ ] wvdial #557772
+- [x] wvdial #557772
 - [ ] wwcd #462998
 - [ ] xf86-video-intel
-- [ ] xfs-undelete #557769
+- [x] xfs-undelete #557769
 - [x] xhosts #554852
 - [ ] xidel
 - [x] xmonad_log_applet #546494
