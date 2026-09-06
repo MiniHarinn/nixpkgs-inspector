@@ -128,7 +128,7 @@
 - [x] go-autoconfig #555553
 - [x] go-bindata-assetfs #555554
 - [x] go-check #555555
-- [ ] go-neb #555559
+- [x] go-neb
 - [x] go-outline #555562
 - [x] go-sct #555568
 - [x] golint #555569
@@ -140,17 +140,17 @@
 - [x] guile-commonmark #555587
 - [x] guile-xcb #555591
 - [x] gx-go #555593
-- [ ] handlr
-- [ ] hash_extender
-- [ ] haskellPackages.hoogle
-- [ ] haskellPackages.leveldb-haskell
-- [ ] haste-server
-- [ ] hdl-dump
+- [ ] handlr #558546
+- [x] hash_extender #558547
+- [x] haskellPackages.hoogle #558552
+- [x] haskellPackages.leveldb-haskell #558557
+- [ ] haste-server #558563
+- [x] hdl-dump #558574
 - [x] hecate #545807
-- [ ] herqq
+- [x] herqq #558585
 - [ ] hidrd
-- [ ] hub
-- [ ] hypr
+- [x] hub #558591
+- [x] hypr #558300
 - [ ] i3-auto-layout
 - [ ] i3-cycle-focus
 - [ ] i3-layout-manager
@@ -238,7 +238,7 @@
 - [ ] lua51Packages.lua-pam
 - [ ] lua51Packages.luarocks-nix
 - [x] lukesmithxyz-bible-kjv #554858
-- [ ] lukesmithxyz-st #554857
+- [x] lukesmithxyz-st #554857
 - [x] lwc #545804
 - [ ] m2libc
 - [ ] manga-cli
@@ -308,7 +308,7 @@
 - [ ] picoprobe-udev-rules
 - [ ] pidginPackages.purple-discord
 - [ ] pidginPackages.purple-googlechat
-- [ ] pidginPackages.purple-xmpp-http-upload
+- [x] pidginPackages.purple-xmpp-http-upload
 - [ ] piglit
 - [ ] play-with-mpv
 - [ ] pms
@@ -337,7 +337,7 @@
 - [ ] python313Packages.gps3
 - [ ] python313Packages.gyp
 - [x] python313Packages.june-analytics-python #541987
-- [ ] python313Packages.mediafire-dl
+- [x] python313Packages.mediafire-dl
 - [ ] python313Packages.mkdocs-linkcheck
 - [ ] python313Packages.muscima
 - [ ] python313Packages.nix-kernel
@@ -375,11 +375,11 @@
 - [ ] quake3hires
 - [x] quark #555199
 - [ ] quintom-cursor-theme
-- [ ] rapidsvn
+- [x] rapidsvn
 - [ ] raspberrypi-armstubs
 - [x] rc #545794
 - [ ] recastnavigation
-- [ ] redprl
+- [x] redprl
 - [ ] remarkable-mouse
 - [ ] remontoire
 - [ ] reredirect
@@ -396,7 +396,7 @@
 - [x] scion-apps #552735
 - [ ] selectdefaultapplication
 - [ ] sgp4
-- [ ] shellnoob
+- [x] shellnoob #558623
 - [ ] shrikhand
 - [x] sierra-gtk-theme
 - [ ] sigutils
@@ -506,44 +506,44 @@
 - [ ] vapoursynth-znedi3
 - [ ] vdrift
 - [ ] vdrift-bin
-- [ ] vimPlugins.fidget-nvim #558059
-- [ ] vimPlugins.fzf-lua #558059
-- [ ] vimPlugins.gitsigns-nvim #558059
-- [ ] vimPlugins.grug-far-nvim #558059
-- [ ] vimPlugins.haskell-tools-nvim #558059
-- [ ] vimPlugins.image-nvim #558059
-- [ ] vimPlugins.kulala-nvim #558059
-- [ ] vimPlugins.lsp-progress-nvim #558059
-- [ ] vimPlugins.lualine-nvim #558059
-- [ ] vimPlugins.luasnip #558059
-- [ ] vimPlugins.lush-nvim #558059
-- [ ] vimPlugins.lz-n #558059
-- [ ] vimPlugins.lze #558059
-- [ ] vimPlugins.lzextras #558059
-- [ ] vimPlugins.lzn-auto-require #558059
-- [ ] vimPlugins.middleclass #558059
-- [ ] vimPlugins.mini-test #558059
-- [ ] vimPlugins.neorg #558059
-- [ ] vimPlugins.neorg-interim-ls #558059
-- [ ] vimPlugins.neotest #558059
-- [ ] vimPlugins.neotest-nix #558059
-- [ ] vimPlugins.nui-nvim #558059
-- [ ] vimPlugins.nvim-cmp #558059
-- [ ] vimPlugins.nvim-nio #558059
-- [ ] vimPlugins.nvim-web-devicons #558059
-- [ ] vimPlugins.oil-nvim #558059
-- [ ] vimPlugins.orgmode #558059
-- [ ] vimPlugins.papis-nvim #558059
-- [ ] vimPlugins.plenary-nvim #558059
-- [ ] vimPlugins.rest-nvim #558059
-- [ ] vimPlugins.rocks-config-nvim #558059
-- [ ] vimPlugins.rocks-dev-nvim #558059
-- [ ] vimPlugins.rocks-git-nvim #558059
-- [ ] vimPlugins.rocks-nvim #558059
-- [ ] vimPlugins.rtp-nvim #558059
-- [ ] vimPlugins.rustaceanvim #558059
-- [ ] vimPlugins.telescope-manix #558059
-- [ ] vimPlugins.telescope-nvim #558059
+- [x] vimPlugins.fidget-nvim #558059
+- [x] vimPlugins.fzf-lua #558059
+- [x] vimPlugins.gitsigns-nvim #558059
+- [x] vimPlugins.grug-far-nvim #558059
+- [x] vimPlugins.haskell-tools-nvim #558059
+- [x] vimPlugins.image-nvim #558059
+- [x] vimPlugins.kulala-nvim #558059
+- [x] vimPlugins.lsp-progress-nvim #558059
+- [x] vimPlugins.lualine-nvim #558059
+- [x] vimPlugins.luasnip #558059
+- [x] vimPlugins.lush-nvim #558059
+- [x] vimPlugins.lz-n #558059
+- [x] vimPlugins.lze #558059
+- [x] vimPlugins.lzextras #558059
+- [x] vimPlugins.lzn-auto-require #558059
+- [x] vimPlugins.middleclass #558059
+- [x] vimPlugins.mini-test #558059
+- [x] vimPlugins.neorg #558059
+- [x] vimPlugins.neorg-interim-ls #558059
+- [x] vimPlugins.neotest #558059
+- [x] vimPlugins.neotest-nix #558059
+- [x] vimPlugins.nui-nvim #558059
+- [x] vimPlugins.nvim-cmp #558059
+- [x] vimPlugins.nvim-nio #558059
+- [x] vimPlugins.nvim-web-devicons #558059
+- [x] vimPlugins.oil-nvim #558059
+- [x] vimPlugins.orgmode #558059
+- [x] vimPlugins.papis-nvim #558059
+- [x] vimPlugins.plenary-nvim #558059
+- [x] vimPlugins.rest-nvim #558059
+- [x] vimPlugins.rocks-config-nvim #558059
+- [x] vimPlugins.rocks-dev-nvim #558059
+- [x] vimPlugins.rocks-git-nvim #558059
+- [x] vimPlugins.rocks-nvim #558059
+- [x] vimPlugins.rtp-nvim #558059
+- [x] vimPlugins.rustaceanvim #558059
+- [x] vimPlugins.telescope-manix #558059
+- [x] vimPlugins.telescope-nvim #558059
 - [ ] vobsub2srt
 - [ ] vpnc-scripts
 - [ ] vsc-leetcode-cli
@@ -557,9 +557,9 @@
 - [x] wlay #542382
 - [ ] wlprop
 - [x] wlr-protocols #544809
-- [ ] wmderland #557775
-- [ ] wmderlandc #557774
-- [ ] workstyle #557773
+- [x] wmderland #557775
+- [x] wmderlandc #557774
+- [x] workstyle #557773
 - [x] wvdial #557772
 - [ ] wwcd #462998
 - [ ] xf86-video-intel
@@ -575,7 +575,7 @@
 - [x] zenmonitor #541850
 - [ ] zeyple
 - [ ] zfsbackup
-- [ ] zi #557778
+- [x] zi #557778
 - [ ] zotero-translation-server #557777
 - [ ] zpool-iostat-viz
 - [ ] zsa-udev-rules #557779
