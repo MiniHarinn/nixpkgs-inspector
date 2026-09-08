@@ -105,9 +105,9 @@
 - [x] gbforth #553157
 - [x] gerbil-unstable #553162
 - [x] ghidra-extensions.ghidraninja-ghidra-scripts #553164
-- [ ] gimp2Plugins.farbfeld
-- [ ] gimp2Plugins.gimplensfun
-- [ ] gimp2Plugins.texturize
+- [ ] gimp2Plugins.farbfeld #561125
+- [ ] gimp2Plugins.gimplensfun #561125
+- [ ] gimp2Plugins.texturize #561125
 - [x] git-appraise #553168
 - [x] git-fire #553172
 - [x] gl-gsync-demo #555217
@@ -140,7 +140,7 @@
 - [x] guile-commonmark #555587
 - [x] guile-xcb #555591
 - [x] gx-go #555593
-- [ ] handlr #558546
+- [x] handlr #558546
 - [x] hash_extender #558547
 - [x] haskellPackages.hoogle #558552
 - [x] haskellPackages.leveldb-haskell #558557
@@ -148,28 +148,28 @@
 - [x] hdl-dump #558574
 - [x] hecate #545807
 - [x] herqq #558585
-- [ ] hidrd
+- [ ] hidrd #561090
 - [x] hub #558591
 - [x] hypr #558300
-- [ ] i3-auto-layout
-- [ ] i3-cycle-focus
-- [ ] i3-layout-manager
-- [ ] i3-swallow
-- [ ] i3lock-fancy
-- [ ] i3lock-fancy-rapid
-- [ ] iannix
-- [ ] ibus-engines.cangjie
+- [ ] i3-auto-layout #561092
+- [ ] i3-cycle-focus #561093
+- [ ] i3-layout-manager #561094
+- [ ] i3-swallow #561095
+- [ ] i3lock-fancy #561098
+- [ ] i3lock-fancy-rapid #561099
+- [ ] iannix #561101
+- [ ] ibus-engines.cangjie #561108
 - [ ] ifupdown-ng #536753
-- [ ] imnodes
-- [ ] in-formant
-- [ ] inav-blackbox-tools
-- [ ] indradb-client
-- [ ] inkscape-extensions.applytransforms
-- [ ] inkscape-extensions.hexmap
+- [ ] imnodes #561110
+- [ ] in-formant #561111
+- [ ] inav-blackbox-tools #561114
+- [ ] indradb-client #561116
+- [ ] inkscape-extensions.applytransforms #561118
+- [ ] inkscape-extensions.hexmap #561120
 - [x] intel-llvm
 - [x] ion #545799
 - [x] ioq3-scion #555343
-- [ ] ios-safari-remote-debug
+- [ ] ios-safari-remote-debug #561122
 - [x] iotools #545800
 - [ ] ipu6-camera-bins
 - [ ] ipu6-camera-hal
