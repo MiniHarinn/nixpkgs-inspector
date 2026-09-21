@@ -100,14 +100,14 @@
 - [x] frogatto #555346
 - [x] fusee-nano #543810
 - [x] fverb #553133
-- [ ] gambit-unstable #553149
+- [x] gambit-unstable #553149
 - [ ] gawkextlib.abort #553154
 - [x] gbforth #553157
 - [x] gerbil-unstable #553162
 - [x] ghidra-extensions.ghidraninja-ghidra-scripts #553164
-- [ ] gimp2Plugins.farbfeld #561125
-- [ ] gimp2Plugins.gimplensfun #561125
-- [ ] gimp2Plugins.texturize #561125
+- [x] gimp2Plugins.farbfeld #561125
+- [x] gimp2Plugins.gimplensfun #561125
+- [x] gimp2Plugins.texturize #561125
 - [x] git-appraise #553168
 - [x] git-fire #553172
 - [x] gl-gsync-demo #555217
@@ -115,8 +115,8 @@
 - [x] gladtex #546510
 - [x] glow-lang #555540
 - [x] glpaper #555541
-- [ ] gmad
-- [ ] gnome-inform7 #555545
+- [x] gmad #561642
+- [x] gnome-inform7 #555545
 - [x] gnome2.gtkglext
 - [x] gnomeExtensions.argos
 - [x] gnomeExtensions.drop-down-terminal
@@ -133,7 +133,7 @@
 - [x] go-sct #555568
 - [x] golint #555569
 - [x] goofys #555572
-- [ ] gpm #555577
+- [x] gpm #555577
 - [x] grpc-health-check #555580
 - [x] gsmlib #555582
 - [x] gst_all_1.icamerasrc-ipu6 #555584
@@ -148,42 +148,42 @@
 - [x] hdl-dump #558574
 - [x] hecate #545807
 - [x] herqq #558585
-- [ ] hidrd #561090
+- [x] hidrd #561090
 - [x] hub #558591
 - [x] hypr #558300
-- [ ] i3-auto-layout #561092
-- [ ] i3-cycle-focus #561093
-- [ ] i3-layout-manager #561094
-- [ ] i3-swallow #561095
-- [ ] i3lock-fancy #561098
-- [ ] i3lock-fancy-rapid #561099
-- [ ] iannix #561101
-- [ ] ibus-engines.cangjie #561108
+- [x] i3-auto-layout #561092
+- [x] i3-cycle-focus #561093
+- [x] i3-layout-manager #561094
+- [x] i3-swallow #561095
+- [x] i3lock-fancy #561098
+- [x] i3lock-fancy-rapid #561099
+- [x] iannix #561101
+- [x] ibus-engines.cangjie #561108
 - [ ] ifupdown-ng #536753
-- [ ] imnodes #561110
-- [ ] in-formant #561111
-- [ ] inav-blackbox-tools #561114
-- [ ] indradb-client #561116
-- [ ] inkscape-extensions.applytransforms #561118
-- [ ] inkscape-extensions.hexmap #561120
+- [x] imnodes #561110
+- [x] in-formant #561111
+- [x] inav-blackbox-tools #561114
+- [x] indradb-client #561116
+- [x] inkscape-extensions.applytransforms #561118
+- [x] inkscape-extensions.hexmap #561120
 - [x] intel-llvm
 - [x] ion #545799
 - [x] ioq3-scion #555343
-- [ ] ios-safari-remote-debug #561122
+- [x] ios-safari-remote-debug #561122
 - [x] iotools #545800
-- [ ] ipu6-camera-bins
-- [ ] ipu6-camera-hal
-- [ ] ivsc-firmware
-- [ ] jabcode
+- [ ] ipu6-camera-bins #561643
+- [ ] ipu6-camera-hal #561648
+- [ ] ivsc-firmware #561652
+- [x] jabcode #561654
 - [ ] jack-autoconnect
 - [x] jack-passthrough #537629
 - [ ] jackline
 - [x] joomscan #543076
 - [ ] jpegexiforient
-- [ ] jpegrescan
+- [x] jpegrescan #564610
 - [ ] jtdx
 - [x] justify #545792
-- [ ] kbdd
+- [x] kbdd #564613
 - [x] kepler
 - [ ] kerf
 - [ ] keyleds
@@ -207,7 +207,7 @@
 - [ ] libsForQt5.qmltermwidget
 - [ ] libsForQt5.qtfeedback
 - [ ] libsForQt5.qtpim
-- [ ] libsForQt5.qtstyleplugins
+- [x] libsForQt5.qtstyleplugins #563212
 - [ ] libstrangle
 - [ ] libunity
 - [ ] libusbgx
@@ -323,7 +323,7 @@
 - [ ] prometheus-fritzbox-exporter
 - [ ] prometheus-idrac-exporter
 - [ ] prometheus-siebenmann-zfs-exporter
-- [ ] prosody-filer
+- [x] prosody-filer
 - [ ] ps2client
 - [ ] pulseaudio-dlna
 - [x] pup #545795
@@ -346,7 +346,7 @@
 - [ ] python313Packages.oscscreen
 - [ ] python313Packages.ovmfvartool
 - [ ] python313Packages.oyaml
-- [ ] python313Packages.paranoid-crypto
+- [x] python313Packages.paranoid-crypto
 - [ ] python313Packages.polarizationsolver
 - [ ] python313Packages.pybluez
 - [ ] python313Packages.pydes
@@ -367,7 +367,7 @@
 - [x] python313Packages.yaswfp #543069
 - [ ] qboot
 - [ ] qdjango
-- [ ] qgo
+- [x] qgo
 - [ ] qmarkdowntextedit
 - [ ] qremotecontrol-server
 - [ ] qscreenshot
@@ -405,7 +405,7 @@
 - [ ] skydns
 - [x] sleek-grub-theme #543819
 - [ ] smartcrop
-- [ ] smpeg2
+- [x] smpeg2 #563215
 - [ ] smuxi
 - [ ] snet
 - [ ] soil
@@ -424,12 +424,12 @@
 - [ ] stw
 - [ ] surf-display
 - [ ] suwidgets
-- [ ] svgcleaner #546503
+- [x] svgcleaner #546503
 - [ ] swaycons
 - [ ] swaylock-fancy
 - [x] sweet-nova #546502
 - [x] synapse-bt #556397
-- [ ] syslinux #556396
+- [x] syslinux #556396
 - [x] systrayhelper #556399
 - [x] tai-ahom #556400
 - [x] tamgamp-lv2 #556402
@@ -441,11 +441,11 @@
 - [ ] termdbms
 - [x] tests.pkg-config.defaultPkgConfigPackages.SoapySDR #546964
 - [ ] textql
-- [ ] times-newer-roman
+- [x] times-newer-roman #563210
 - [x] tinyalsa
 - [ ] tmate
 - [ ] tmate-ssh-server
-- [ ] tmux-cssh
+- [ ] tmux-cssh #563213
 - [ ] tmuxPlugins.better-mouse-mode #558068
 - [ ] tmuxPlugins.continuum #558068
 - [ ] tmuxPlugins.copycat #558068
@@ -547,7 +547,7 @@
 - [ ] vobsub2srt
 - [ ] vpnc-scripts
 - [ ] vsc-leetcode-cli
-- [ ] waylogout #462998
+- [x] waylogout
 - [ ] webdav-server-rs
 - [ ] weechatScripts.weechat-matrix-bridge
 - [ ] wemux
