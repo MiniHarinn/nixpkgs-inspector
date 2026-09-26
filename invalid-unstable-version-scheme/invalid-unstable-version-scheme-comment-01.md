@@ -124,7 +124,7 @@
 - [x] gnomeExtensions.tilingnome
 - [x] gnomeExtensions.window-corner-preview
 - [x] gnomecast #555547
-- [ ] gnuradioPackages.fosphor #555550
+- [x] gnuradioPackages.fosphor #555550
 - [x] go-autoconfig #555553
 - [x] go-bindata-assetfs #555554
 - [x] go-check #555555
@@ -175,42 +175,42 @@
 - [ ] ipu6-camera-hal #561648
 - [ ] ivsc-firmware #561652
 - [x] jabcode #561654
-- [ ] jack-autoconnect
+- [ ] jack-autoconnect #567252
 - [x] jack-passthrough #537629
-- [ ] jackline
+- [ ] jackline #567253
 - [x] joomscan #543076
-- [ ] jpegexiforient
+- [ ] jpegexiforient #565844
 - [x] jpegrescan #564610
-- [ ] jtdx
+- [ ] jtdx #565856
 - [x] justify #545792
 - [x] kbdd #564613
 - [x] kepler
-- [ ] kerf
-- [ ] keyleds
+- [x] kerf #565849
+- [x] keyleds #565928
 - [ ] keym
 - [x] kjv #545782
-- [ ] kmscube
-- [ ] kxstitch
-- [ ] l2md
+- [x] kmscube #565846
+- [x] kxstitch #565847
+- [x] l2md #565848
 - [ ] lalezar-fonts
 - [ ] lamb
-- [ ] ldapvi
+- [x] ldapvi #565851
 - [x] lemon #546488
 - [ ] lemonade
 - [ ] lemonbar-xft
-- [ ] lerpn
-- [ ] lguf-brightness
+- [x] lerpn #565572
+- [x] lguf-brightness #565573
 - [ ] libgumath
-- [ ] libndtypes
-- [ ] libnixxml
-- [ ] libnut
+- [x] libndtypes #565853
+- [ ] libnixxml #565855
+- [x] libnut #565577
 - [ ] libsForQt5.qmltermwidget
 - [ ] libsForQt5.qtfeedback
 - [ ] libsForQt5.qtpim
 - [x] libsForQt5.qtstyleplugins #563212
-- [ ] libstrangle
-- [ ] libunity
-- [ ] libusbgx
+- [ ] libstrangle #565576
+- [x] libunity #565584
+- [x] libusbgx #565854
 - [x] libuvc
 - [ ] libvdwxc
 - [ ] libyafaray
@@ -240,7 +240,7 @@
 - [x] lukesmithxyz-bible-kjv #554858
 - [x] lukesmithxyz-st #554857
 - [x] lwc #545804
-- [ ] m2libc
+- [ ] m2libc #567255
 - [ ] manga-cli
 - [ ] mar1d
 - [ ] maxfetch
