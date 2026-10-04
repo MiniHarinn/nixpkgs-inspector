@@ -173,11 +173,11 @@
 - [x] iotools #545800
 - [ ] ipu6-camera-bins #561643
 - [ ] ipu6-camera-hal #561648
-- [ ] ivsc-firmware #561652
+- [ ] ivsc-firmware
 - [x] jabcode #561654
-- [ ] jack-autoconnect #567252
+- [x] jack-autoconnect #567252
 - [x] jack-passthrough #537629
-- [ ] jackline #567253
+- [x] jackline #567253
 - [x] joomscan #543076
 - [ ] jpegexiforient #565844
 - [x] jpegrescan #564610
@@ -242,28 +242,28 @@
 - [x] lwc #545804
 - [ ] m2libc #567255
 - [ ] manga-cli
-- [ ] mar1d
-- [ ] maxfetch
-- [ ] mdctags
+- [ ] mar1d #567257
+- [ ] maxfetch #567258
+- [x] mdctags #567260
 - [x] meh #545788
-- [ ] meslo-lgs-nf
-- [ ] minc_widgets
-- [ ] mio
-- [ ] mjpg-streamer
-- [ ] mlxbf-bootctl
-- [ ] mmh
-- [ ] modd
-- [ ] models-dev
-- [ ] moka-icon-theme
-- [ ] molly-brown
-- [ ] mons
-- [ ] mpd-touch-screen-gui
-- [ ] mplus-outline-fonts.githubRelease
-- [ ] mpvScripts.youtube-chat
-- [ ] mro-unicode
-- [ ] mswatch
-- [ ] multipart-parser-c
-- [ ] muso
+- [ ] meslo-lgs-nf #567261
+- [x] minc_widgets #567262
+- [ ] mio #567263
+- [x] mjpg-streamer #567266
+- [ ] mlxbf-bootctl #567268
+- [x] mmh #567272
+- [ ] modd #567275
+- [x] models-dev #567278
+- [x] moka-icon-theme #567279
+- [x] molly-brown #567280
+- [x] mons #567281
+- [x] mpd-touch-screen-gui #567283
+- [ ] mplus-outline-fonts.githubRelease #567285
+- [x] mpvScripts.youtube-chat #567287
+- [ ] mro-unicode #567291
+- [x] mswatch #567293
+- [x] multipart-parser-c #567299
+- [x] muso #567300
 - [ ] nanotts
 - [ ] naproche
 - [ ] nasmfmt
@@ -318,7 +318,7 @@
 - [ ] postgresql14Packages.pg_similarity
 - [ ] potreeconverter
 - [ ] powerline-fonts
-- [ ] precice-config-visualizer
+- [x] precice-config-visualizer
 - [ ] primus-lib
 - [ ] prometheus-fritzbox-exporter
 - [ ] prometheus-idrac-exporter
